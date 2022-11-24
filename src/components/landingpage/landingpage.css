@@ -160,6 +160,7 @@
 
 .landingpage .images img{
     height: 55vh;
+    box-shadow: 2px 2px 15px 2px #330033;
 }
 
 .landingpage .images {
