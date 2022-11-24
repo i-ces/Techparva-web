@@ -115,25 +115,3 @@
     border-right: 2px solid #beb8b8;
   }
   
-  .detailsofevent {
-    padding: 0px 40px;
-  }
-  
-  .detailsofevent h3 {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    align-items: center;
-    color: #504e4e;
-  }
-  
-  .detailsofevent p {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    letter-spacing: 0.02em;
-    color: #504e4e;
-    width: 90%;
-  }

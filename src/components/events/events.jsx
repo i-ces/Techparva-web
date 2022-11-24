@@ -25,7 +25,7 @@ const Events = () =>{
                 <h3>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</h3>
             </div>
             <div className='content' id="events">
-                <Link to="/codewithcoffee">
+                <a href="/codewithcoffee">
                     <div className='scard'>
                         <div className='image'>
                             <BiCoffeeTogo className='icon'/>
@@ -34,8 +34,8 @@ const Events = () =>{
                         <div className='line'></div>
                         <p>Turn Caffiene into Code Eaque ipsa quae ab illo inventore veritatis</p>
                     </div>
-                </Link>
-                <Link to="/datathon">
+                </a>
+                <a href="/datathon">
                     <div className='scard'>
                         <div className='image'>
                             <BsClipboardData className='icon'/>
@@ -44,8 +44,8 @@ const Events = () =>{
                         <div className='line'></div>
                         <p>Turn Caffiene into Code Eaque ipsa quae ab illo inventore veritatis</p>
                     </div>
-                </Link>
-                <Link to="/designthinking">
+                </a>
+                <a href="/designthinking">
                     <div className='scard'>
                         <div className='image'>
                             <GiDeadWood className='icon'/>
@@ -54,8 +54,8 @@ const Events = () =>{
                         <div className='line'></div>
                         <p>Turn Caffiene into Code Eaque ipsa quae ab illo inventore veritatis</p>
                     </div>
-                </Link>
-                <Link to="/breakingintosecurity">
+                </a>
+                <a href="/breakingintosecurity">
                 <div className='scard'>
                     <div className='image'>
                         <AiFillSecurityScan className='icon'/>
@@ -64,7 +64,7 @@ const Events = () =>{
                     <div className='line'></div>
                     <p>Turn Caffiene into Code Eaque ipsa quae ab illo inventore veritatis</p>
                 </div>`
-                </Link>
+                </a>
             </div>
         </div>
     )

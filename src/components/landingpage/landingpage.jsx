@@ -1,6 +1,9 @@
 import React from 'react';
 import Navig from '../navig/navig'
-import photo from '../../assets/img.jpeg'
+import left from '../../assets/a-8.png'
+import mid from '../../assets/b-8.png'
+import right from '../../assets/c-8.png'
+
 import './landingpage.css'
 import {Link} from 'react-router-dom'
 
@@ -35,13 +38,13 @@ const Landingpage = () =>{
             </div>
             <div className='images'>
                 <div className='img'>
-                    <img src={photo}/>
+                    <img src={left}/>
                 </div>
                 <div className='img'>
-                    <img src={photo}/>
+                    <img src={mid}/>
                 </div>
                 <div className='img'>
-                    <img src={photo}/>
+                    <img src={right}/>
                 </div>
             </div>
         </div>
