@@ -1,9 +1,9 @@
 import React from 'react';
 import Navig from '../navig/navig'
-import full from '../../assets/img.jpeg'
-import left from '../../assets/a-8.png'
+import full from '../../assets/img.jpg'
+import left from '../../assets/a-8.jpg'
 import mid from '../../assets/b-8.png'
-import right from '../../assets/c-8.png'
+import right from '../../assets/c-8.jpg'
 
 import './landingpage.css'
 import {Link} from 'react-router-dom'
