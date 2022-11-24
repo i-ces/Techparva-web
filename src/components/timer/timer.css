@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800;900&family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+
+.countdowncontainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .countdown {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #eeebeb;
+    position: relative;
+    bottom: 40px;
+  }
+  
+  .registerpage .countdown {
+    top: 40px;
+  }
+  
+  .countdown h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #948c8c;
+    padding: 5px 20px;
+  }
+  .countdown h3:nth-child(2) {
+    border-left: 2px solid #beb8b8;
+    border-right: 2px solid #beb8b8;
+  }
