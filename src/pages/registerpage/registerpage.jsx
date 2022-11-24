@@ -5,9 +5,6 @@ import './registerpage.css'
 
 
 const RegisterPage = (props) =>{
-    console.log(props.countdown_time)
-
-    
 
     const [registrationmodal, setregistrationmodal] = useState(false)
         

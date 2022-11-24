@@ -1,5 +1,6 @@
 import React from 'react';
 import Navig from '../navig/navig'
+import full from '../../assets/img.jpeg'
 import left from '../../assets/a-8.png'
 import mid from '../../assets/b-8.png'
 import right from '../../assets/c-8.png'
@@ -31,17 +32,17 @@ const Landingpage = () =>{
                 <h2>Paschimanchal Campus</h2>
                 {/* <h3>Technology&nbsp;&nbsp;-&nbsp;&nbsp;Excellegence&nbsp;&nbsp;-&nbsp;&nbsp;Competition</h3> */}
             </div>
-            <div className='buttons'>
+            {/* <div className='buttons'>
                 <a href="#events"><button>About the Event</button></a><a href="#events"><button>Register Now</button></a>
 
-            </div>
+            </div> */}
             </div>
             <div className='images'>
                 <div className='img'>
                     <img src={left}/>
                 </div>
                 <div className='img'>
-                    <img src={mid}/>
+                    <img src={full}/>
                 </div>
                 <div className='img'>
                     <img src={right}/>
