@@ -21,7 +21,7 @@ const Events = () =>{
             <div className='title'>
                 <p>i-CES</p>
                 <h1>Learn and Compete your Interest</h1>
-                <h3>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</h3>
+                <h3>In celebration of the 35th anniversary of Paschimanchal Campus, Department of Electronics and Computer Engineering in association with i-CES is organizing Tech Parva, a celebration of Technology, Competition and Excellence.</h3>
             </div>
             <div className='content' id="events">
                 <a href="/codewithcoffee">
@@ -31,7 +31,7 @@ const Events = () =>{
                         </div>
                         <h3>Code with Coffee</h3>
                         <div className='line'></div>
-                        <p>Turn Caffiene into Code Eaque ipsa quae ab illo inventore veritatis</p>
+                        <p>Code with Coffee is a competitive coding challenge hosted on Hacker Rank</p>
                     </div>
                 </a>
                 <a href="/datathon">
@@ -41,7 +41,7 @@ const Events = () =>{
                         </div>
                         <h3>Datathon</h3>
                         <div className='line'></div>
-                        <p>Turn Caffiene into Code Eaque ipsa quae ab illo inventore veritatis</p>
+                        <p>Learn. Clean given dataset, generate insights, analyze, visualize and win</p>
                     </div>
                 </a>
                 <a href="/designthinking">
@@ -51,7 +51,7 @@ const Events = () =>{
                         </div>
                         <h3>Design Thinking </h3>
                         <div className='line'></div>
-                        <p>Turn Caffiene into Code Eaque ipsa quae ab illo inventore veritatis</p>
+                        <p>Tackle the growing challenges in real world, with your next app design</p>
                     </div>
                 </a>
                 <a href="/breakingintosecurity">
@@ -61,8 +61,8 @@ const Events = () =>{
                     </div>
                     <h3>Breaking into Security </h3>
                     <div className='line'></div>
-                    <p>Turn Caffiene into Code Eaque ipsa quae ab illo inventore veritatis</p>
-                </div>`
+                    <p>Your first baby steps into the world of cybersecurity and ethical hacking</p>
+                </div>
                 </a>
             </div>
         </div>
