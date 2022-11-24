@@ -22,3 +22,9 @@
     letter-spacing: 0.05em;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 640px) {
+    .navigation{
+        padding:20px 30px;
+    }
+}

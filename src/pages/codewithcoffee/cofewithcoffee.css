@@ -45,3 +45,14 @@
     letter-spacing: 0.03em;
 
   }
+
+  @media only screen and (max-width: 640px) {
+  
+    /* .detailsofevent {
+      padding: 0px 10px;
+    }
+
+    .detailsofevent p {
+      width: 100%;
+    } */
+}

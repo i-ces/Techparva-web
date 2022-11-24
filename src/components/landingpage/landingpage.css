@@ -183,3 +183,17 @@
 .landingpage .images .img:nth-child(3) {
     padding-top: 60px;
 }
+
+@media only screen and (max-width: 640px) {
+    .titles h1{
+        font-size:40px;
+    }
+
+    .landingpage .images img{
+        display: none;
+    }
+    .blank{
+        height:0vh;
+    }
+
+}
