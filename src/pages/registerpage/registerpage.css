@@ -6,7 +6,7 @@
         rgba(90, 92, 156, 0.5),
         rgba(90, 92, 156, 0.5)
       ),
-      url("./images/back1.jpg");
+      url("/images/back1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: fixed;
