@@ -1,5 +1,4 @@
 import React from 'react';
-import photo from '../../assets/capture.png'
 import './events.css'
 import {Link} from'react-router-dom'
 import {BiCoffeeTogo} from 'react-icons/bi'
