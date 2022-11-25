@@ -12,10 +12,13 @@ const Security = () =>{
             date="16th Mangsir, 2079"
             location="CIT Hall, WRC"
             countdown_time="12/02/2022"
+            urll = "https://forms.gle/jWgSWp719UYM18f97"
             />
         <div className="detailsofevent">
             <h3>About the event</h3>
-            <p>Cybersecurity is one of the most desired professions in today's job market. There is a high demand for professionals who can secure today's modern infrastructure. But getting into security is a chore in itself. With BabyPwn, our desire is to help people interested in security begin their journey. The event will have a talk session with industry insiders detailing their experience in the security, followed by a beginner level Capture the Flag tournament.</p>
+            <p>Cybersecurity is one of the most sought-after professions. Professionals that can secure contemporary infrastructure are in high demand. But going through security is a hassle in and of itself. </p>
+            <p>Our goal with BabyPwn is to assist those who are interested in security in starting their adventure. A discussion session with experts in the field discussing their experiences in security will precede a beginner-level Capture the Flag competition.</p>
+            <p>Finding concealed data, obtaining encryption keys, and getting around security measures are frequent problems. Teams of players often attack and defend computer systems during competitions, though the format might vary. Players may occasionally be given particular goals, like locating a lost password, or they may be left free to explore the system and locate anything they can. CTF competitions can be an entertaining and instructive approach to discover computer security and explore more.</p>
             <h3>More Info:</h3>
             <ul>
                 <li>Talk session with industry insiders on how to get started in security</li>

@@ -100,7 +100,9 @@ const RegisterPage = (props) =>{
                     <h3><i className="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;{props.location}</h3>
                 </div>
                 <div className="registerbutton">
-                <button onClick={()=>setregistrationmodal(true)} disabled={true}>Register Now</button>
+                <a href = {props.urll} target="blank">
+                    <button>Register Now</button>
+                </a>
                 </div>
                 
             </div>

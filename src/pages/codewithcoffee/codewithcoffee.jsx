@@ -12,11 +12,13 @@ const CodewithCoffee = () =>{
             date="14th Mangsir, 2079"
             location="CIT Hall, WRC"
             countdown_time="11/30/2022"
+            url="https://forms.gle/YqJaxPKEF3qwu5bF9"
             />
         <div className="detailsofevent">
             <h3>About the event</h3>
-            <p> A great way to improve your skills when learning to code is by solving coding challenges. Solving different types of challenges and puzzles can help you become a better problem solver, learn the intricacies of a programming language, learn new algorithms, and more. The event will feature Leet Code style challenges with an interactive playground to code towards the solution.
-                So, We have come up with the “Code with Coffee” contest. It is a platform to show your talent to cope with coding problems within a time barrier.</p>
+            <p>Solving coding challenges is an excellent method to advance your coding abilities. You can  study the complexities of a programming language, discover new algorithms, and more by tackling various challenges and puzzles. The event will include challenges in the LeetCode style with an interactive coding playground.</p>
+            <p>We aim to split this competition into two categories— one for 1st and 2nd years of undergrads and another for tested veterans.</p>
+            <p>Therefore, we are here with a "Code with Coffee" competition. It serves as a forum for showcasing your aptitude for solving code issues quickly.</p>
             <h3>More Info:</h3>
             <ul>
                 <li>Beginner to advanced level coding challenges.</li>
