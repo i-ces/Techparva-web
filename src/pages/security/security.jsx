@@ -7,7 +7,7 @@ const Security = () =>{
     return(
         <div className='security'>
             <RegisterPage 
-            title="BabyPwn"
+            title="BabyPwn: Capture the Flag"
             time="2pm onwards"
             date="16th Mangsir, 2079"
             location="CIT Hall, WRC"

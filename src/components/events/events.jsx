@@ -59,7 +59,7 @@ const Events = () =>{
                     <div className='image'>
                         <AiFillSecurityScan className='icon'/>
                     </div>
-                    <h3>Babypwn </h3>
+                    <h3>Babypwn: CTF </h3>
                     <div className='line'></div>
                     <p>Your first baby steps into the world of cybersecurity and ethical hacking</p>
                 </div>
