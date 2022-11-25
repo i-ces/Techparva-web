@@ -9,10 +9,10 @@ const Designthinking = () =>{
         <div className='designthinking'>
             <RegisterPage 
             title="Design Incubation"
-            time="2 - 3pm"
-            date="15th Mangsir, 2079"
+            time="2pm onwards"
+            date="16th Mangsir, 2079"
             location="CIT Hall, WRC"
-            countdown_time="12/01/2022"
+            countdown_time="12/02/2022"
             /> 
         <div className="detailsofevent">
             <h3>About the event</h3>

@@ -25,12 +25,11 @@ const RegisterPage = (props) =>{
     const csrftoken = getCookie('csrftoken');
 
     const initialdata = {
-        question1:'',
-        question2:'',
-        question3:'',
-        question4:'',
-        question5:'',
-        question6:''
+        name:'',
+        batch:'',
+        phone:'',
+        email:'',
+        prior_experience:'',
     }
 
     const [formvalue, setFormvalue] = useState(initialdata)
@@ -42,13 +41,31 @@ const RegisterPage = (props) =>{
       })
       console.log(formvalue)
     }
+    let url="";
+
+    if(props.title=="Code with Coffee"){
+        url="https://techparva.aandbinternationalhospital.org/codewithcoffee/"
+    }
+    else if(props.title=="Design Incubation"){
+        url="https://techparva.aandbinternationalhospital.org/designincubation/"
+    }
+    else if(props.title=="Datathon"){
+        url="https://techparva.aandbinternationalhospital.org/datathon/"
+    }
+    else if(props.title=="BabyPwn"){
+        url="https://techparva.aandbinternationalhospital.org/babypwn/"
+    }
+
+
+
+
     const handleFormSubmit = e => {
         e.preventDefault();
         if (formvalue.name === null) {
             alert('Message field empty')
         }
         else {
-            fetch("http://localhost:3000/", {
+            fetch(url, {
                 method: "POST",
                 body: JSON.stringify(formvalue),
                 headers: {
@@ -82,7 +99,7 @@ const RegisterPage = (props) =>{
                     <h3><i className="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;{props.location}</h3>
                 </div>
                 <div className="registerbutton">
-                <button onClick={()=>setregistrationmodal(true)} disabled={true}>Opening Today</button>
+                <button onClick={()=>setregistrationmodal(true)}>Opening Today</button>
                 </div>
                 
             </div>
@@ -98,25 +115,25 @@ const RegisterPage = (props) =>{
                         <input type="text" onChange={handleinputChange} name="name" placeholder='Enter your name' value={formvalue.name} required/>
                     </div>   
                     <div className='input_field'>
-                        <h3>question2</h3>
-                        <input type="text" onChange={handleinputChange} name="question2" placeholder='question2' value={formvalue.question2} required/>
+                        <h3>batch</h3>
+                        <input type="text" onChange={handleinputChange} name="batch" placeholder='batch' value={formvalue.batch} required/>
                     </div> 
                     <div className='input_field'>
-                        <h3>question3</h3>
-                        <input type="text" onChange={handleinputChange} name="question3" placeholder='question3' value={formvalue.question3} required/>
+                        <h3>phone</h3>
+                        <input type="text" onChange={handleinputChange} name="phone" placeholder='phone' value={formvalue.phone} required/>
                     </div> 
                     <div className='input_field'>
-                        <h3>question4</h3>
-                        <input type="text" onChange={handleinputChange} name="question4" placeholder='question4' value={formvalue.question4} required/>
+                        <h3>email</h3>
+                        <input type="text" onChange={handleinputChange} name="email" placeholder='email' value={formvalue.email} required/>
                     </div> 
                     <div className='input_field'>
-                        <h3>question5</h3>
-                        <input type="text" onChange={handleinputChange} name="question5" placeholder='question5' value={formvalue.question5} required/>
+                        <h3>prior_experience</h3>
+                        <input type="text" onChange={handleinputChange} name="prior_experience" placeholder='prior_experience' value={formvalue.prior_experience} required/>
                     </div> 
-                    <div className='input_field'>
+                    {/* <div className='input_field'>
                         <h3>question6</h3>
                         <input type="text" onChange={handleinputChange} name="question6" placeholder='question6' value={formvalue.question6} required/>
-                    </div>
+                    </div> */}
                     <div className='submit'>
                         <button onClick={handleFormSubmit}>Register</button>
                     </div> 
