@@ -4,7 +4,6 @@ const Timer =(props)=>{
 
     // let eventdate = '12/23/2022'
     let eventdate = props.countdown_time
-    console.log(props.countdown_time)
     const [timeLeft, setTimeLeft] = useState({})
     let year = new Date().getFullYear()
     const difference = +new Date(`${eventdate}`) - +new Date()

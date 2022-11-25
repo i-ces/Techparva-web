@@ -76,6 +76,10 @@
     letter-spacing: 0.05em;
     box-shadow: 2px 2px 15px #948c8c;
   }
+
+  .registerbutton button:hover{
+    cursor: pointer;
+  }
   
   .countdowncontainer {
     display: flex;
@@ -115,3 +119,76 @@
     border-right: 2px solid #beb8b8;
   }
   
+.registrationmodal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(148, 140, 140, 0.5);
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  
+}
+
+.registrationmodal .modalcontainer{
+  font-family:Inter;
+  padding:30px;
+  background-color: white;
+  width:80%;
+  
+}
+
+.registrationmodal .modalcontainer h2{
+  font-size: 18px;
+  letter-spacing: 0.03em;;
+}
+
+.registrationmodal .modalcontainer h3{
+  font-size: 15px;
+  letter-spacing: 0.03em;;
+}
+
+.registrationmodal .modalcontainer .input_field{
+  padding:10px 0;
+}
+
+
+.registrationmodal .modalcontainer .input_field input{
+  padding:5px 10px;
+  border:1px solid rgb(182, 175, 175);
+  border-radius: 10px;
+  font-family: Inter;
+  margin-top: 5px;
+}
+
+
+.registrationmodal button{
+  border:none;
+  background-color: #E44C4C;
+  padding:5px 10px;
+  border-radius: 10px;
+  width:200px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  color:white;
+  letter-spacing: 0.04em;
+  margin-top: 20px;
+}
+
+.registrationmodal button:hover{
+  cursor: pointer;
+}
+
+.registrationmodal .cross{
+  position: absolute;
+  top:30px;
+  right:30px;
+  color:white;
+}
+
+.registrationmodal .cross:hover{
+  cursor: pointer;
+}
