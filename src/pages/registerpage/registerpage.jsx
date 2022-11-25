@@ -115,20 +115,20 @@ const RegisterPage = (props) =>{
                         <input type="text" onChange={handleinputChange} name="name" placeholder='Enter your name' value={formvalue.name} required/>
                     </div>   
                     <div className='input_field'>
-                        <h3>batch</h3>
-                        <input type="text" onChange={handleinputChange} name="batch" placeholder='batch' value={formvalue.batch} required/>
+                        <h3>Batch and Year</h3>
+                        <input type="text" onChange={handleinputChange} name="batch" placeholder='eg: BEI075' value={formvalue.batch} required/>
                     </div> 
                     <div className='input_field'>
-                        <h3>phone</h3>
-                        <input type="text" onChange={handleinputChange} name="phone" placeholder='phone' value={formvalue.phone} required/>
+                        <h3>Phone Number</h3>
+                        <input type="text" onChange={handleinputChange} name="phone" placeholder='Enter your phone number' value={formvalue.phone} required/>
                     </div> 
                     <div className='input_field'>
-                        <h3>email</h3>
-                        <input type="text" onChange={handleinputChange} name="email" placeholder='email' value={formvalue.email} required/>
+                        <h3>Enter your email</h3>
+                        <input type="text" onChange={handleinputChange} name="email" placeholder='Email' value={formvalue.email} required/>
                     </div> 
                     <div className='input_field'>
-                        <h3>prior_experience</h3>
-                        <input type="text" onChange={handleinputChange} name="prior_experience" placeholder='prior_experience' value={formvalue.prior_experience} required/>
+                        <h3>Do you have prior Experience in this field? Do you want to participate in the Workshop?</h3>
+                        <textarea onChange={handleinputChange} name="prior_experience" placeholder='Prior Experience' value={formvalue.prior_experience} required/>
                     </div> 
                     {/* <div className='input_field'>
                         <h3>question6</h3>
@@ -137,6 +137,7 @@ const RegisterPage = (props) =>{
                     <div className='submit'>
                         <button onClick={handleFormSubmit}>Register</button>
                     </div> 
+                    <p>*If you have any problem submitting the form, contact at icesnepal@gmail.com</p>
                 </div>
             </div>
             <div className='cross' onClick={()=>setregistrationmodal(false)}><ImCross className="crossicon"/></div>

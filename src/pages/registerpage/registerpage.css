@@ -136,6 +136,7 @@
   font-family:Inter;
   padding:30px;
   background-color: white;
+  color:rgb(70, 67, 67);
   width:80%;
   
 }
@@ -167,7 +168,7 @@
 .registrationmodal button{
   border:none;
   background-color: #E44C4C;
-  padding:5px 10px;
+  padding:10px 15px;
   border-radius: 10px;
   width:200px;
   font-family: Inter;
@@ -191,4 +192,21 @@
 
 .registrationmodal .cross:hover{
   cursor: pointer;
+}
+
+.form p{
+  padding:40px 0;
+  letter-spacing: 0.04em;
+  color:#948c8c;
+  font-size: 14px;
+}
+
+.form textarea{
+  padding:5px 10px;
+  border:1px solid rgb(182, 175, 175);
+  border-radius: 10px;
+  font-family: Inter;
+  margin-top: 5px;
+  width:400px;
+  height:100px;
 }
