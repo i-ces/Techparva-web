@@ -77,6 +77,7 @@ const RegisterPage = (props) =>{
                 .then(response => response.json())
                 setFormvalue(initialdata)
                 setregistrationmodal(false)
+                alert("Thank you. Your response was submitted.")
 
 
         }

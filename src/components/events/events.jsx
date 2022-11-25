@@ -49,7 +49,7 @@ const Events = () =>{
                         <div className='image'>
                             <GiDeadWood className='icon'/>
                         </div>
-                        <h3>Design Thinking </h3>
+                        <h3>Design Incubation </h3>
                         <div className='line'></div>
                         <p>Tackle the growing challenges in real world, with your next app design</p>
                     </div>
@@ -59,7 +59,7 @@ const Events = () =>{
                     <div className='image'>
                         <AiFillSecurityScan className='icon'/>
                     </div>
-                    <h3>Breaking into Security </h3>
+                    <h3>Babypwn </h3>
                     <div className='line'></div>
                     <p>Your first baby steps into the world of cybersecurity and ethical hacking</p>
                 </div>
