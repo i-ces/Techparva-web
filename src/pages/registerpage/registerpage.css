@@ -138,6 +138,8 @@
   background-color: white;
   color:rgb(70, 67, 67);
   width:80%;
+  height:80vh;
+  overflow-y: scroll;
   
 }
 
