@@ -30,6 +30,11 @@ const Designthinking = () =>{
             </ul>
             <h3>Point System</h3>
             <p>The presented concept is given points on the basis of design and problem-solving features.</p>
+            <h3>Demo Example</h3>
+            <p>If the "Movie ticketing system" theme is given, then you have to design the screens for ticket booking, payment, and confirmation. You have to also take care of the user experience and keep it in mind while you design the screens. A good design should be such that it is self-explanatory and users should be able to figure out what to do without any difficulty.</p>
+            <p>The important thing is the creativity and innovation of your design.</p>
+            <p>You can use any platform or tool that you want such as Android Studio, Adobe XD, Figma, etc. You can also use hand-drawn wireframes. Once you have completed the design, you have to submit the design to us.</p>
+        
         </div>
             <Copyright/>
        
