@@ -13,7 +13,7 @@ const Datathon = () =>{
             date="15th Mangsir, 2079"
             location="CIT Hall, WRC"
             countdown_time="12/01/2022"
-            urll="https://forms.gle/dTncXmPZ21Tt5zJy7"
+            urll="#"
             />
         <div className="detailsofevent">
             <h3>About the event</h3>
