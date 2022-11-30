@@ -1,0 +1,12 @@
+.about .aboutcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+about .aboutcontainer .aboutleft{
+    
+}

@@ -4,6 +4,7 @@ import Events from '../../components/events/events';
 import Landingpage from '../../components/landingpage/landingpage';
 
 
+
 const Main = () =>{
     return(
         <div className='main'>
