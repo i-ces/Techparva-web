@@ -8,7 +8,7 @@ const Security = () =>{
         <div className='security'>
             <RegisterPage 
             title="BabyPwn: Capture the Flag"
-            time="2pm onwards"
+            time="10am onwards"
             date="16th Mangsir, 2079"
             location="CIT Hall, WRC"
             countdown_time="12/02/2022"
