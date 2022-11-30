@@ -12,7 +12,7 @@ const CodewithCoffee = () =>{
             date="14th Mangsir, 2079"
             location="CIT Hall, WRC"
             countdown_time="11/30/2022"
-            urll="https://forms.gle/YqJaxPKEF3qwu5bF9"
+            urll="#"
             />
         <div className="detailsofevent">
             <h3>About the event</h3>
