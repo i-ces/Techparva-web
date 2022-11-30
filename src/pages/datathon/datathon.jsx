@@ -10,7 +10,7 @@ const Datathon = () =>{
             <RegisterPage 
             title="Datathon"
             time="10am onwards"
-            date="15th Mangsir, 2079"
+            date="14th Mangsir, 2079"
             location="CIT Hall, WRC"
             countdown_time="12/01/2022"
             urll="#"
