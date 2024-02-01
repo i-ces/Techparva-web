@@ -46,8 +46,8 @@ const Sponsors = () => {
                             ))
                         ) : (
                             <div className='sponsor'>
-                                <p>{data.name}</p>
                                 <img src={data.logo} alt={data.name} height={64} />
+                                <p>{data.name}</p>
                             </div>
                         )}
                     </div>
