@@ -10,24 +10,28 @@ const eventDetails = [
         icon: <BiCoffeeTogo className='icon' />,
         date: 'February 2023', // Set your specific dates
         description: 'Code with Coffee is a competitive coding challenge hosted on Hacker Rank',
+        link: 'codewithcoffee'
     },
     {
         title: 'Datathon',
         icon: <BsClipboardData className='icon' />,
         date: 'March 2023',
         description: 'Learn. Clean given dataset, generate insights, analyze, visualize and win',
+        link: 'datathon'
     },
     {
         title: 'Design Incubation',
         icon: <GiDeadWood className='icon' />,
         date: 'April 2023',
         description: 'Tackle the growing challenges in the real world, with your next app design',
+        link: 'designthinking'
     },
     {
         title: 'Babypwn: CTF',
         icon: <AiFillSecurityScan className='icon' />,
         date: 'May 2023',
         description: 'Your first baby steps into the world of cybersecurity and ethical hacking',
+        link: 'breakingintosecurity'
     },
 ];
 
@@ -44,23 +48,31 @@ const Events = () => {
                     Excellence.
                 </h3>
             </div>
-            <VerticalTimeline >
+            <VerticalTimeline
+                animate={true}
+                lineColor='#ddd'
+
+            >
                 {eventDetails.map((event, index) => (
                     <VerticalTimelineElement
                         key={index}
                         className='vertical-timeline-element--work'
                         date={event.date}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         icon={event.icon}
+                        iconStyle={{ background: '#fff', color: '#000' }}
                     >
-                        <a href={event.link} key={index}>
+                        <div>
                             <div className='scard'>
                                 <div className='image'>{event.icon}</div>
                                 <h3>{event.title}</h3>
                                 <div className='line'></div>
                                 <p>{event.description}</p>
                             </div>
-                        </a>
+                            <button className='booknow--button'>
+                                Book now
+                            </button>
+                        </div>
+
 
                     </VerticalTimelineElement>
                 ))}
