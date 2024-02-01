@@ -16,20 +16,26 @@ const sponsors = {
     ],
 };
 
+const sponsorDisplayNames = {
+    titleSponsor: 'Diamond Sponsor',
+    goldSponsor: 'Gold Sponsor',
+    paymentPartner: 'Payment Partner',
+    medicalPartner: 'Medical Partner',
+    giftingPartner: 'Gifting Partner',
+    silverSponsor: 'Silver Sponsor',
+};
 
 const Sponsors = () => {
     return (
         <div className='sponsors-container'>
             <div className='powered-by'>
-                <h2>
-                    Powered by
-                </h2>
+                <h2>Powered by</h2>
                 <img src="/iceslogo.png" alt="kangaroo" />
                 Kangaroo association
             </div>
             {Object.entries(sponsors).map(([type, data], index) => (
                 <div key={index} className='sponsor-category'>
-                    <h2>{type}</h2>
+                    <h2>{sponsorDisplayNames[type]}</h2>
                     <div className='sponsors'>
                         {Array.isArray(data) ? (
                             data.map((sponsor, index) => (
