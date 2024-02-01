@@ -4,10 +4,10 @@ import './copyright.css'
 const Copyright = () => {
     const date = new Date()
     return (
-        <div className='copyright'>
+        <footer className='copyright'>
             <h3 >&copy; Innovative Computer Engineering Students' Society {date.getFullYear()}.
                 All Rights Reserved. </h3>
-        </div>
+        </footer>
     )
 }
 
