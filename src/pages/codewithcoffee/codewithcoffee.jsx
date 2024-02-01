@@ -9,10 +9,11 @@ const CodewithCoffee = () =>{
             <RegisterPage 
             title="Code with Coffee"
             time="2pm onwards"
-            date="14th Mangsir, 2079"
+            date="24th Magh, 2080"
             location="CIT Hall, WRC"
-            countdown_time="11/30/2022"
+            countdown_time="02/07/2024"
             urll="#"
+            background="/cover/code-with-coffee.jpg"
             />
         <div className="detailsofevent">
             <h3>About the event</h3>

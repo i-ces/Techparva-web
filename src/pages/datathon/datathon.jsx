@@ -9,11 +9,12 @@ const Datathon = () =>{
         <div className='datathon'>
             <RegisterPage 
             title="Datathon"
-            time="10am onwards"
-            date="15th Mangsir, 2079"
+            time="2PM onwards"
+            date="25th Magh, 2080"
             location="CIT Hall, WRC"
-            countdown_time="11/30/2022"
+            countdown_time="02/08/2022"
             urll="#"
+            background= "/cover/datathon.png"
             />
         <div className="detailsofevent">
             <h3>About the event</h3>
