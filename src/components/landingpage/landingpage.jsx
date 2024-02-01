@@ -45,8 +45,6 @@ const Landingpage = () => {
                             words={['Technology', 'Excellence', 'Competition', 'Enthusiasm', 'Tech Festival']}
                         />
                     </h2>
-                    <h2><img src="/iceslogo.png" alt="logo" height={64} /></h2>
-                    <h2>Presented by</h2>
                     {/* <h3>Technology&nbsp;&nbsp;-&nbsp;&nbsp;Excellegence&nbsp;&nbsp;-&nbsp;&nbsp;Competition</h3> */}
                 </div>
                 {/* <div className='buttons'>
