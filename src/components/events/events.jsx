@@ -3,36 +3,59 @@ import './events.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { BiCoffeeTogo, BsClipboardData, GiDeadWood, AiFillSecurityScan } from 'react-icons/all';
+import { GrWorkshop } from "react-icons/gr";
 
 const eventDetails = [
     {
         title: 'Code with Coffee',
         icon: <BiCoffeeTogo className='icon' />,
-        date: 'February 2023',
+        date: '24 Magh ',
+        time: '2:00 PM',
         description: 'Code with Coffee is a competitive coding challenge hosted on Hacker Rank',
         link: 'code-with-coffee'
     },
     {
-        title: 'Datathon',
-        icon: <BsClipboardData className='icon' />,
-        date: 'March 2023',
-        description: 'Learn. Clean given dataset, generate insights, analyze, visualize and win',
-        link: 'datathon'
+        title: 'Design Workshop',
+        icon: <GrWorkshop  className='icon' />,
+        date: '24 Magh ',
+        time: '7:00 PM',
+        description: 'Online session for design incubation workshop.',
+        link: 'design-workshop'
+
     },
     {
         title: 'Design Incubation',
         icon: <GiDeadWood className='icon' />,
-        date: 'April 2023',
+        date: '25 Magh ',
+        time: '10:00 AM',
         description: 'Tackle the growing challenges in the real world, with your next app design',
         link: 'design-thinking'
     },
     {
+        title: 'Datathon',
+        icon: <BsClipboardData className='icon' />,
+        date: '25 Magh ',
+        time: '2:00 PM',
+        description: 'Learn. Clean given dataset, generate insights, analyze, visualize and win',
+        link: 'datathon'   
+    },
+    {
+        title: 'Security Session',
+        icon:  <GrWorkshop  className='icon' />,
+        date:  '25 Magh ',
+        time:  '10:00 AM',
+        description: 'Pre-Event for CTF',
+        link: 'security-session'
+    },
+    {
         title: 'Babypwn: CTF',
         icon: <AiFillSecurityScan className='icon' />,
-        date: 'May 2023',
+        date: '26 Magh ',
+        time: '10:00 AM',
         description: 'Your first baby steps into the world of cybersecurity and ethical hacking',
         link: 'breaking-into-security'
-    },
+    }
+    
 ];
 
 const Events = () => {
@@ -43,7 +66,7 @@ const Events = () => {
                 <p>i-CES</p>
                 <h1>Learn and Compete your Interest</h1>
                 <h3>
-                    In celebration of the 35th anniversary of Paschimanchal Campus, Department of Electronics and Computer
+                    In celebration of TechParva , Department of Computer
                     Engineering in association with i-CES is organizing Tech Parva, a celebration of Technology, Competition, and
                     Excellence.
                 </h3>
@@ -57,7 +80,7 @@ const Events = () => {
                     <VerticalTimelineElement
                         key={index}
                         className='vertical-timeline-element--work'
-                        date={event.date}
+                        date={`${event.date} ${event.time}`}
                         icon={event.icon}
                         iconStyle={{ background: '#fff', color: '#000' }}
                     >
