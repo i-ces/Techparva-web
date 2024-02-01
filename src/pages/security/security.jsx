@@ -9,9 +9,9 @@ const Security = () =>{
             <RegisterPage 
             title="BabyPwn: Capture the Flag"
             time="10am onwards"
-            date="16th Mangsir, 2079"
+            date="26th Magh, 2080"
             location="CIT Hall, WRC"
-            countdown_time="12/02/2022"
+            countdown_time="02/09/2024"
             urll = "https://forms.gle/jWgSWp719UYM18f97"
             />
         <div className="detailsofevent">
