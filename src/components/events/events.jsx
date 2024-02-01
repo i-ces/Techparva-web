@@ -8,9 +8,9 @@ const eventDetails = [
     {
         title: 'Code with Coffee',
         icon: <BiCoffeeTogo className='icon' />,
-        date: 'February 2023', // Set your specific dates
+        date: 'February 2023',
         description: 'Code with Coffee is a competitive coding challenge hosted on Hacker Rank',
-        link: 'codewithcoffee'
+        link: 'code-with-coffee'
     },
     {
         title: 'Datathon',
@@ -24,14 +24,14 @@ const eventDetails = [
         icon: <GiDeadWood className='icon' />,
         date: 'April 2023',
         description: 'Tackle the growing challenges in the real world, with your next app design',
-        link: 'designthinking'
+        link: 'design-thinking'
     },
     {
         title: 'Babypwn: CTF',
         icon: <AiFillSecurityScan className='icon' />,
         date: 'May 2023',
         description: 'Your first baby steps into the world of cybersecurity and ethical hacking',
-        link: 'breakingintosecurity'
+        link: 'breaking-into-security'
     },
 ];
 

@@ -15,9 +15,10 @@ function App() {
             <div className="App">
                 <Routes>
                     <Route exact path='/' element={<Main />} />
-                    <Route exact path='/codewithcoffee' element={<CodewithCoffee />} />
-                    <Route exact path='/designthinking' element={<Designthinking />} />
-                    <Route exact path='/breakingintosecurity' element={<Security />} />
+                    <Route exact path='/code-with-coffee' element={<CodewithCoffee />} />
+                    <Route exact path='/datathon-session' element={<CodewithCoffee />} />
+                    <Route exact path='/design-thinking' element={<Designthinking />} />
+                    <Route exact path='/breaking-into-security' element={<Security />} />
                     <Route exact path='/datathon' element={<Datathon />} />
                 </Routes>
             </div>
