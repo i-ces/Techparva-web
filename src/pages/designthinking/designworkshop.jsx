@@ -1,16 +1,18 @@
-import React from 'react'
-import RegisterPage from '../registerpage/registerpage'
-import '../designthinking/designthinking.css'
+import React from 'react';
+import Copyright from '../../components/copyright/copyright';
+import RegisterPage from '../registerpage/registerpage';
+import './designthinking.css'
 
-const Designworkshop = () => {
+
+const Designthinking = () => {
     return (
         <div className='designthinking'>
             <RegisterPage
-                title="Design Workshop"
+                title="Design Incubation"
                 time="2pm onwards"
-                date="24th Magh, 2080"
-                location="Online"
-                countdown_time="12/02/2024"
+                date="16th Mangsir, 2079"
+                location="CIT Hall, WRC"
+                countdown_time="12/02/2022"
                 urll="https://forms.gle/27qRTfuPMw6SWFTL8"
             />
             <div className="detailsofevent">
@@ -40,4 +42,4 @@ const Designworkshop = () => {
     )
 }
 
-export default Designworkshop
+export default Designthinking;
