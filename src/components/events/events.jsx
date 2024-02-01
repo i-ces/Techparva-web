@@ -37,7 +37,7 @@ const eventDetails = [
 
 const Events = () => {
     return (
-        <div className='events'>
+        <div className='events' id='events'>
             <div className='blank'></div>
             <div className='title'>
                 <p>i-CES</p>
@@ -68,7 +68,11 @@ const Events = () => {
                                 <div className='line'></div>
                                 <p>{event.description}</p>
                             </div>
-                            <button className='booknow--button'>
+                            <button className='booknow--button'
+                                onClick={() => {
+                                    window.location.href = event.link;
+                                }}
+                            >
                                 Book now
                             </button>
                         </div>

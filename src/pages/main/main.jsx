@@ -5,12 +5,12 @@ import Landingpage from '../../components/landingpage/landingpage';
 
 
 
-const Main = () =>{
-    return(
+const Main = () => {
+    return (
         <div className='main'>
-            <Landingpage/>
-            <Events/>
-            <Copyright/>
+            <Landingpage />
+            <Events />
+            <Copyright />
         </div>
     )
 }
