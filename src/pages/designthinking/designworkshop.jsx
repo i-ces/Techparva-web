@@ -4,7 +4,7 @@ import RegisterPage from '../registerpage/registerpage';
 import './designthinking.css'
 
 
-const Designthinking = () => {
+const Designworkshop = () => {
     return (
         <div className='designthinking'>
             <RegisterPage
@@ -42,4 +42,4 @@ const Designthinking = () => {
     )
 }
 
-export default Designthinking;
+export default Designworkshop;
