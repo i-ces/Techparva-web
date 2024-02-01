@@ -14,6 +14,7 @@ const Designthinking = () =>{
             location="CIT Hall, WRC"
             countdown_time="02/08/2024"
             urll="https://forms.gle/27qRTfuPMw6SWFTL8"
+            background="/cover/design.png"
             /> 
         <div className="detailsofevent">
             <h3>About the event</h3>

@@ -14,6 +14,7 @@ const Datathon = () =>{
             location="CIT Hall, WRC"
             countdown_time="02/08/2022"
             urll="#"
+            background= "/cover/datathon.png"
             />
         <div className="detailsofevent">
             <h3>About the event</h3>

@@ -13,6 +13,7 @@ const Security = () =>{
             location="CIT Hall, WRC"
             countdown_time="02/09/2024"
             urll = "https://forms.gle/jWgSWp719UYM18f97"
+            background = "/cover/ctf.jpeg"
             />
         <div className="detailsofevent">
             <h3>About the event</h3>

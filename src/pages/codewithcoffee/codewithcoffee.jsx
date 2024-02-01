@@ -13,6 +13,7 @@ const CodewithCoffee = () =>{
             location="CIT Hall, WRC"
             countdown_time="02/07/2024"
             urll="#"
+            background="/cover/code-with-coffee.jpg"
             />
         <div className="detailsofevent">
             <h3>About the event</h3>
