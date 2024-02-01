@@ -14,13 +14,14 @@ const Designworkshop = () => {
                 location="Online"
                 countdown_time="02/07/2024"
                 urll="https://forms.gle/27qRTfuPMw6SWFTL8"
+                background='/cover/workshop.png'
             />
             <div className="detailsofevent">
                 <h3>About the event</h3>
-               <p> 
-                Design Workshop is a pre-event for TechParva Design Incubation, where you can get some hint about the main event and do your best.  
-               </p>
-              
+                <p>
+                    Design Workshop is a pre-event for TechParva Design Incubation, where you can get some hint about the main event and do your best.
+                </p>
+
             </div>
             <Copyright />
 
