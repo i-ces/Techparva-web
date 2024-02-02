@@ -38,7 +38,7 @@ const Landingpage = () => {
                     <h2>
                         Celebrating&nbsp;&nbsp;
                         <Typewriter
-                            loop={5}
+                            loop={0}
                             cursor
                             cursorStyle='_'
                             typeSpeed={70}
