@@ -3,7 +3,7 @@ import './sponsors.css';
 
 const sponsors = {
     titleSponsor: { name: 'Nipuna', logo: '/sponsors/nipuna-prabidhik-sewa.png' },
-    goldSponsor: { name: 'Jankari Tech', logo: '/iceslogo.png' },
+    goldSponsor: [{ name: 'Jankari Tech', logo: '/iceslogo.png' }],
     silverSponsor: [
         { name: 'Urja Labs', logo: '/sponsors/urja-tech.jpg' },
         { name: 'Margin Top', logo: '/iceslogo.png' },
@@ -30,13 +30,26 @@ const Sponsors = () => {
     return (
         <div className='sponsors-container'>
             <div className='powered-by'>
-                <h2>Powered by</h2>
+                <div
+                    style={
+                        {
+                            fontSize: '2rem',
+                            fontWeight: 'bold',
+                            marginBottom: '1rem',
+                        }
+                    }
+                >Powered by</div>
                 <img src="/iceslogo.png" alt="kangaroo" />
                 Kangaroo association
             </div>
             {Object.entries(sponsors).map(([type, data], index) => (
                 <div key={index} className='sponsor-category'>
-                    <h2>{sponsorDisplayNames[type]}</h2>
+                    <div
+                        style={{
+                            fontSize: '2rem',
+                            marginBottom: '1rem',
+                        }}
+                    >{sponsorDisplayNames[type]}</div>
                     <div className='sponsors'>
                         {Array.isArray(data) ? (
                             data.map((sponsor, index) => (
