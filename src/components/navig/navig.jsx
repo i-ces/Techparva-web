@@ -7,15 +7,14 @@ import logo from '../../assets/Asset_1.png'
 function Navig() {
     return (
         <>
-            <div className='navigation'>
+            <nav className='navigation'>
                 <div className='left'>
-                    <Link to="/"><img src={logo}/></Link>
+                    <Link to="/"><img src={logo} /></Link>
                 </div>
-
                 <div className='right'>
                     <a href="/#events">Events</a>
                 </div>
-            </div>
+            </nav>
         </>
     )
 }
