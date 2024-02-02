@@ -1,8 +1,8 @@
 import React from 'react';
 import Navig from '../navig/navig'
-import left from '../../assets/a.jpg'
-import mid from '../../assets/b.jpg'
-import right from '../../assets/c.jpg'
+import left from '../../assets/a.png'
+import mid from '../../assets/b.png'
+import right from '../../assets/c.png'
 
 import './landingpage.css'
 
