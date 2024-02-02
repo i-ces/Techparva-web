@@ -2,13 +2,12 @@ import React from 'react';
 import './events.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { BiCoffeeTogo, BsClipboardData, GiDeadWood, AiFillSecurityScan } from 'react-icons/all';
-import { GrWorkshop } from "react-icons/gr";
+import { BiCoffeeTogo, BsClipboardData, GiDeadWood, AiFillSecurityScan, GrWorkshop } from 'react-icons/all';
 
 const eventDetails = [
     {
         title: 'Code with Coffee',
-        icon: <BiCoffeeTogo className='icon' />,
+        icon: <BiCoffeeTogo className='icon' color='brown' />,
         date: '24 Magh ',
         time: '2:00 PM',
         description: 'Code with Coffee is a competitive coding challenge hosted on Hacker Rank',
@@ -25,7 +24,7 @@ const eventDetails = [
     },
     {
         title: 'Design Incubation',
-        icon: <GiDeadWood className='icon' />,
+        icon: <GiDeadWood className='icon' color='green' />,
         date: '25 Magh ',
         time: '10:00 AM',
         description: 'Tackle the growing challenges in the real world, with your next app design',
@@ -33,7 +32,7 @@ const eventDetails = [
     },
     {
         title: 'Datathon',
-        icon: <BsClipboardData className='icon' />,
+        icon: <BsClipboardData className='icon' color='red' />,
         date: '25 Magh ',
         time: '2:00 PM',
         description: 'Learn. Clean given dataset, generate insights, analyze, visualize and win',
@@ -49,7 +48,7 @@ const eventDetails = [
     },
     {
         title: 'Babypwn: CTF',
-        icon: <AiFillSecurityScan className='icon' />,
+        icon: <AiFillSecurityScan className='icon' color='orange' />,
         date: '26 Magh ',
         time: '10:00 AM',
         description: 'Your first baby steps into the world of cybersecurity and ethical hacking',
