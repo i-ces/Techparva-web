@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './team.css';
 const Team = () => {
     const teamMembersData = {
-        developer: ['seamoonpandey', 'RakshaRaut'],
+        developer: ['seamoonpandey', 'RakshaRaut', 'Samirlamsal'],
         hosts: ['RakshaRaut'],
         // coordinators: ['anisha'],
         socialmedia: ['seamoonpandey'],
