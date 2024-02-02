@@ -2,7 +2,8 @@ import React from 'react';
 import './sponsors.css';
 
 const sponsors = {
-    titleSponsor: { name: 'Nipuna', logo: '/sponsors/nipuna-prabidhik-sewa.png' },
+    platinumSponsor: { name: 'Nipuna', logo: '/sponsors/nipuna-prabidhik-sewa.png', size: 'large' },
+    diamondSponsor: { name: 'Kangaroo Education Foundation', logo: '/sponsors/Kangaroo-logo.png' },
     goldSponsor: [{ name: 'Jankari Tech', logo: '/iceslogo.png' }],
     silverSponsor: [
         { name: 'Urja Labs', logo: '/sponsors/urja-tech.jpg' },
@@ -13,15 +14,15 @@ const sponsors = {
     eLearningPartner: { name: 'Programiz', logo: '/iceslogo.png' },
     medicalPartner: [
         { name: 'Kriti Ayurveda', logo: '/iceslogo.png' },
-        { name: 'Gorkha Ayurveda', logo: '/iceslogo.png' },
+        { name: 'Gorkha Ayurveda', logo: '/sponsors/gorkha-ayurved.png' },
     ],
     giftingPartner: { name: 'Book Mart', logo: '/sponsors/Book_mart.jpg' },
 };
 
 const sponsorDisplayNames = {
-    titleSponsor: 'Title Sponsor',
-    diamondSponsor: 'Diamond Sponsor',
-    goldSponsor: 'Gold Sponsor',
+    platinumSponsor: 'Title Sponsor',
+    diamondSponsor: 'Powered By',
+    goldSponsor: 'Supported By',
     paymentPartner: 'Payment Partner',
     medicalPartner: 'Medical Partner',
     giftingPartner: 'Gifting Partner',
@@ -32,20 +33,6 @@ const sponsorDisplayNames = {
 const Sponsors = () => {
     return (
         <div className='sponsors-container'>
-            <div className='powered-by'>
-                <div
-                    style={
-                        {
-                            fontSize: '2rem',
-                            fontWeight: 'bold',
-                            marginBottom: '1rem',
-                        }
-                    }
-                >Powered by</div>
-                <div className="sponsor">
-                    <img src="/sponsors/Kangaroo-logo.png" alt="kangaroo" height={74} />
-                </div>
-            </div>
             {Object.entries(sponsors).map(([type, data], index) => (
                 <div key={index} className='sponsor-category'>
                     <div
@@ -63,7 +50,7 @@ const Sponsors = () => {
                             ))
                         ) : (
                             <div className='sponsor'>
-                                <img src={data.logo} alt={data.name} height={74} />
+                                <img src={data.logo} alt={data.name} height={data.size === 'large' ? 128 : 74} />
                             </div>
                         )}
                     </div>
