@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './team.css';
 const Team = () => {
     const teamMembersData = {
-        developers: ['seamoonpandey', 'RakshaRaut', 'Samirlamsal'],
+        developers: ['seamoonpandey', 'RakshaRaut'],
         hosts: ['RakshaRaut'],
-        // coordinators: ['anisha'],
+        coordinators: ['anysa-kharel'],
         socialmedia: ['seamoonpandey'],
-        creativeteam: ['shishirrijal', 'seamoonpandey', 'Sudru']
+        creativeteam: ['shishirrijal', 'seamoonpandey', 'Sudru'],
+        desginers: ['IPP-World']
     };
 
     const [teamMembers, setTeamMembers] = useState([]);
