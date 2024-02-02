@@ -59,7 +59,9 @@ const eventDetails = [
 
 const Events = () => {
     return (
-        <div className='events' id='events'>
+        <div className='events' id='events' style={{
+            textAlign: 'center',
+        }}>
             <div className='blank'></div>
             <div className='title'>
                 <p>i-CES</p>
@@ -68,6 +70,9 @@ const Events = () => {
                     i-CES is organizing Tech Parva, a celebration of Technology, Competition, and
                     Excellence.
                 </h3>
+            </div>
+            <div className='timeline-title'>
+                Event Timeline
             </div>
             <VerticalTimeline
                 animate={true}
