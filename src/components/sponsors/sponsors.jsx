@@ -7,8 +7,10 @@ const sponsors = {
     silverSponsor: [
         { name: 'Urja Labs', logo: '/sponsors/urja-tech.jpg' },
         { name: 'Margin Top', logo: '/iceslogo.png' },
+        { name: 'IT Deurali', logo: '/iceslogo.png' },
     ],
     paymentPartner: { name: 'eSewa', logo: '/iceslogo.png' },
+    eLearningPartner: { name: 'Programiz', logo: '/iceslogo.png' },
     medicalPartner: [
         { name: 'Kriti Ayurveda', logo: '/iceslogo.png' },
         { name: 'Gorkha Ayurveda', logo: '/iceslogo.png' },
@@ -24,6 +26,7 @@ const sponsorDisplayNames = {
     medicalPartner: 'Medical Partner',
     giftingPartner: 'Gifting Partner',
     silverSponsor: 'Silver Sponsor',
+    eLearningPartner: 'E-Learning Partner',
 };
 
 const Sponsors = () => {
@@ -55,12 +58,12 @@ const Sponsors = () => {
                         {Array.isArray(data) ? (
                             data.map((sponsor, index) => (
                                 <div key={index} className='sponsor'>
-                                    <img src={sponsor.logo} alt={sponsor.name} height={64} />
+                                    <img src={sponsor.logo} alt={sponsor.name} height={74} />
                                 </div>
                             ))
                         ) : (
                             <div className='sponsor'>
-                                <img src={data.logo} alt={data.name} height={128} />
+                                <img src={data.logo} alt={data.name} height={74} />
                             </div>
                         )}
                     </div>

@@ -94,7 +94,7 @@ const Events = () => {
                                     window.location.href = event.link;
                                 }}
                             >
-                                Book now
+                                Register Now
                             </button>
                         </div>
 
