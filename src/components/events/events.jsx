@@ -16,7 +16,7 @@ const eventDetails = [
     },
     {
         title: 'Design Workshop',
-        icon: <GrWorkshop  className='icon' />,
+        icon: <GrWorkshop className='icon' />,
         date: '24 Magh ',
         time: '7:00 PM',
         description: 'Online session for design incubation workshop.',
@@ -37,13 +37,13 @@ const eventDetails = [
         date: '25 Magh ',
         time: '2:00 PM',
         description: 'Learn. Clean given dataset, generate insights, analyze, visualize and win',
-        link: 'datathon'   
+        link: 'datathon'
     },
     {
         title: 'Security Session',
-        icon:  <GrWorkshop  className='icon' />,
-        date:  '25 Magh ',
-        time:  '10:00 AM',
+        icon: <GrWorkshop className='icon' />,
+        date: '25 Magh ',
+        time: '10:00 AM',
         description: 'Pre-Event for CTF',
         link: 'security-session'
     },
@@ -55,7 +55,7 @@ const eventDetails = [
         description: 'Your first baby steps into the world of cybersecurity and ethical hacking',
         link: 'breaking-into-security'
     }
-    
+
 ];
 
 const Events = () => {
@@ -66,8 +66,7 @@ const Events = () => {
                 <p>i-CES</p>
                 <h1>Learn and Compete your Interest</h1>
                 <h3>
-                    In celebration of TechParva , Department of Computer
-                    Engineering in association with i-CES is organizing Tech Parva, a celebration of Technology, Competition, and
+                    i-CES is organizing Tech Parva, a celebration of Technology, Competition, and
                     Excellence.
                 </h3>
             </div>
