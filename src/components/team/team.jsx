@@ -2,14 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './team.css';
 const Team = () => {
     const teamMembersData = {
-        developer: ['seamoonpandey', 'RakshaRaut', 'Samirlamsal'],
+        developers: ['seamoonpandey', 'RakshaRaut', 'Samirlamsal'],
         hosts: ['RakshaRaut'],
         // coordinators: ['anisha'],
         socialmedia: ['seamoonpandey'],
+        creativeteam: ['shishirrijal', 'seamoonpandey', 'Sudru']
     };
 
     const [teamMembers, setTeamMembers] = useState([]);
-    const [selectedOption, setSelectedOption] = useState('developer');
+    const [selectedOption, setSelectedOption] = useState('developers');
 
     useEffect(() => {
         const fetchGitHubData = async () => {
