@@ -28,7 +28,7 @@ const Landingpage = () => {
                     <h1>
                         TECH&nbsp;<span>&#123;</span>PARVA<span style={{ marginRight: "5px" }}>&#125; </span>
                         <Typewriter
-                            loop={5}
+                            loop={0}
                             words={['2.0']}
                             typeSpeed={70}
                         />

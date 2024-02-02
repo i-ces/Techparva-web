@@ -44,7 +44,8 @@ const Sponsors = () => {
                 <div key={index} className='sponsor-category'>
                     <div
                         style={{
-                            fontSize: sponsorDisplayNames[type] === 'Title Sponsor ✨' ? '2.5rem' : '1.5rem',
+                            fontSize: '1.5rem',
+                            fontWeight: sponsorDisplayNames[type] === 'Title Sponsor ✨' ? 'bold' : '',
                             marginBottom: '1rem',
                         }}
                     >{sponsorDisplayNames[type]}</div>
