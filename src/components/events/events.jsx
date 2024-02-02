@@ -59,9 +59,7 @@ const eventDetails = [
 
 const Events = () => {
     return (
-        <div className='events' id='events' style={{
-            textAlign: 'center',
-        }}>
+        <div className='events' id='events'>
             <div className='blank'></div>
             <div className='title'>
                 <p>i-CES</p>
@@ -71,12 +69,21 @@ const Events = () => {
                     Excellence.
                 </h3>
             </div>
-            <div className='timeline-title'>
-                Event Timeline
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: 'column'
+            }}>
+                <div className='timeline-title'
+                >
+                    Event Timeline
+                </div>
             </div>
             <VerticalTimeline
                 animate={true}
                 lineColor='#ddd'
+
 
             >
                 {eventDetails.map((event, index) => (
