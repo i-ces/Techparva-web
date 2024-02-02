@@ -42,7 +42,7 @@ const Sponsors = () => {
                     <div
                         style={{
                             fontSize: '1.5rem',
-                            fontWeight: sponsorDisplayNames[type] === 'Title Sponsor ✨' ? 'bold' : '',
+                            fontWeight: sponsorDisplayNames[type] === 'Title Sponsor ✨' ? '500' : '',
                             marginBottom: '1rem',
                         }}
                     >{sponsorDisplayNames[type]}</div>
