@@ -4,16 +4,16 @@ import './sponsors.css';
 const sponsors = {
     titleSponsor: { name: 'Nipuna', logo: '/sponsors/nipuna-prabidhik-sewa.png' },
     goldSponsor: { name: 'Jankari Tech', logo: '/iceslogo.png' },
+    silverSponsor: [
+        { name: 'Urja Labs', logo: '/sponsors/urja-tech.jpg' },
+        { name: 'Margin Top', logo: '/iceslogo.png' },
+    ],
     paymentPartner: { name: 'eSewa', logo: '/iceslogo.png' },
     medicalPartner: [
         { name: 'Kriti Ayurveda', logo: '/iceslogo.png' },
         { name: 'Gorkha Ayurveda', logo: '/iceslogo.png' },
     ],
     giftingPartner: { name: 'Book Mart', logo: '/sponsors/Book_mart.jpg' },
-    silverSponsor: [
-        { name: 'Urja Labs', logo: '/sponsors/urja-tech.jpg' },
-        { name: 'Margin Top', logo: '/iceslogo.png' },
-    ],
 };
 
 const sponsorDisplayNames = {
