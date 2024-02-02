@@ -59,7 +59,7 @@ const Team = () => {
                         <a href={member.html_url} target="_blank" rel="noopener noreferrer">
                             <img src={member.avatar_url} alt={member.login} style={{ width: '50px', height: '50px', borderRadius: '50%' }} />
                         </a>
-                        <p>{member.login}</p>
+                        <p>@{member.login}</p>
                     </div>
                 ))}
             </div>
