@@ -39,8 +39,9 @@ const Sponsors = () => {
                         }
                     }
                 >Powered by</div>
-                <img src="/iceslogo.png" alt="kangaroo" />
-                Kangaroo association
+                <div className="sponsor">
+                    <img src="/sponsors/Kangaroo-logo.png" alt="kangaroo" height={74} />
+                </div>
             </div>
             {Object.entries(sponsors).map(([type, data], index) => (
                 <div key={index} className='sponsor-category'>

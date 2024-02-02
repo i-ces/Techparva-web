@@ -39,7 +39,6 @@ p {
   display: flex;
   flex-direction: column;
   img {
-    width: 100px;
     margin: 0 auto;
   }
   text-align: center;
