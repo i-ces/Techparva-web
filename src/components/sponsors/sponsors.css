@@ -24,6 +24,7 @@
 .sponsor img {
   border-radius: 8px; /* Add border-radius for a rounded appearance */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  padding: 1rem;
 }
 
 h2 {
