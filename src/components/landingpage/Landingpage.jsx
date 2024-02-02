@@ -24,20 +24,22 @@ export const Landingpage = () => {
                     <h1>
                         TECH&nbsp;<span>&#123;</span>PARVA<span style={{ marginRight: "5px" }}>&#125; </span>
                         <Typewriter
-                            loop={5}
+                            loop={0}
                             words={['2.0']}
-                            typeSpeed={70} />
+                            typeSpeed={50} />
                     </h1>
                 </div>
                 <div className='subtitles'>
                     <h2>
                         Celebrating&nbsp;&nbsp;
                         <Typewriter
-                            loop={5}
+                            loop={0}
                             cursor
                             cursorStyle='_'
                             typeSpeed={70}
                             words={['Technology', 'Excellence', 'Competition', 'Enthusiasm', 'Tech Festival']} />
+
+
                     </h2>
                     <h2><img src="/iceslogo.png" alt="logo" height={64} /></h2>
                     {/* <h3>Technology&nbsp;&nbsp;-&nbsp;&nbsp;Excellegence&nbsp;&nbsp;-&nbsp;&nbsp;Competition</h3> */}
