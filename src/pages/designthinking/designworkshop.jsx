@@ -13,7 +13,7 @@ const Designworkshop = () => {
                 date="24th Magh, 2080"
                 location="Online"
                 countdown_time="02/07/2024"
-                urll="https://forms.gle/27qRTfuPMw6SWFTL8"
+                urll="https://forms.gle/kXdJ4UsXrir87FfNA"
                 background='/cover/workshop.png'
             />
             <div className="detailsofevent">
