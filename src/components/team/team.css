@@ -1,0 +1,11 @@
+.teams {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 718px) {
+  .teams {
+    flex-direction: column;
+    text-align: center;
+  }
+}
