@@ -21,7 +21,7 @@ const sponsors = {
 };
 
 const sponsorDisplayNames = {
-    platinumSponsor: 'Title Sponsor',
+    platinumSponsor: 'Title Sponsor ✨',
     diamondSponsor: 'Powered By',
     goldSponsor: 'Supported By',
     paymentPartner: 'Payment Partner',
@@ -34,11 +34,17 @@ const sponsorDisplayNames = {
 const Sponsors = () => {
     return (
         <div className='sponsors-container'>
+            <div style={{
+                fontSize: '3rem',
+                marginBottom: '1rem',
+            }}>
+                Our Sponsors
+            </div>
             {Object.entries(sponsors).map(([type, data], index) => (
                 <div key={index} className='sponsor-category'>
                     <div
                         style={{
-                            fontSize: '2rem',
+                            fontSize: sponsorDisplayNames[type] === 'Title Sponsor ✨' ? '2rem' : '1.5rem',
                             marginBottom: '1rem',
                         }}
                     >{sponsorDisplayNames[type]}</div>
