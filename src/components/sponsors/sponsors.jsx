@@ -17,7 +17,8 @@ const sponsors = {
 };
 
 const sponsorDisplayNames = {
-    titleSponsor: 'Diamond Sponsor',
+    titleSponsor: 'Title Sponsor',
+    diamondSponsor: 'Diamond Sponsor',
     goldSponsor: 'Gold Sponsor',
     paymentPartner: 'Payment Partner',
     medicalPartner: 'Medical Partner',
