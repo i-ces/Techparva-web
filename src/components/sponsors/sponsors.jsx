@@ -2,16 +2,16 @@ import React from 'react';
 import './sponsors.css';
 
 const sponsors = {
-    titleSponsor: { name: 'Nipuna', logo: '/iceslogo.png' },
+    titleSponsor: { name: 'Nipuna', logo: '/sponsors/nipuna-prabidhik-sewa.png' },
     goldSponsor: { name: 'Jankari Tech', logo: '/iceslogo.png' },
     paymentPartner: { name: 'eSewa', logo: '/iceslogo.png' },
     medicalPartner: [
         { name: 'Kriti Ayurveda', logo: '/iceslogo.png' },
         { name: 'Gorkha Ayurveda', logo: '/iceslogo.png' },
     ],
-    giftingPartner: { name: 'Book Mart', logo: '/iceslogo.png' },
+    giftingPartner: { name: 'Book Mart', logo: '/sponsors/Book_mart.jpg' },
     silverSponsor: [
-        { name: 'Urja Labs', logo: '/iceslogo.png' },
+        { name: 'Urja Labs', logo: '/sponsors/urja-tech.jpg' },
         { name: 'Margin Top', logo: '/iceslogo.png' },
     ],
 };
@@ -41,13 +41,11 @@ const Sponsors = () => {
                             data.map((sponsor, index) => (
                                 <div key={index} className='sponsor'>
                                     <img src={sponsor.logo} alt={sponsor.name} height={64} />
-                                    <p>{sponsor.name}</p>
                                 </div>
                             ))
                         ) : (
                             <div className='sponsor'>
-                                <img src={data.logo} alt={data.name} height={64} />
-                                <p>{data.name}</p>
+                                <img src={data.logo} alt={data.name} height={128} />
                             </div>
                         )}
                     </div>
