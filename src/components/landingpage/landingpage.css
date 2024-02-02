@@ -156,15 +156,15 @@
 }
 
 .landingpage .images .img:nth-child(1) {
-  padding-top: 60px;
+  margin-top: 60px;
 }
 
 .landingpage .images .img:nth-child(2) {
-  padding: 0 10px;
+  margin: 0 10px;
 }
 
 .landingpage .images .img:nth-child(3) {
-  padding-top: 60px;
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 640px) {
