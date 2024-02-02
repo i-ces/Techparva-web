@@ -64,10 +64,6 @@ const Events = () => {
             <div className='title'>
                 <p>i-CES</p>
                 <h1>Learn and Compete your Interest</h1>
-                <h3>
-                    i-CES is organizing Tech Parva, a celebration of Technology, Competition, and
-                    Excellence.
-                </h3>
             </div>
             <div style={{
                 display: 'flex',
