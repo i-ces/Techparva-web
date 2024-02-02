@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
-const Timer =(props)=>{
+const Timer = (props) => {
 
     // let eventdate = '12/23/2022'
     let eventdate = props.countdown_time
@@ -10,39 +10,39 @@ const Timer =(props)=>{
     let timeleft = {}
     if (difference > 0) {
         timeleft = {
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          min: Math.floor((difference / 1000 / 60) % 60),
+            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+            min: Math.floor((difference / 1000 / 60) % 60),
         }
-      }
-      useEffect(() => {
+    }
+    useEffect(() => {
         const timer = setTimeout(() => {
-          setTimeLeft(timeleft);
+            setTimeLeft(timeleft);
         }, 1000);
-        return ()=>clearTimeout(timer)
-      });
+        return () => clearTimeout(timer)
+    });
     const timerComponents = [];
     Object.keys(timeLeft).forEach((interval) => {
         if (!timeLeft[interval]) {
-          return;
+            return;
         }
-      
+
         timerComponents.push(
-          <span>
-            {timeLeft[interval]} {interval}{" "}
-          </span>
+            <span>
+                {timeLeft[interval]} {interval}{" "}
+            </span>
         );
-      });
-    return(
-        <div className="countdowncontainer" style={{'zIndex':2}}>
-        {timerComponents.length ?
-    <div className="countdown">
-            <h3>{timeleft.days} days</h3>
-            <h3>{timeleft.hours } hours</h3>
-            <h3>{timeleft.min } min</h3>        
-        </div>: <div className="countdown"><h3>Registration Closed</h3></div>
-}
-    </div>
+    });
+    return (
+        <div className="countdowncontainer" style={{ 'zIndex': 2 }}>
+            {timerComponents.length ?
+                <div className="countdown">
+                    <h3>{timeleft.days} days</h3>
+                    <h3>{timeleft.hours} hours</h3>
+                    <h3>{timeleft.min} min</h3>
+                </div> : <div className="countdown"><h3>Registration Closed</h3></div>
+            }
+        </div>
     )
 }
 
