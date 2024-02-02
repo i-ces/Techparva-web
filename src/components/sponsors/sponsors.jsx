@@ -3,20 +3,21 @@ import './sponsors.css';
 
 const sponsors = {
     platinumSponsor: { name: 'Nipuna', logo: '/sponsors/nipuna-prabidhik-sewa.png', size: 'large' },
-    diamondSponsor: { name: 'Kangaroo Education Foundation', logo: '/sponsors/Kangaroo-logo.png' },
+    diamondSponsor: { name: 'Kangaroo Education Foundation', logo: '/sponsors/Kangaroo-logo.png', },
     goldSponsor: [{ name: 'Jankari Tech', logo: '/iceslogo.png' }],
     silverSponsor: [
         { name: 'Urja Labs', logo: '/sponsors/urja-tech.jpg' },
         { name: 'Margin Top', logo: '/iceslogo.png' },
         { name: 'IT Deurali', logo: '/iceslogo.png' },
+        { name: 'Hamro kosheli Ciura udhyog', logo: '/iceslogo.png' },
     ],
-    paymentPartner: { name: 'eSewa', logo: '/iceslogo.png' },
-    eLearningPartner: { name: 'Programiz', logo: '/iceslogo.png' },
+    paymentPartner: { name: 'eSewa', logo: '/sponsors/esewa_logo.png' },
+    eLearningPartner: { name: 'Programiz', logo: '/sponsors/pc_logo.svg' },
     medicalPartner: [
         { name: 'Kriti Ayurveda', logo: '/iceslogo.png' },
         { name: 'Gorkha Ayurveda', logo: '/sponsors/gorkha-ayurved.png' },
     ],
-    giftingPartner: { name: 'Book Mart', logo: '/sponsors/Book_mart.jpg' },
+    giftingPartner: { name: 'Book Mart', logo: '/sponsors/Book_mart.jpg', size: 'large' },
 };
 
 const sponsorDisplayNames = {
