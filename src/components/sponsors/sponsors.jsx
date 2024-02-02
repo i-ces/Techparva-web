@@ -34,10 +34,7 @@ const sponsorDisplayNames = {
 const Sponsors = () => {
     return (
         <div className='sponsors-container'>
-            <div style={{
-                fontSize: '3rem',
-                marginBottom: '1rem',
-            }}>
+            <div className='sponsors-bigass-title'>
                 Our Sponsors
             </div>
             {Object.entries(sponsors).map(([type, data], index) => (

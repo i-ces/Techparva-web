@@ -6,6 +6,19 @@
   gap: 4rem;
 }
 
+.sponsors-bigass-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sponsors-bigass-title {
+    font-size: 2rem;
+  }
+}
+
 .sponsor-category {
   text-align: center;
   margin-bottom: 2rem;
