@@ -12,7 +12,7 @@ const Datathon = () => {
                 time="2PM onwards"
                 date="25th Magh, 2080"
                 location="CIT Hall, WRC"
-                countdown_time="02/08/2022"
+                countdown_time="02/08/2024"
                 urll="https://forms.gle/YvjouVmgnNHDnvCC9"
                 background="/cover/datathon.png"
             />
