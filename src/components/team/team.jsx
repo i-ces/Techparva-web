@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './team.css';
+
 const Team = () => {
     const teamMembersData = {
         developers: ['seamoonpandey', 'RakshaRaut'],
-        hosts: ['RakshaRaut'],
+        hosts: ['RakshaRaut', 'jyantsss'],
         coordinators: ['anysa-kharel'],
         socialmedia: ['seamoonpandey'],
         creativeteam: ['shishirrijal', 'seamoonpandey', 'Sudru'],
-        desginers: ['IPP-World']
+        desginers: ['IPP-World', 'anysa-kharel']
     };
 
-    const [teamMembers, setTeamMembers] = useState([]);
     const [selectedOption, setSelectedOption] = useState('developers');
+    const [teamMembers, setTeamMembers] = useState([]);
 
     useEffect(() => {
         const fetchGitHubData = async () => {
@@ -32,14 +33,16 @@ const Team = () => {
         fetchGitHubData();
     }, [selectedOption, teamMembersData]);
 
+    const memoizedTeamMembers = useMemo(() => {
+        return teamMembers || [];
+    }, [teamMembers]);
+
     const handleOptionChange = (option) => {
         setSelectedOption(option);
     };
 
     const renderContent = () => {
         return (
-
-
             <div
                 style={{
                     display: 'flex',
@@ -49,7 +52,7 @@ const Team = () => {
                     alignItems: 'center',
                 }}
             >
-                {teamMembers.map((member) => (
+                {memoizedTeamMembers.map((member) => (
                     <div key={member.id} style={{
                         display: 'flex',
                         flexDirection: 'column',
@@ -65,7 +68,6 @@ const Team = () => {
                     </div>
                 ))}
             </div>
-
         );
     };
 
