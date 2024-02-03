@@ -157,14 +157,44 @@
 
 .landingpage .images .img:nth-child(1) {
   margin-top: 60px;
+  animation: slideFromLeft 1s ease-in-out;
 }
 
 .landingpage .images .img:nth-child(2) {
   margin: 0 10px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .landingpage .images .img:nth-child(3) {
   margin-top: 60px;
+  animation: slideFromRight 1s ease-in-out;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (max-width: 640px) {
