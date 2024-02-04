@@ -11,7 +11,7 @@ const Team = () => {
         desginers: ['IPP-World', 'anysa-kharel']
     };
 
-    const [selectedOption, setSelectedOption] = useState('developers');
+    const [selectedOption, setSelectedOption] = useState('website');
     const [teamMembers, setTeamMembers] = useState([]);
 
     useEffect(() => {
