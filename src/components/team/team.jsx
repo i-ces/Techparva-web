@@ -5,7 +5,7 @@ const Team = () => {
     const teamMembersData = {
         website: ['seamoonpandey', 'RakshaRaut', 'shishirrijal', 'IPP-World'],
         hosts: ['RakshaRaut', 'jyantsss'],
-        coordinators: ['anysa-kharel'],
+        coordinators: ['anysa-kharel', 'IPP-World'],
         socialmedia: ['seamoonpandey'],
         creativeteam: ['shishirrijal', 'seamoonpandey', 'Sudru'],
         desginers: ['IPP-World', 'anysa-kharel']
