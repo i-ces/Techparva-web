@@ -3,7 +3,7 @@ import './team.css';
 
 const Team = () => {
     const teamMembersData = {
-        website: ['seamoonpandey', 'RakshaRaut', 'shishirrijal'],
+        website: ['seamoonpandey', 'RakshaRaut', 'shishirrijal', 'IPP-World'],
         hosts: ['RakshaRaut', 'jyantsss'],
         coordinators: ['anysa-kharel'],
         socialmedia: ['seamoonpandey'],
