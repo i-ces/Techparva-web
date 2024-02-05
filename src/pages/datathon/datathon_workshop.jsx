@@ -4,7 +4,7 @@ import RegisterPage from '../registerpage/registerpage';
 import '../designthinking/designthinking.css'
 
 
-const Designworkshop = () => {
+const DatathonWorkshop = () => {
     return (
         <div className='designthinking'>
             <RegisterPage
@@ -30,4 +30,4 @@ There will be a workshop on Magh 24,  and the Dataset for the competition will b
     )
 }
 
-export default Designworkshop;
+export default DatathonWorkshop;
