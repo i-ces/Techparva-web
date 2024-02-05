@@ -6,6 +6,14 @@ import { BiCoffeeTogo, BsClipboardData, GiDeadWood, AiFillSecurityScan, GrWorksh
 
 const eventDetails = [
     {
+        title: 'Datathon Workshop',
+        icon: <BsClipboardData className='icon' color='red' />,
+        date: '24 Magh',
+        time: '10:00 AM',
+        description: 'Datathon workshop on data preprocessing and visualization',
+        link: 'design-workshop'
+    },
+    {
         title: 'Code with Coffee',
         icon: <BiCoffeeTogo className='icon' color='brown' />,
         date: '24 Magh ',
