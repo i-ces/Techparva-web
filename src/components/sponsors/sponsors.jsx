@@ -11,7 +11,7 @@ const sponsors = {
         { name: 'IT Deurali', logo: '/sponsors/it-deurali.png' },
         { name: 'Hamro kosheli Ciura udhyog', logo: '/sponsors/hamro-koseli.jpg' },
         { name: 'Black Tech.', logo: '/sponsors/Blacktech.png' }, 
-        { name: 'PanchaAmrit', logo: '
+        // { name: 'PanchaAmrit', logo: ''}
     ],
     paymentPartner: { name: 'eSewa', logo: '/sponsors/esewa_logo.png' },
     eLearningPartner: { name: 'Programiz', logo: '/sponsors/pc_logo.svg' },
