@@ -11,7 +11,7 @@ const eventDetails = [
         date: '24 Magh',
         time: '10:00 AM',
         description: 'Datathon workshop on data preprocessing and visualization',
-        link: 'design-workshop'
+        link: 'datathon-workshop'
     },
     {
         title: 'Code with Coffee',
