@@ -7,6 +7,7 @@ import Security from './pages/security/security'
 import Datathon from './pages/datathon/datathon'
 import Designworkshop from './pages/designthinking/designworkshop'
 import SecuritySession from './pages/security/security_session'
+import DatathonWorkshop from './pages/datathon/datathon_workshop.jsx'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <Routes>
                     <Route exact path='/' element={<Main />} />
                     <Route exact path='/code-with-coffee' element={<CodewithCoffee />} />
+                    <Route exact path='/datathon-workshop' element={<DatathonWorkshop/>} />
                     <Route exact path='/design-workshop' element={<Designworkshop />} />
                     <Route exact path='/design-thinking' element={<Designthinking />} />
                     <Route exact path='/breaking-into-security' element={<Security />} />
