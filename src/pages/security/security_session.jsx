@@ -10,7 +10,7 @@ const Security = () => {
                 title="Security Session"
                 time="2PM onwards"
                 date="25th Magh, 2080"
-                location="Electrical Hall, WRC"
+                location="RIC Building; Room No: 308, WRC"
                 countdown_time="02/08/2024"
                 urll="https://forms.gle/rxuaDnZWyRD3LpPx8"
                 background="/cover/workshop.png"
