@@ -8,7 +8,7 @@ const DatathonWorkshop = () => {
     return (
         <div className='designthinking'>
             <RegisterPage
-                title="Dataform Workshop"
+                title="Datathon Workshop"
                 time="10am onwards"
                 date="24th Magh, 2080"
                 location="Wrc Cit Hall"
