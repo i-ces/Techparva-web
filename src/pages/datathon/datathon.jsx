@@ -9,7 +9,7 @@ const Datathon = () => {
         <div className='datathon'>
             <RegisterPage
                 title="Datathon"
-                time="2PM onwards"
+                time="3 PM onwards"
                 date="24th Magh, 2080"
                 location="CIT Hall, WRC"
                 countdown_time="02/07/2024"
@@ -22,9 +22,9 @@ const Datathon = () => {
                 <p>The day before the event, there will be a workshop where attendees can pick up the fundamentals of data cleaning and visualization.</p>
                 <h3>More Info:</h3>
                 <ul>
-                    <li>The probmelm statement for the datathon will be revealed after fininshing workshop of datathon i.e. at 2PM of Magh 24</li>
+                    <li>The problem statement for the datathon will be revealed after fininshing workshop of datathon i.e. at 3 PM of Magh 24</li>
                     <li>The time limit of 24 hr</li>
-                    <li>After the end of 24 hours i.e @ 2 P.M of Magh 25, participants are required to be ready with their presentation at CIT Multimedia Hall, WRC. </li>
+                    <li>After the end of 24 hours i.e @ 3 P.M of Magh 25, participants are required to be ready with their presentation at CIT Multimedia Hall, WRC. </li>
                     <li>Teams are given access to a large data set to process.</li>
                     <li>The team that is able to come up with the most innovative and practical solution to the issue usually ends up winning.</li>
                 </ul>
