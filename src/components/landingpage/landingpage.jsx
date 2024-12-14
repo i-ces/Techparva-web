@@ -52,7 +52,7 @@ const Landingpage = () => {
 
             </div> */}
             </div>
-            <div className='images'>
+            {/* <div className='images'>
                 <div className='img'>
                     <img src={left} />
                 </div>
@@ -62,7 +62,61 @@ const Landingpage = () => {
                 <div className='img'>
                     <img src={right} />
                 </div>
+            </div> */}
+
+            {/* coming soon banner */}
+
+            <div>
+                <div style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}>
+                    <h1
+                        style={
+                            {
+                                fontSize: "4rem",
+                                color: "white",
+                                fontWeight: "bold",
+                                textAlign: "center",
+                                textShadow: "2px 2px 4px #000000",
+                                padding: "10px",
+                            }
+                        }
+                    >Coming</h1>
+                    <h1
+                        style={
+                            {
+                                fontSize: "4rem",
+                                color: "rgb(228,76,76)",
+                                fontWeight: "bold",
+                                textAlign: "center",
+                                textShadow: "2px 2px 4px #000000",
+                                padding: "10px",
+                            }
+                        }>Soon</h1>
+                </div>
+
+                <div>
+                    <h1
+                        style={
+                            {
+                                fontSize: "2rem",
+                                color: "white",
+                                fontWeight: "bold",
+                                textAlign: "center",
+                                textShadow: "2px 2px 4px #000000",
+                                padding: "10px",
+                            }
+                        }
+                    >
+
+                        6th, 7th & 8th January, 2025
+                    </h1>
+                </div>
+
             </div>
+
         </div>
     )
 }
