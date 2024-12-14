@@ -6,63 +6,53 @@ import { BiCoffeeTogo, BsClipboardData, GiDeadWood, AiFillSecurityScan, GrWorksh
 
 const eventDetails = [
     {
-        title: 'Datathon Workshop',
+        title: "Datathon Workshop",
         icon: <BsClipboardData className='icon' color='red' />,
-        date: '24 Magh',
-        time: '10:00 AM',
-        description: 'Datathon workshop on data preprocessing and visualization',
-        link: 'datathon-workshop'
+        date: "22 Poush",
+        time: "11:00 AM",
+        description: "Datathon workshop on data preprocessing and visualization",
+        link: "datathon-workshop"
     },
     {
-        title: 'Code with Coffee',
-        icon: <BiCoffeeTogo className='icon' color='brown' />,
-        date: '24 Magh ',
-        time: '2:00 PM',
-        description: 'Code with Coffee is a competitive coding challenge hosted on Hacker Rank',
-        link: 'code-with-coffee'
-    },
-    {
-        title: 'Design Workshop',
-        icon: <GrWorkshop className='icon' />,
-        date: '24 Magh ',
-        time: '7:00 PM',
-        description: 'Online session for design incubation workshop.',
-        link: 'design-workshop'
-
-    },
-    {
-        title: 'Design Incubation',
-        icon: <GiDeadWood className='icon' color='green' />,
-        date: '25 Magh ',
-        time: '10:00 AM',
-        description: 'Tackle the growing challenges in the real world, with your next app design',
-        link: 'design-thinking'
-    },
-    {
-        title: 'Datathon',
-        icon: <BsClipboardData className='icon' color='red' />,
-        date: '25 Magh ',
-        time: '2:00 PM',
-        description: 'Learn. Clean given dataset, generate insights, analyze, visualize and win',
-        link: 'datathon'
-    },
-    {
-        title: 'Security Session',
-        icon: <GrWorkshop className='icon' />,
-        date: '25 Magh ',
-        time: '10:00 AM',
-        description: 'Pre-Event for CTF',
-        link: 'security-session'
-    },
-    {
-        title: 'Babypwn: CTF',
+        title: "Babypwn: Capture the Flag",
         icon: <AiFillSecurityScan className='icon' color='orange' />,
-        date: '26 Magh ',
-        time: '10:00 AM',
-        description: 'Your first baby steps into the world of cybersecurity and ethical hacking',
-        link: 'breaking-into-security'
+        date: "22 Poush",
+        time: "2:00 PM",
+        description: "Your first baby steps into the world of cybersecurity and ethical hacking",
+        link: "breaking-into-security"
+    },
+    {
+        title: "Design Workshop",
+        icon: <GrWorkshop className='icon' />,
+        date: "22 Poush",
+        time: "7:00 PM",
+        description: "Online session for design incubation workshop.",
+        link: "design-workshop"
+    },
+    {
+        title: "Design Incubation",
+        icon: <GiDeadWood className='icon' color='green' />,
+        date: "23 Poush",
+        time: "10:00 AM",
+        description: "Tackle the growing challenges in the real world, with your next app design",
+        link: "design-thinking"
+    },
+    {
+        title: "Datathon",
+        icon: <BsClipboardData className='icon' color='red' />,
+        date: "23 Poush",
+        time: "2:00 PM",
+        description: "Learn. Clean given dataset, generate insights, analyze, visualize and win",
+        link: "datathon"
+    },
+    {
+        title: "Code with Coffee",
+        icon: <BiCoffeeTogo className='icon' color='brown' />,
+        date: "24 Poush",
+        time: "11:00 AM",
+        description: "Code with Coffee is a competitive coding challenge hosted on Hacker Rank",
+        link: "code-with-coffee"
     }
-
 ];
 
 const Events = () => {
