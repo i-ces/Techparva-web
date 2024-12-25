@@ -8,17 +8,17 @@ const Home = () => {
       {/* Hero Section */}
       <div className="relative h-[95vh] bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center">
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center sm:gap-11 justify-between md:flex-row sm:flex-col sm:justify-center ">
           <AnimateOnScroll animation="slideUp">
             <div className="text-white">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">
                 <span className="text-orange-500">Tech</span>
                 <span>Parva</span>
                 <span className="text-orange-500"> 3.0</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-                Join us for the grand tech festival in WRC. Experience
-                innovation, learn, and connect with tech enthusiasts.
+              <p className="text-xl md:text-xl mb-8 max-w-2xl">
+                Experience innovation,
+                <br /> learn, and connect with tech enthusiasts.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -39,7 +39,7 @@ const Home = () => {
           <img
             src="/main.png"
             alt="Tech Parva"
-            className="hidden md:block w-1/2"
+            className="md:block md:w-1/2 sm:w-full"
           />
         </div>
       </div>
