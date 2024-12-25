@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg fixed w-full z-50 p-4">
+    <nav className=" bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg fixed w-full z-50">
       {/* Overlay with black opacity */}
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
@@ -63,29 +63,29 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden bg-gradient-to-r from-indigo-600 to-purple-600">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`${
-                    location.pathname === item.href
-                      ? "bg-indigo-700 text-white"
-                      : "text-white hover:bg-indigo-700 hover:text-white"
-                  } block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-gradient-to-r from-indigo-600 to-purple-600">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`${
+                  location.pathname === item.href
+                    ? "bg-indigo-700 text-white"
+                    : "text-white hover:bg-indigo-700 hover:text-white"
+                } block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200`}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

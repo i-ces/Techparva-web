@@ -1,3 +1,5 @@
+import { generateSlug } from "./schedule";
+
 export interface Event {
     id: string;
     title: string;
@@ -12,11 +14,12 @@ export interface Event {
     speakers: string[];
     tags: string[];
     nepalidate: string;
+    rules?: string[];
 }
 
 export const events: Event[] = [
     {
-        id: "1",
+        id: generateSlug("Design Workshop"),
         title: "Design Workshop",
         description: "Interactive session on design incubation and creative insights.",
         type: "workshop",
@@ -31,7 +34,7 @@ export const events: Event[] = [
         tags: ["Design", "Creativity", "Workshop"]
     },
     {
-        id: "2",
+        id: generateSlug("Pre-event"),
         title: "Pre-event",
         description: "An engaging pre-event challenge to kick-start the excitement for Tech Parva.",
         type: "competition",
@@ -46,7 +49,7 @@ export const events: Event[] = [
         tags: ["Problem-Solving", "Pre-event", "Competition"]
     },
     {
-        id: "3",
+        id: generateSlug("CTF Workshop"),
         title: "CTF Workshop",
         description: "Learn the basics of Capture the Flag competitions in this online workshop.",
         type: "workshop",
@@ -61,7 +64,7 @@ export const events: Event[] = [
         tags: ["Cybersecurity", "Workshop", "CTF"]
     },
     {
-        id: "4",
+        id: generateSlug("Capture the Flag"),
         title: "Capture the Flag",
         description: "Compete in an exciting Capture the Flag challenge.",
         type: "competition",
@@ -76,7 +79,7 @@ export const events: Event[] = [
         tags: ["Cybersecurity", "Competition", "CTF"]
     },
     {
-        id: "5",
+        id: generateSlug("Datathon Workshop"),
         title: "Datathon Workshop",
         description: "Learn data preprocessing and visualization techniques.",
         type: "workshop",
@@ -91,7 +94,7 @@ export const events: Event[] = [
         tags: ["Data Science", "Workshop", "Visualization"]
     },
     {
-        id: "6",
+        id: generateSlug("Design Incubation"),
         title: "Design Incubation",
         description: "Tackle real-world challenges with innovative designs.",
         type: "workshop",
@@ -106,7 +109,7 @@ export const events: Event[] = [
         tags: ["Design Thinking", "Workshop", "Innovation"]
     },
     {
-        id: "7",
+        id: generateSlug("Datathon"),
         title: "Datathon",
         description: "Clean, analyze, and visualize datasets to generate insights.",
         type: "competition",
@@ -121,7 +124,7 @@ export const events: Event[] = [
         tags: ["Data Science", "Competition", "Analysis"]
     },
     {
-        id: "8",
+        id: generateSlug("Code with Coffee"),
         title: "Code with Coffee",
         description: "Competitive coding with a relaxing coffee vibe.",
         type: "competition",

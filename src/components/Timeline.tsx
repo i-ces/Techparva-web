@@ -28,7 +28,10 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
           contentArrowStyle={{ borderRight: "7px solid #f9f9f9" }}
           //   iconStyle={getEventTypeStyles(event.type)}
         >
-          <a href={event.id} className="text-gray-600 text-sm">
+          <a
+            href={event.isEvent ? `/events/${event.id}` : ""}
+            className="text-gray-600 text-sm"
+          >
             <h3 className="text-lg font-semibold">{event.title}</h3>
             <p className="text-sm text-gray-600 mb-2">{event.dayTitle}</p>
             <p className="text-gray-600 mb-4">{event.description}</p>

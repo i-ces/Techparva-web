@@ -6,6 +6,7 @@ import Events from "./pages/Events";
 import Schedule from "./pages/Schedule";
 // import Speakers from "./pages/Speakers";
 import Contact from "./pages/Contact";
+import EventDetails from "./pages/EventDetails";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/events/:id" element={<EventDetails />} />
           <Route path="/schedule" element={<Schedule />} />
           {/* <Route path="/speakers" element={<Speakers />} /> */}
           <Route path="/contact" element={<Contact />} />

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from 'lucide-react';
+import React from "react";
+import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -27,10 +27,26 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/events" className="hover:text-indigo-400">Events</a></li>
-              <li><a href="/schedule" className="hover:text-indigo-400">Schedule</a></li>
-              <li><a href="/speakers" className="hover:text-indigo-400">Speakers</a></li>
-              <li><a href="/contact" className="hover:text-indigo-400">Contact</a></li>
+              <li>
+                <a href="/events" className="hover:text-indigo-400">
+                  Events
+                </a>
+              </li>
+              <li>
+                <a href="/schedule" className="hover:text-indigo-400">
+                  Schedule
+                </a>
+              </li>
+              <li>
+                <a href="/speakers" className="hover:text-indigo-400">
+                  Speakers
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="hover:text-indigo-400">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -56,6 +72,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
