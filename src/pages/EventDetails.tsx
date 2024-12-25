@@ -68,7 +68,7 @@ const EventDetails = () => {
           backgroundImage: `url(${event.image})`,
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="relative z-10 text-center text-white px-4">
           {timeLeft === "Event Closed" ? (
             <h1 className="text-4xl md:text-6xl font-extrabold">
@@ -117,7 +117,7 @@ const EventDetails = () => {
             </span>
           </div>
           {timeLeft !== "Event Closed" && (
-            <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-lg font-semibold transition">
+            <button className="mt-6 px-6 py-3 bg-[#F05924] hover:bg-[#D04E20] rounded-full text-lg font-semibold transition">
               <a href={event.formlink} target="_blank" rel="noreferrer">
                 Register Now
               </a>
