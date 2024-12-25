@@ -29,7 +29,7 @@ export const events: Event[] = [
         time: "02:00 PM",
         duration: "2 hours",
         location: "CIT Hall, WRC",
-        image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80",
+        image: "/designworkshop.png",
         capacity: 50,
         speakers: ["John Doe"],
         formlink: "https://forms.gle/ZiBnemrH7xz3F1K36",
@@ -60,7 +60,7 @@ export const events: Event[] = [
         time: "10:00 AM",
         duration: "2 hours",
         location: "Online",
-        image: "https://images.unsplash.com/photo-1600210491896-3e814e2784f1?auto=format&fit=crop&q=80",
+        image: "/CTF_Workshop.png",
         capacity: 50,
         speakers: ["Jane Smith"],
         tags: ["Cybersecurity", "Workshop", "CTF"]
@@ -90,7 +90,7 @@ export const events: Event[] = [
         time: "11:30 AM",
         duration: "2 hours",
         location: "CIT Hall, WRC",
-        image: "https://images.unsplash.com/photo-1517142089942-ba376ce32a6e?auto=format&fit=crop&q=80",
+        image: "/Datathon_Workshop.png",
         capacity: 50,
         speakers: ["Dr. Emily Brown"],
         tags: ["Data Science", "Workshop", "Visualization"]
