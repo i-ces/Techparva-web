@@ -16,7 +16,7 @@ export interface DaySchedule {
     events: ScheduleEvent[];
 }
 
-const generateSlug = (title: string): string => {
+export const generateSlug = (title: string): string => {
     return `${title.toLowerCase().replace(/\s+/g, '-')}`;
 };
 
