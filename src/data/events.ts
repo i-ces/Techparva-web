@@ -134,7 +134,7 @@ export const events: Event[] = [
         time: "11:00 AM",
         duration: "2 hours",
         location: "CIT Hall, WRC",
-        image: "https://images.unsplash.com/photo-1519750157634-ba37f0b0d3b2?auto=format&fit=crop&q=80",
+        image: "/CWC.png",
         capacity: 50,
         speakers: [],
         tags: ["Coding", "Competition", "Fun"]
