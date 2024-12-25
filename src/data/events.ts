@@ -135,19 +135,4 @@ export const events: Event[] = [
         speakers: [],
         tags: ["Coding", "Competition", "Fun"]
     },
-    {
-        id: "9",
-        title: "Closing Ceremony",
-        description: "Event wrap-up and farewell.",
-        type: "talk",
-        date: "January 8, 2025",
-        nepalidate: "Poush 24, 2081",
-        time: "02:00 PM",
-        duration: "1 hour",
-        location: "CIT Hall, WRC",
-        image: "https://images.unsplash.com/photo-1558683454-1870af165b3a?auto=format&fit=crop&q=80",
-        capacity: 200,
-        speakers: ["Organizing Team"],
-        tags: ["Closing", "Farewell", "Talk"]
-    }
 ];

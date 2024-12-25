@@ -28,7 +28,7 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
           contentArrowStyle={{ borderRight: "7px solid #f9f9f9" }}
           //   iconStyle={getEventTypeStyles(event.type)}
         >
-          <div>
+          <a href={event.id} className="text-gray-600 text-sm">
             <h3 className="text-lg font-semibold">{event.title}</h3>
             <p className="text-sm text-gray-600 mb-2">{event.dayTitle}</p>
             <p className="text-gray-600 mb-4">{event.description}</p>
@@ -44,7 +44,7 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
                 <span>{event.speaker}</span>
               </div>
             )}
-          </div>
+          </a>
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>
