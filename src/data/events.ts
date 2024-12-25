@@ -14,6 +14,7 @@ export interface Event {
     speakers: string[];
     tags: string[];
     nepalidate: string;
+    formlink?: string;
     rules?: string[];
 }
 
@@ -30,11 +31,11 @@ export const events: Event[] = [
         location: "CIT Hall, WRC",
         image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80",
         capacity: 50,
-        speakers: ["John Doe"],
+        speakers: ["John Doe"], formlink: "https://forms.gle/ZiBnemrH7xz3F1K36",
         tags: ["Design", "Creativity", "Workshop"]
     },
     {
-        id: generateSlug("Pre-event"),
+        id: generateSlug("Pre-event"), formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
         title: "Pre-event",
         description: "An engaging pre-event challenge to kick-start the excitement for Tech Parva.",
         type: "competition",
@@ -49,7 +50,7 @@ export const events: Event[] = [
         tags: ["Problem-Solving", "Pre-event", "Competition"]
     },
     {
-        id: generateSlug("CTF Workshop"),
+        id: generateSlug("CTF Workshop"), formlink: "https://forms.gle/7uh5Nei9KFdZc13N8",
         title: "CTF Workshop",
         description: "Learn the basics of Capture the Flag competitions in this online workshop.",
         type: "workshop",
@@ -64,7 +65,7 @@ export const events: Event[] = [
         tags: ["Cybersecurity", "Workshop", "CTF"]
     },
     {
-        id: generateSlug("Capture the Flag"),
+        id: generateSlug("Capture the Flag"), formlink: "https://forms.gle/JsUcgKVY6kzKLms96",
         title: "Capture the Flag",
         description: "Compete in an exciting Capture the Flag challenge.",
         type: "competition",
@@ -79,7 +80,7 @@ export const events: Event[] = [
         tags: ["Cybersecurity", "Competition", "CTF"]
     },
     {
-        id: generateSlug("Datathon Workshop"),
+        id: generateSlug("Datathon Workshop"), formlink: "https://forms.gle/ACXpxmXoojitF7j87",
         title: "Datathon Workshop",
         description: "Learn data preprocessing and visualization techniques.",
         type: "workshop",
@@ -94,7 +95,7 @@ export const events: Event[] = [
         tags: ["Data Science", "Workshop", "Visualization"]
     },
     {
-        id: generateSlug("Design Incubation"),
+        id: generateSlug("Design Incubation"), formlink: "https://forms.gle/WfB2v3aVnRdJhbiU7",
         title: "Design Incubation",
         description: "Tackle real-world challenges with innovative designs.",
         type: "workshop",
@@ -109,7 +110,7 @@ export const events: Event[] = [
         tags: ["Design Thinking", "Workshop", "Innovation"]
     },
     {
-        id: generateSlug("Datathon"),
+        id: generateSlug("Datathon"), formlink: "https://forms.gle/DMCpMMjrtHcibMET6",
         title: "Datathon",
         description: "Clean, analyze, and visualize datasets to generate insights.",
         type: "competition",
@@ -124,7 +125,7 @@ export const events: Event[] = [
         tags: ["Data Science", "Competition", "Analysis"]
     },
     {
-        id: generateSlug("Code with Coffee"),
+        id: generateSlug("Code with Coffee"), formlink: "https://forms.gle/4aYTkcfCDXy9o7x87",
         title: "Code with Coffee",
         description: "Competitive coding with a relaxing coffee vibe.",
         type: "competition",
