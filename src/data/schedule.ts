@@ -8,6 +8,7 @@ export interface ScheduleEvent {
     type?: 'talk' | 'workshop' | 'competition';
     formlink?: string;
     isEvent?: boolean | true;
+    icon?: string;
 }
 
 export interface DaySchedule {
@@ -34,7 +35,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Interactive session on design incubation and creative insights.",
                 location: "CIT Hall, WRC",
                 type: "workshop",
-                formlink: "https://forms.gle/ZiBnemrH7xz3F1K36", isEvent: true
+                formlink: "https://forms.gle/ZiBnemrH7xz3F1K36", isEvent: true, icon: '/icons/Design.svg'
             }
         ],
     },
@@ -50,7 +51,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Test your research and problem-solving skills in this challenge.",
                 location: "CIT Hall, WRC",
                 type: "competition",
-                formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true
+                formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true, icon: '/icons/Googler.svg'
             },
             {
                 id: generateSlug("Pre-event"),
@@ -59,7 +60,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Navigate through Wikipedia pages in the least time.",
                 location: "CIT Hall, WRC",
                 type: "competition",
-                formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true
+                formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true, icon: '/icons/WikiSpeedrun.svg'
             },
             {
                 id: generateSlug("Pre-event"),
@@ -68,7 +69,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Explore the power of generative AI with fun challenges.",
                 location: "CIT Hall, WRC",
                 type: "competition",
-                formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true
+                formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true, icon: '/icons/GenAI.svg'
             }
         ],
     },
@@ -84,7 +85,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Learn the basics of Capture the Flag competitions.",
                 location: "CIT Hall, WRC",
                 type: "workshop",
-                formlink: "https://forms.gle/7uh5Nei9KFdZc13N8", isEvent: true
+                formlink: "https://forms.gle/7uh5Nei9KFdZc13N8", isEvent: true, icon: '/icons/CTF.svg'
             }
         ]
     },
@@ -109,7 +110,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Datathon workshop on data preprocessing and visualization.",
                 location: "CIT Hall, WRC",
                 type: "workshop",
-                formlink: "https://forms.gle/ACXpxmXoojitF7j87", isEvent: true
+                formlink: "https://forms.gle/ACXpxmXoojitF7j87", isEvent: true, icon: '/icons/Datathon.svg'
             },
             {
                 id: generateSlug("Capture the Flag"),
@@ -118,7 +119,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Compete in an exciting CTF challenge.",
                 location: "CIT Hall, WRC",
                 type: "competition",
-                formlink: "https://forms.gle/JsUcgKVY6kzKLms96", isEvent: true
+                formlink: "https://forms.gle/JsUcgKVY6kzKLms96", isEvent: true, icon: '/icons/CTF.svg'
             }
         ]
     },
@@ -134,7 +135,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Tackle real-world challenges with innovative designs.",
                 location: "CIT Hall, WRC",
                 type: "competition",
-                formlink: "https://forms.gle/WfB2v3aVnRdJhbiU7", isEvent: true
+                formlink: "https://forms.gle/WfB2v3aVnRdJhbiU7", isEvent: true, icon: '/icons/Design.svg'
             },
             {
                 id: generateSlug("Datathon"),
@@ -143,7 +144,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Clean, analyze, and visualize datasets to generate insights.",
                 location: "CIT Hall, WRC",
                 type: "competition",
-                formlink: "https://forms.gle/DMCpMMjrtHcibMET6", isEvent: true
+                formlink: "https://forms.gle/DMCpMMjrtHcibMET6", isEvent: true, icon: '/icons/Datathon.svg'
             }
         ]
     },
@@ -160,7 +161,7 @@ export const scheduleData: DaySchedule[] = [
                 location: "CIT Hall, WRC",
                 type: "competition",
                 formlink: "https://forms.gle/4aYTkcfCDXy9o7x87"
-                , isEvent: true
+                , isEvent: true, icon: '/icons/CWC.svg'
             },
             {
                 id: generateSlug("Closing Ceremony"),

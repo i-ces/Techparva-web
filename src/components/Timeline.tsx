@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, User } from "lucide-react";
+import { MapPin, PartyPopper, User } from "lucide-react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -27,6 +27,17 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
           contentStyle={{ background: "#f9f9f9", color: "#333" }}
           contentArrowStyle={{ borderRight: "7px solid #f9f9f9" }}
           //   iconStyle={getEventTypeStyles(event.type)}
+          iconStyle={{
+            background: "#f9f9f9",
+            color: "#333",
+          }}
+          icon={
+            event.icon ? (
+              <img src={event.icon} alt={event.title} />
+            ) : (
+              <PartyPopper className="bg-white bg-opacity-100" />
+            )
+          }
         >
           <a
             href={event.isEvent ? `/events/${event.id}` : ""}
