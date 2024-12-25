@@ -1,6 +1,6 @@
 [build]
   base    = ""
-  publish = "fixtures/dom/build"
+  publish = "fixtures/dom/dist"
   command = "yarn build  && cd fixtures/dom/ && yarn && yarn build"
 
 [[redirects]]
