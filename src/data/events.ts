@@ -75,7 +75,7 @@ export const events: Event[] = [
         time: "02:00 PM",
         duration: "4 hours",
         location: "CIT Hall, WRC",
-        image: "https://images.unsplash.com/photo-1562577309-2592ab84b1bc?auto=format&fit=crop&q=80",
+        image: "/CTF.png",
         capacity: 100,
         speakers: [],
         tags: ["Cybersecurity", "Competition", "CTF"]
@@ -105,7 +105,7 @@ export const events: Event[] = [
         time: "10:00 AM",
         duration: "3 hours",
         location: "CIT Hall, WRC",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80",
+        image: "/Design.png",
         capacity: 50,
         speakers: ["Sophia Williams"],
         tags: ["Design Thinking", "Workshop", "Innovation"]
@@ -120,7 +120,7 @@ export const events: Event[] = [
         time: "02:00 PM",
         duration: "3 hours",
         location: "CIT Hall, WRC",
-        image: "https://images.unsplash.com/photo-1553531384-cc64cf0b7dd7?auto=format&fit=crop&q=80",
+        image: "/Datathon.png",
         capacity: 100,
         speakers: [],
         tags: ["Data Science", "Competition", "Analysis"]
