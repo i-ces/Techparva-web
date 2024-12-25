@@ -1,50 +1,53 @@
-import React from 'react';
-import { MapPin, User } from 'lucide-react';
-import { ScheduleEvent } from '../data/schedule';
-import AnimateOnScroll from './AnimateOnScroll';
-import { getEventTypeStyles } from '../utils/eventStyles';
+import React from "react";
+import { MapPin, User } from "lucide-react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { ScheduleEvent } from "../data/schedule";
+// import { getEventTypeStyles } from "../utils/eventStyles";
+
+interface MergedScheduleEvent extends ScheduleEvent {
+  dayTitle: string; // Include day title
+  date: string; // Include date
+}
 
 interface TimelineProps {
-  events: ScheduleEvent[];
+  events: MergedScheduleEvent[];
 }
 
 const Timeline: React.FC<TimelineProps> = ({ events }) => {
   return (
-    <div className="relative pl-8 space-y-8">
-      <div className="absolute left-0 inset-y-0 w-0.5 bg-gray-200"></div>
+    <VerticalTimeline animate={true} lineColor="#dddf">
       {events.map((event, index) => (
-        <AnimateOnScroll
+        <VerticalTimelineElement
           key={index}
-          animation="slideRight"
-          delay={index * 0.1}
+          date={event.time}
+          contentStyle={{ background: "#f9f9f9", color: "#333" }}
+          contentArrowStyle={{ borderRight: "7px solid #f9f9f9" }}
+          //   iconStyle={getEventTypeStyles(event.type)}
         >
-          <div className="relative">
-            <div className={getEventTypeStyles(event.type)}></div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-lg font-semibold">{event.title}</h3>
-                <span className="text-sm text-gray-600">{event.time}</span>
+          <div>
+            <h3 className="text-lg font-semibold">{event.title}</h3>
+            <p className="text-sm text-gray-600 mb-2">{event.dayTitle}</p>
+            <p className="text-gray-600 mb-4">{event.description}</p>
+            {event.location && (
+              <div className="flex items-center text-sm text-gray-500">
+                <MapPin className="h-4 w-4 mr-2" />
+                <span>{event.location}</span>
               </div>
-              <p className="text-gray-600 mb-4">{event.description}</p>
-              <div className="space-y-2">
-                {event.location && (
-                  <div className="flex items-center text-sm text-gray-500">
-                    <MapPin className="h-4 w-4 mr-2" />
-                    <span>{event.location}</span>
-                  </div>
-                )}
-                {event.speaker && (
-                  <div className="flex items-center text-sm text-gray-500">
-                    <User className="h-4 w-4 mr-2" />
-                    <span>{event.speaker}</span>
-                  </div>
-                )}
+            )}
+            {event.speaker && (
+              <div className="flex items-center text-sm text-gray-500">
+                <User className="h-4 w-4 mr-2" />
+                <span>{event.speaker}</span>
               </div>
-            </div>
+            )}
           </div>
-        </AnimateOnScroll>
+        </VerticalTimelineElement>
       ))}
-    </div>
+    </VerticalTimeline>
   );
 };
 
