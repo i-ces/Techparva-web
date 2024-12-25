@@ -40,7 +40,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
               <div className="flex items-center text-gray-600">
                 <Clock className="h-4 w-4 mr-2" />
                 <span>
-                  {event.date} at {event.time} ({event.duration})
+                  {event.nepalidate} at {event.time} ({event.duration})
                 </span>
               </div>
               <div className="flex items-center text-gray-600">

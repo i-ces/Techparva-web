@@ -78,21 +78,21 @@ const EventDetails = () => {
             <div className="flex gap-4 justify-center items-center">
               {/* Countdown Box */}
               <div className="flex gap-4 items-center">
-                <div className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg w-20">
+                <div className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg">
                   <span className="text-2xl font-bold text-white">{days}</span>
                   <span className="text-sm text-gray-200">Days</span>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg w-20">
+                <div className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg">
                   <span className="text-2xl font-bold text-white">{hours}</span>
                   <span className="text-sm text-gray-200">Hours</span>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg w-20">
+                <div className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg">
                   <span className="text-2xl font-bold text-white">
                     {minutes}
                   </span>
                   <span className="text-sm text-gray-200">Minutes</span>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg w-20">
+                <div className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg">
                   <span className="text-2xl font-bold text-white">
                     {seconds}
                   </span>

@@ -5,7 +5,7 @@ export interface Event {
     title: string;
     description: string;
     type: 'workshop' | 'talk' | 'competition';
-    date: string;
+    date: string; // Updated to include date and time in ISO format
     time: string;
     duration: string;
     location: string;
@@ -24,22 +24,23 @@ export const events: Event[] = [
         title: "Design Workshop",
         description: "Interactive session on design incubation and creative insights.",
         type: "workshop",
-        date: "December 27, 2024",
+        date: "2024-12-27T14:00:00", // ISO format (includes time)
         nepalidate: "Poush 12, 2081",
         time: "02:00 PM",
         duration: "2 hours",
         location: "CIT Hall, WRC",
         image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80",
         capacity: 50,
-        speakers: ["John Doe"], formlink: "https://forms.gle/ZiBnemrH7xz3F1K36",
+        speakers: ["John Doe"],
+        formlink: "https://forms.gle/ZiBnemrH7xz3F1K36",
         tags: ["Design", "Creativity", "Workshop"]
     },
     {
-        id: generateSlug("Pre-event"), formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
+        id: generateSlug("Pre-event"),
         title: "Pre-event",
         description: "An engaging pre-event challenge to kick-start the excitement for Tech Parva.",
         type: "competition",
-        date: "January 3, 2025",
+        date: "2025-01-03T10:00:00", // ISO format (includes time)
         nepalidate: "Poush 19, 2081",
         time: "10:00 AM",
         duration: "3 hours",
@@ -50,11 +51,11 @@ export const events: Event[] = [
         tags: ["Problem-Solving", "Pre-event", "Competition"]
     },
     {
-        id: generateSlug("CTF Workshop"), formlink: "https://forms.gle/7uh5Nei9KFdZc13N8",
+        id: generateSlug("CTF Workshop"),
         title: "CTF Workshop",
         description: "Learn the basics of Capture the Flag competitions in this online workshop.",
         type: "workshop",
-        date: "January 4, 2025",
+        date: "2025-01-04T10:00:00", // ISO format (includes time)
         nepalidate: "Poush 20, 2081",
         time: "10:00 AM",
         duration: "2 hours",
@@ -65,11 +66,11 @@ export const events: Event[] = [
         tags: ["Cybersecurity", "Workshop", "CTF"]
     },
     {
-        id: generateSlug("Capture the Flag"), formlink: "https://forms.gle/JsUcgKVY6kzKLms96",
+        id: generateSlug("Capture the Flag"),
         title: "Capture the Flag",
         description: "Compete in an exciting Capture the Flag challenge.",
         type: "competition",
-        date: "January 6, 2025",
+        date: "2025-01-06T14:00:00", // ISO format (includes time)
         nepalidate: "Poush 22, 2081",
         time: "02:00 PM",
         duration: "4 hours",
@@ -80,11 +81,11 @@ export const events: Event[] = [
         tags: ["Cybersecurity", "Competition", "CTF"]
     },
     {
-        id: generateSlug("Datathon Workshop"), formlink: "https://forms.gle/ACXpxmXoojitF7j87",
+        id: generateSlug("Datathon Workshop"),
         title: "Datathon Workshop",
         description: "Learn data preprocessing and visualization techniques.",
         type: "workshop",
-        date: "January 6, 2025",
+        date: "2025-01-06T11:30:00", // ISO format (includes time)
         nepalidate: "Poush 22, 2081",
         time: "11:30 AM",
         duration: "2 hours",
@@ -95,11 +96,11 @@ export const events: Event[] = [
         tags: ["Data Science", "Workshop", "Visualization"]
     },
     {
-        id: generateSlug("Design Incubation"), formlink: "https://forms.gle/WfB2v3aVnRdJhbiU7",
+        id: generateSlug("Design Incubation"),
         title: "Design Incubation",
         description: "Tackle real-world challenges with innovative designs.",
         type: "workshop",
-        date: "January 7, 2025",
+        date: "2025-01-07T10:00:00", // ISO format (includes time)
         nepalidate: "Poush 23, 2081",
         time: "10:00 AM",
         duration: "3 hours",
@@ -110,11 +111,11 @@ export const events: Event[] = [
         tags: ["Design Thinking", "Workshop", "Innovation"]
     },
     {
-        id: generateSlug("Datathon"), formlink: "https://forms.gle/DMCpMMjrtHcibMET6",
+        id: generateSlug("Datathon"),
         title: "Datathon",
         description: "Clean, analyze, and visualize datasets to generate insights.",
         type: "competition",
-        date: "January 7, 2025",
+        date: "2025-01-07T14:00:00", // ISO format (includes time)
         nepalidate: "Poush 23, 2081",
         time: "02:00 PM",
         duration: "3 hours",
@@ -125,11 +126,11 @@ export const events: Event[] = [
         tags: ["Data Science", "Competition", "Analysis"]
     },
     {
-        id: generateSlug("Code with Coffee"), formlink: "https://forms.gle/4aYTkcfCDXy9o7x87",
+        id: generateSlug("Code with Coffee"),
         title: "Code with Coffee",
         description: "Competitive coding with a relaxing coffee vibe.",
         type: "competition",
-        date: "January 8, 2025",
+        date: "2025-01-08T11:00:00", // ISO format (includes time)
         nepalidate: "Poush 24, 2081",
         time: "11:00 AM",
         duration: "2 hours",
