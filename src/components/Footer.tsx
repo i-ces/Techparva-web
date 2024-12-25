@@ -1,4 +1,3 @@
-import React from "react";
 import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
 
 const Footer = () => {
@@ -11,15 +10,15 @@ const Footer = () => {
             <div className="space-y-2">
               <p className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
-                info@techfest2024.com
+                <a href="mailto:ices@wrc.edu.np">ices@wrc.edu.np</a>
               </p>
               <p className="flex items-center">
                 <Phone className="h-5 w-5 mr-2" />
-                +1 (555) 123-4567
+                <a href="tel:+977 984-1891060">+977 984-1891060</a>
               </p>
               <p className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2" />
-                Tech Valley, Innovation City
+                Lamachaur Road, Pokhara-16
               </p>
             </div>
           </div>
@@ -37,16 +36,16 @@ const Footer = () => {
                   Schedule
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/speakers" className="hover:text-indigo-400">
                   Speakers
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="/contact" className="hover:text-indigo-400">
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -67,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
-          <p>&copy; 2024 TechFest. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()}, i-CES. All rights reserved.</p>
         </div>
       </div>
     </footer>
