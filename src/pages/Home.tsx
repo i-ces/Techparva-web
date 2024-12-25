@@ -1,4 +1,4 @@
-import { ArrowRight, Calendar, Users, MapPin } from "lucide-react";
+import { ArrowRight, Calendar, MapPin, CpuIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 
@@ -47,17 +47,17 @@ const Home = () => {
               {
                 icon: <Calendar className="h-10 w-10 text-indigo-600" />,
                 title: "Date",
-                info: "March 15-17, 2024",
+                info: "Poush 19-24th",
               },
               {
                 icon: <MapPin className="h-10 w-10 text-indigo-600" />,
                 title: "Location",
-                info: "Tech Convention Center",
+                info: "WRC, CIT, Multimedia Hall",
               },
               {
-                icon: <Users className="h-10 w-10 text-indigo-600" />,
-                title: "Attendees",
-                info: "5000+ Expected",
+                icon: <CpuIcon className="h-10 w-10 text-indigo-600" />,
+                title: "Competetions",
+                info: "Different domains",
               },
             ].map((item, index) => (
               <AnimateOnScroll
