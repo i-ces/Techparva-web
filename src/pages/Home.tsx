@@ -87,17 +87,12 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "Hackathon",
-                description: "24-hour coding competition with amazing prizes",
+                title: "Competitive Programming",
+                description: "2-hour coding competition with amazing prizes",
                 image:
                   "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80",
               },
-              {
-                title: "Tech Talks",
-                description: "Inspiring presentations from industry leaders",
-                image:
-                  "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80",
-              },
+
               {
                 title: "Workshops",
                 description:
