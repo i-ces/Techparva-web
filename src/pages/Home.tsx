@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <div className="relative h-[95vh] bg-gradient-to-r from-indigo-600 to-purple-600">
+      <div className="relative h-[95vh] bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <AnimateOnScroll animation="slideUp">
@@ -36,6 +36,11 @@ const Home = () => {
               </div>
             </div>
           </AnimateOnScroll>
+          <img
+            src="/main.png"
+            alt="Tech Parva"
+            className="hidden md:block w-1/2"
+          />
         </div>
       </div>
 

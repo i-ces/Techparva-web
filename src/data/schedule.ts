@@ -101,7 +101,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Welcome address to kickstart Tech Parva 3.0.",
                 location: "CIT Hall, WRC",
                 type: "talk",
-                isEvent: false
+                isEvent: false, icon: '/icons/Inauguration.svg'
             },
             {
                 id: generateSlug("Datathon Workshop"),
@@ -170,7 +170,7 @@ export const scheduleData: DaySchedule[] = [
                 description: "Event wrap-up and farewell.",
                 location: "CIT Hall, WRC",
                 type: "talk",
-                isEvent: false
+                isEvent: false, icon: '/icons/Closing.svg'
             }
         ]
     }
