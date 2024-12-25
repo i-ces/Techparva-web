@@ -30,6 +30,9 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
           iconStyle={{
             background: "#f9f9f9",
             color: "#333",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
           icon={
             event.icon ? (
