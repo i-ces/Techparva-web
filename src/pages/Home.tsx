@@ -8,7 +8,8 @@ const Home = () => {
       {/* Hero Section */}
       <div className="relative h-[95vh] bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center">
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center sm:gap-11 justify-between md:flex-row sm:flex-col sm:justify-center ">
+        <div className="relative max-w-7xl px-4 sm:px-6 lg:px-8 h-full w-full flex  items-center   ">
+          {/* <div className="md:w-2/5 sm:w-full"> */}
           <AnimateOnScroll animation="slideUp">
             <div className="text-white">
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
@@ -36,11 +37,12 @@ const Home = () => {
               </div>
             </div>
           </AnimateOnScroll>
-          <img
+          {/* </div> */}
+          {/* <img
             src="/main.png"
             alt="Tech Parva"
-            className="md:block md:w-1/2 sm:w-full"
-          />
+            className="md:w-3/5 sm:w-full"
+          /> */}
         </div>
       </div>
 
