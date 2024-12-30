@@ -44,29 +44,47 @@ const sponsors = {
 };
 
 const Sponsors = () => {
-  const transformedSponsors = Object.entries(sponsors).flatMap(
-    ([category, sponsorsList]) =>
-      sponsorsList.map((sponsor) => ({
-        quote: "",
-        name: sponsor.name,
-        title: category,
-        logo: sponsor.logo,
-      }))
-  );
-
   return (
     <div id="sponsors" className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-8">
           Our <span className="text-orange-600">Sponsors</span>
         </h2>
-        <InfiniteMovingCards
-          items={transformedSponsors}
-          direction="left"
-          speed="normal"
-          pauseOnHover={true}
-          className=""
-        />
+
+        <div className="space-y-16">
+          {/* Static Title Section */}
+          <div className="text-center">
+            {sponsors.Title.map((sponsor, i) => (
+              <div key={i} className="inline-block mx-4">
+                <img
+                  src={sponsor.logo}
+                  alt={sponsor.name}
+                  className="w-24 h-24 object-contain mb-2"
+                />
+                <p className="text-lg font-medium">{sponsor.name}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Static Diamond Section */}
+          <div className="text-center">
+            {sponsors.Diamond.map((sponsor, i) => (
+              <div key={i} className="inline-block mx-4">
+                <img
+                  src={sponsor.logo}
+                  alt={sponsor.name}
+                  className="w-24 h-24 object-contain mb-2"
+                />
+                <p className="text-lg font-medium">{sponsor.name}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Dynamic Scrolling Sections */}
+          <InfiniteMovingCards items={sponsors.Gold} />
+          <InfiniteMovingCards items={sponsors.Silver} direction="right" />
+          <InfiniteMovingCards items={sponsors.General} />
+        </div>
       </div>
     </div>
   );
