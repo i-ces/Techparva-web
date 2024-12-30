@@ -97,9 +97,9 @@ const InfiniteMovingCards = ({
                 alt={item.name}
                 className="w-full h-auto object-contain"
               />
-              <span className="mt-2 text-sm leading-[1.6] text-gray-600 font-normal">
+              {/* <span className="mt-2 text-sm leading-[1.6] text-gray-600 font-normal">
                 {item.name}
-              </span>
+              </span> */}
             </div>
           </li>
         ))}

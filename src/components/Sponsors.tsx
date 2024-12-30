@@ -55,13 +55,13 @@ const Sponsors = () => {
           {/* Static Title Section */}
           <div className="text-center">
             {sponsors.Title.map((sponsor, i) => (
-              <div key={i} className="inline-block mx-4">
+              <div key={i} className="inline-block mx-8 p-4 rounded-lg">
                 <img
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  className="w-24 h-24 object-contain mb-2"
+                  className="w-32 h-32 object-contain mb-4"
                 />
-                <p className="text-lg font-medium">{sponsor.name}</p>
+                {/* <p className="text-xl font-semibold">{sponsor.name}</p> */}
               </div>
             ))}
           </div>
@@ -69,13 +69,13 @@ const Sponsors = () => {
           {/* Static Diamond Section */}
           <div className="text-center">
             {sponsors.Diamond.map((sponsor, i) => (
-              <div key={i} className="inline-block mx-4">
+              <div key={i} className="inline-block mx-8 p-4 rounded-lg">
                 <img
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  className="w-24 h-24 object-contain mb-2"
+                  className="w-32 h-32 object-contain mb-4"
                 />
-                <p className="text-lg font-medium">{sponsor.name}</p>
+                {/* <p className="text-xl font-semibold">{sponsor.name}</p> */}
               </div>
             ))}
           </div>
