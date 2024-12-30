@@ -48,7 +48,8 @@ export const events: Event[] = [
         image: "/preevent.png",
         capacity: 100,
         speakers: [],
-        tags: ["Problem-Solving", "Pre-event", "Competition"]
+        tags: ["Problem-Solving", "Pre-event", "Competition"],
+        formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
     },
     {
         id: generateSlug("CTF Workshop"),
@@ -62,8 +63,9 @@ export const events: Event[] = [
         location: "Online",
         image: "/CTF_Workshop.png",
         capacity: 50,
-        speakers: ["Jane Smith"],
-        tags: ["Cybersecurity", "Workshop", "CTF"]
+        speakers: [],
+        tags: ["Cybersecurity", "Workshop", "CTF"],
+        formlink: "https://forms.gle/7uh5Nei9KFdZc13N8",
     },
     {
         id: generateSlug("Capture the Flag"),
@@ -79,6 +81,7 @@ export const events: Event[] = [
         capacity: 100,
         speakers: [],
         tags: ["Cybersecurity", "Competition", "CTF"]
+        , formlink: "https://forms.gle/JsUcgKVY6kzKLms96"
     },
     {
         id: generateSlug("Datathon Workshop"),
@@ -92,14 +95,15 @@ export const events: Event[] = [
         location: "CIT Hall, WRC",
         image: "/Datathon_Workshop.png",
         capacity: 50,
-        speakers: ["Dr. Emily Brown"],
-        tags: ["Data Science", "Workshop", "Visualization"]
+        speakers: [],
+        tags: ["Data Science", "Workshop", "Visualization"],
+        formlink: "https://forms.gle/ACXpxmXoojitF7j87"
     },
     {
         id: generateSlug("Design Incubation"),
         title: "Design Incubation",
         description: "Tackle real-world challenges with innovative designs.",
-        type: "workshop",
+        type: "competition",
         date: "2025-01-07T10:00:00", // ISO format (includes time)
         nepalidate: "Poush 23, 2081",
         time: "10:00 AM",
@@ -108,7 +112,8 @@ export const events: Event[] = [
         image: "/Design.png",
         capacity: 50,
         speakers: ["Sophia Williams"],
-        tags: ["Design Thinking", "Workshop", "Innovation"]
+        tags: ["Design Thinking", "Competetion", "Innovation"],
+        formlink: "https://forms.gle/WfB2v3aVnRdJhbiU7",
     },
     {
         id: generateSlug("Datathon"),
@@ -123,7 +128,8 @@ export const events: Event[] = [
         image: "/Datathon.png",
         capacity: 100,
         speakers: [],
-        tags: ["Data Science", "Competition", "Analysis"]
+        tags: ["Data Science", "Competition", "Analysis"],
+        formlink: "https://forms.gle/DMCpMMjrtHcibMET6",
     },
     {
         id: generateSlug("Code with Coffee"),
@@ -138,6 +144,7 @@ export const events: Event[] = [
         image: "/CWC.png",
         capacity: 50,
         speakers: [],
-        tags: ["Coding", "Competition", "Fun"]
+        tags: ["Coding", "Competition", "Fun"],
+        formlink: "https://forms.gle/4aYTkcfCDXy9o7x87"
     },
 ];
