@@ -88,11 +88,7 @@ const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="w-[200px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-gray-300 px-4 py-4"
-            style={{
-              background:
-                "linear-gradient(180deg, var(--slate-100), var(--slate-200)",
-            }}
+            className="w-[200px] max-w-full relative rounded-2xl  flex-shrink-0px-4 py-4"
             key={item.name}
           >
             <div className="flex flex-col items-center">
