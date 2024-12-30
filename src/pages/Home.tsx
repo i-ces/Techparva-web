@@ -1,6 +1,7 @@
 import { ArrowRight, Calendar, MapPin, CpuIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
+import Sponsors from "../components/Sponsors";
 
 const Home = () => {
   return (
@@ -139,48 +140,7 @@ const Home = () => {
       </div>
 
       {/* Sponsors Section */}
-      <div id="sponsors" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimateOnScroll animation="slideUp">
-            <h2 className="text-3xl font-bold mb-8">Our Sponsors</h2>
-          </AnimateOnScroll>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              {
-                name: "Sponsor 1",
-                logo: "https://via.placeholder.com/150",
-              },
-              {
-                name: "Sponsor 2",
-                logo: "https://via.placeholder.com/150",
-              },
-              {
-                name: "Sponsor 3",
-                logo: "https://via.placeholder.com/150",
-              },
-              {
-                name: "Sponsor 4",
-                logo: "https://via.placeholder.com/150",
-              },
-            ].map((sponsor, index) => (
-              <AnimateOnScroll
-                key={index}
-                animation="slideUp"
-                delay={index * 0.2}
-              >
-                <div className="flex flex-col items-center">
-                  <img
-                    src={sponsor.logo}
-                    alt={sponsor.name}
-                    className="w-32 h-32 object-contain mb-4"
-                  />
-                  <p className="text-lg font-semibold">{sponsor.name}</p>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
-        </div>
-      </div>
+      <Sponsors />
     </div>
   );
 };
