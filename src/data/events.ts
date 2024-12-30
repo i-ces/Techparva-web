@@ -111,7 +111,7 @@ export const events: Event[] = [
         location: "CIT Hall, WRC",
         image: "/Design.png",
         capacity: 50,
-        speakers: ["Sophia Williams"],
+        speakers: [],
         tags: ["Design Thinking", "Competetion", "Innovation"],
         formlink: "https://forms.gle/WfB2v3aVnRdJhbiU7",
     },
