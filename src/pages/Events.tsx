@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import { events } from '../data/events';
-import EventCard from '../components/EventCard';
-import AnimateOnScroll from '../components/AnimateOnScroll';
+import React, { useState } from "react";
+import { events } from "../data/events";
+import EventCard from "../components/EventCard";
+import AnimateOnScroll from "../components/AnimateOnScroll";
 
 const Events = () => {
-  const [selectedType, setSelectedType] = useState<string>('all');
+  const [selectedType, setSelectedType] = useState<string>("all");
 
-  const filteredEvents = selectedType === 'all'
-    ? events
-    : events.filter(event => event.type === selectedType);
+  const filteredEvents =
+    selectedType === "all"
+      ? events
+      : events.filter((event) => event.type === selectedType);
 
-  const types = ['all', ...new Set(events.map(event => event.type))];
+  const types = ["all", ...new Set(events.map((event) => event.type))];
 
   return (
     <div className="pt-16 min-h-screen bg-gray-50">
@@ -30,11 +31,13 @@ const Events = () => {
                 onClick={() => setSelectedType(type)}
                 className={`
                   px-4 py-2 text-sm font-medium
-                  ${type === selectedType
-                    ? 'bg-indigo-600 text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-50'}
-                  ${type === types[0] ? 'rounded-l-md' : ''}
-                  ${type === types[types.length - 1] ? 'rounded-r-md' : ''}
+                  ${
+                    type === selectedType
+                      ? "bg-indigo-600 text-white"
+                      : "bg-white text-gray-700 hover:bg-gray-50"
+                  }
+                  ${type === types[0] ? "rounded-l-md" : ""}
+                  ${type === types[types.length - 1] ? "rounded-r-md" : ""}
                   border border-gray-200
                 `}
               >
