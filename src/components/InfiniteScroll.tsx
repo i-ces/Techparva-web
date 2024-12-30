@@ -87,19 +87,16 @@ const InfiniteMovingCards = ({
         )}
       >
         {items.map((item) => (
-          <li
-            className="w-[200px] max-w-full relative rounded-2xl  flex-shrink-0px-4 py-4"
-            key={item.name}
-          >
+          <li className="inline-block mx-8 p-4 rounded-lg" key={item.name}>
             <div className="flex flex-col items-center">
               <img
                 src={item.logo}
                 alt={item.name}
-                className="w-full h-auto object-contain"
+                className="w-32 h-32 object-contain mb-4"
               />
               {/* <span className="mt-2 text-sm leading-[1.6] text-gray-600 font-normal">
-                {item.name}
-              </span> */}
+                                {item.name}
+                            </span> */}
             </div>
           </li>
         ))}
