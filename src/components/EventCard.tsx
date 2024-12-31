@@ -7,85 +7,101 @@ interface EventCardProps {
   event: Event;
 }
 
-const currentDate = new Date();
-
 const EventCard: React.FC<EventCardProps> = ({ event }) => {
-  const eventDate = new Date(event.date); // Convert event.date to a Date object
-  const isCompleted = eventDate < currentDate; // Check if the event date has passed
+  const currentDate = new Date();
+  const eventDate = new Date(event.date);
+  const isCompleted = eventDate < currentDate;
 
   return (
     <AnimateOnScroll animation="slideUp">
-      <a href={`/events/${event.id}`} className="block relative">
+      <a
+        href={`/events/${event.id}`}
+        className="block transition-transform transform hover:scale-105 hover:shadow-lg"
+      >
         <div
-          className={`bg-white rounded-lg shadow-lg overflow-hidden ${
+          className={`flex flex-col h-full bg-white rounded-xl shadow-md overflow-hidden ${
             isCompleted ? "border-2 border-green-500" : ""
           }`}
         >
+          {/* Badge for Completed Events */}
           {isCompleted && (
-            <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg flex items-center gap-1">
+            <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-xl flex items-center gap-1">
               <CheckCircle className="h-4 w-4" />
               Completed
             </div>
           )}
-          <img
-            src={event.image}
-            alt={event.title}
-            className={`w-full h-48 object-cover ${
-              isCompleted ? "opacity-70" : ""
-            }`}
-          />
-          <div className="p-6">
-            <div className="flex justify-between items-start mb-4">
+
+          {/* Image Section */}
+          <div className="relative">
+            <img
+              src={event.image}
+              alt={event.title}
+              className={`w-full h-48 object-cover ${
+                isCompleted ? "opacity-70" : ""
+              }`}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-indigo-200/50 to-transparent"></div>
+          </div>
+
+          {/* Content Section */}
+          <div className="p-4 flex flex-col flex-grow">
+            {/* Title and Event Type */}
+            <div className="flex justify-between items-start mb-3">
               <h3
-                className={`text-xl font-bold ${
+                className={`text-lg font-bold text-indigo-600 ${
                   isCompleted ? "line-through" : ""
                 }`}
               >
                 {event.title}
               </h3>
               <span
-                className={`
-                  px-3 py-1 rounded-full text-sm font-medium
-                  ${
-                    event.type === "workshop"
-                      ? "bg-green-100 text-green-800"
-                      : event.type === "talk"
-                      ? "bg-blue-100 text-blue-800"
-                      : "bg-orange-100 text-orange-800"
-                  }
-                `}
+                className={`px-3 py-1 rounded-full text-sm font-medium ${
+                  event.type === "workshop"
+                    ? "bg-green-100 text-green-800"
+                    : event.type === "talk"
+                    ? "bg-blue-100 text-blue-500"
+                    : event.type === "competition"
+                    ? "bg-purple-100 text-purple-600"
+                    : "bg-orange-100 text-orange-800"
+                }`}
               >
                 {event.type.charAt(0).toUpperCase() + event.type.slice(1)}
               </span>
             </div>
+
+            {/* Event Description */}
             <p
-              className={`text-gray-600 mb-4 ${
+              className={`text-gray-600 text-sm ${
                 isCompleted ? "text-gray-400" : ""
               }`}
             >
               {event.description}
             </p>
-            <div className="space-y-2 mb-4">
-              <div className="flex items-center text-gray-600">
-                <Clock className="h-4 w-4 mr-2" />
+
+            {/* Event Details */}
+            <div className="mt-4 space-y-2 text-sm text-gray-600">
+              <div className="flex items-center">
+                <Clock className="h-4 w-4 mr-2 text-indigo-500" />
                 <span>
                   {event.nepalidate} at {event.time} ({event.duration})
                 </span>
               </div>
-              <div className="flex items-center text-gray-600">
-                <MapPin className="h-4 w-4 mr-2" />
+              <div className="flex items-center">
+                <MapPin className="h-4 w-4 mr-2 text-indigo-500" />
                 <span>{event.location}</span>
               </div>
-              <div className="flex items-center text-gray-600">
-                <Users className="h-4 w-4 mr-2" />
-                <span>Capacity: {event.capacity} attendees</span>
+              <div className="flex items-center">
+                <Users className="h-4 w-4 mr-2 text-indigo-500" />
+                <span>Participants: {event.capacity}</span>
               </div>
             </div>
-            <div className="flex flex-wrap gap-2">
+
+            {/* Tags */}
+            <div className="mt-4 flex flex-wrap gap-2">
               {event.tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs hover:bg-indigo-500 hover:text-white transition"
                 >
                   {tag}
                 </span>

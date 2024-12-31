@@ -134,7 +134,7 @@ export const events: Event[] = [
     {
         id: generateSlug("Code with Coffee"),
         title: "Code with Coffee",
-        description: "Competitive coding with a relaxing coffee vibe.",
+        description: "Competitive coding with a relaxing coffee vibe. Make it seem easy",
         type: "competition",
         date: "2025-01-08T11:00:00", // ISO format (includes time)
         nepalidate: "Poush 24, 2081",
