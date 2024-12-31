@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import Sponsors from "../components/Sponsors";
 
+import competitive_programming from "../../public/competition.png";
+import workshop from "../../public/workshop.png";
+
+
+
 const Home = () => {
   return (
     <div className="pt-16">
@@ -23,15 +28,15 @@ const Home = () => {
                 <br /> learn, and connect with tech enthusiasts.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link
+              <Link
                   to="/events"
-                  className="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-200"
+                  className="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold border-2 border-indigo-600 shadow-md transition-all duration-300 transform hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600 hover:text-white hover:shadow-xl hover:scale-105"
                 >
                   Explore Events
                 </Link>
                 <Link
                   to="/schedule"
-                  className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-200"
+                  className="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold border-2 border-indigo-600 shadow-md transition-all duration-300 transform hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600 hover:text-white hover:shadow-xl hover:scale-105"
                 >
                   View Schedule
                 </Link>
@@ -97,16 +102,14 @@ const Home = () => {
               {
                 title: "Competitive Programming",
                 description: "2-hour coding competition with amazing prizes",
-                image:
-                  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80",
+                image:competitive_programming,
               },
 
               {
                 title: "Workshops",
                 description:
                   "Hands-on learning experiences in various technologies",
-                image:
-                  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80",
+                image:workshop,
               },
             ].map((event, index) => (
               <AnimateOnScroll
@@ -114,25 +117,28 @@ const Home = () => {
                 animation="slideUp"
                 delay={index * 0.2}
               >
-                <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">
-                      {event.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4">{event.description}</p>
-                    <Link
-                      to="/events"
-                      className="text-indigo-600 font-medium flex items-center hover:text-indigo-700"
-                    >
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </div>
-                </div>
+                 <div className="bg-white rounded-2xl overflow-hidden shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+     <div className="relative">
+       <img
+         src={event.image}
+         alt={event.title}
+         className="w-full h-48 object-cover"
+       />
+       <div className="absolute inset-0 bg-gradient-to-t from-indigo-500/50 to-transparent"></div>
+     </div>
+     <div className="p-6">
+       <h3 className="text-xl font-semibold text-indigo-600 mb-2">
+         {event.title}
+       </h3>
+       <p className="text-gray-600 mb-4">{event.description}</p>
+       <Link
+         to="/events"
+         className="text-purple-500 font-medium flex items-center hover:text-purple-700 transition"
+       >
+         Learn more <ArrowRight className="ml-2 h-4 w-4" />
+       </Link>
+     </div>
+   </div>
               </AnimateOnScroll>
             ))}
           </div>

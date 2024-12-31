@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin,FacebookIcon, Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -56,10 +56,13 @@ const Footer = () => {
                 <Github className="h-6 w-6" />
               </a>
               <a href="#" className="hover:text-indigo-400">
-                <Twitter className="h-6 w-6" />
+                <Linkedin className="h-6 w-6" />
               </a>
               <a href="#" className="hover:text-indigo-400">
-                <Linkedin className="h-6 w-6" />
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a href="#" className="hover:text-indigo-400">
+                <Instagram className="h-6 w-6" />
               </a>
             </div>
           </div>

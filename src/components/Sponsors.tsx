@@ -1,45 +1,47 @@
 import InfiniteMovingCards from "./InfiniteScroll";
 
+import nipuna_sewa from "../../public/nipuna sewa.png";
+import AECC from "../../public/AECC Logo.pdf";
+import info_chip from "../../public/infochip_updated.png";
+import Janakari_tech from "../../public/JankariTech.png";
+import Rebooted from "../../public/Rebooted.png";
+import margin_top from "../../public/margintop.svg";
+import freshelement from "../../public/freshelementslogo.png";
+import everest_testinomial from "../../public/Everest Technomania Pvt.Ltd.pdf";
+import citizen_furniture from "../../public/citizen furniture.jpg";
+import Bookmart from "../../public/Bookmart logo.png";
+import programiz_logo from "../../public/Programiz.svg";
+
 const sponsors = {
   Title: [
     {
-      name: "Nipuna Sewa",
-      logo: "https://via.placeholder.com/150",
+      name: "Nipuna Prabhidhik Sewa",
+      logo: nipuna_sewa, // Use the imported logo directly
     },
   ],
   Diamond: [
-    { name: "Diamond Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "Diamond Sponsor 2", logo: "https://via.placeholder.com/150" },
-    { name: "Diamond Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "Diamond Sponsor 2", logo: "https://via.placeholder.com/150" },
+    { name: "AECC Global", logo: AECC },
+    { name: "Infochip (P.) Ltd", logo: info_chip },
   ],
   Gold: [
-    { name: "Gold Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "Gold Sponsor 2", logo: "https://via.placeholder.com/150" },
-    { name: "Gold Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "Gold Sponsor 2", logo: "https://via.placeholder.com/150" },
-    { name: "Gold Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "Gold Sponsor 2", logo: "https://via.placeholder.com/150" },
+    { name: "JanakariTech Pvt. Ltd.", logo: Janakari_tech },
+    { name: "Rebooted Creation Labs Pvt. Ltd.", logo: Rebooted },
+  
   ],
   Silver: [
-    { name: "Silver Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "Silver Sponsor 2", logo: "https://via.placeholder.com/150" },
-    { name: "Silver Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "Silver Sponsor 2", logo: "https://via.placeholder.com/150" },
+    { name: "Everest Technomania Pvt. Ltd", logo: everest_testinomial },
+    { name: "Fresh Elements Restaurant", logo: freshelement },
+    { name: "Citizen Furniture Trade Link Pvt. Ltd", logo: citizen_furniture },
+    { name: "MarginTop Solutions", logo: margin_top },
+      { name: "Black Tech.", logo: "https://via.placeholder.com/150" },
+      { name: " Panchamrit Bakery and cafe.", logo: " Panchamrit_Bakery_and_cafe" },
+
   ],
   General: [
-    { name: "General Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 2", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 2", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 2", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 2", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 2", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 1", logo: "https://via.placeholder.com/150" },
-    { name: "General Sponsor 2", logo: "https://via.placeholder.com/150" },
+    { name: "Book Mart", logo: Bookmart },
+    { name: "Books Mandala", logo: "https://via.placeholder.com/150" },
+    { name: "Programiz", logo: programiz_logo },
+   
   ],
 };
 
@@ -61,7 +63,6 @@ const Sponsors = () => {
                   alt={sponsor.name}
                   className="w-32 h-32 object-contain mb-4"
                 />
-                {/* <p className="text-xl font-semibold">{sponsor.name}</p> */}
               </div>
             ))}
           </div>
@@ -75,10 +76,48 @@ const Sponsors = () => {
                   alt={sponsor.name}
                   className="w-32 h-32 object-contain mb-4"
                 />
-                {/* <p className="text-xl font-semibold">{sponsor.name}</p> */}
               </div>
             ))}
           </div>
+
+                {/* Static gold Section */}
+               {/* <div className="text-center">
+            {sponsors.Gold.map((sponsor, i) => (
+              <div key={i} className="inline-block mx-8 p-4 rounded-lg">
+                <img
+                  src={sponsor.logo}
+                  alt={sponsor.name}
+                  className="w-32 h-32 object-contain mb-4"
+                />
+              </div>
+            ))}
+          </div> */}
+          
+             {/* Static silver Section */}
+              {/* <div className="text-center">
+            {sponsors.Silver.map((sponsor, i) => (
+              <div key={i} className="inline-block mx-8 p-4 rounded-lg">
+                <img
+                  src={sponsor.logo}
+                  alt={sponsor.name}
+                  className="w-32 h-32 object-contain mb-4"
+                />
+              </div>
+            ))}
+          </div>  */}
+
+             {/* Static general Section */}
+              {/* <div className="text-center">
+            {sponsors.General.map((sponsor, i) => (
+              <div key={i} className="inline-block mx-8 p-4 rounded-lg">
+                <img
+                  src={sponsor.logo}
+                  alt={sponsor.name}
+                  className="w-32 h-32 object-contain mb-4"
+                />
+              </div>
+            ))}
+          </div>  */}
 
           {/* Dynamic Scrolling Sections */}
           <InfiniteMovingCards items={sponsors.Gold} />
