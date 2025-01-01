@@ -8,8 +8,8 @@ import "react-vertical-timeline-component/style.min.css";
 import { ScheduleEvent } from "../data/schedule";
 
 interface MergedScheduleEvent extends ScheduleEvent {
-  dayTitle: string; // Include day title
-  date: string; // Include date
+  dayTitle: string; 
+  date: string; 
 }
 
 interface TimelineProps {
@@ -20,44 +20,49 @@ const currentDate = new Date();
 
 const Timeline: React.FC<TimelineProps> = ({ events }) => {
   return (
-    <VerticalTimeline animate={true} lineColor="#dddddd">
+    <VerticalTimeline animate={true} lineColor="#cccccc">
       {events.map((event, index) => {
         const eventDate = new Date(event.date);
-        const isCompleted = eventDate < currentDate; // Check if the event date is in the past
-
+        const isCompleted = eventDate < currentDate; 
         return (
           <VerticalTimelineElement
             key={index}
             date={event.time}
             contentStyle={{
-              background: isCompleted ? "#e0e0e0" : "#f9f9f9", // Gray background for completed events
-              color: isCompleted ? "#555" : "#333",
-              borderLeft: isCompleted ? "4px solid #888" : "4px solid #4CAF50", // Line color based on status
+              background: isCompleted ? "#FFCFCF" : "#F3F4FF", 
+              color: isCompleted ? "#4C4B7E" : "#333",
+              borderLeft: isCompleted
+                ? "4px solid #F73C3C" // Dark purple 
+                : "4px solid #3B82F6", // Blue 
             }}
             contentArrowStyle={{
               borderRight: isCompleted
-                ? "7px solid #e0e0e0"
-                : "7px solid #f9f9f9",
+                ? "7px solid #E0E7FF" // Purple shade 
+                : "7px solid #F3F4FF", // Lighter 
             }}
             iconStyle={{
-              background: isCompleted ? "#ddd" : "#f9f9f9", // Dimmed icon background for completed events
-              color: isCompleted ? "#888" : "#333",
+              background: isCompleted ? "#FAF4F4" : "#ffffff", // Purple for completed, Orange for upcoming
+              color: "#fff", // White icon color
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
             }}
             icon={
               event.icon ? (
-                <img src={event.icon} alt={event.title} />
+                <img
+                  src={event.icon}
+                  alt={event.title}
+                  className="rounded-full h-8 w-8"
+                />
               ) : (
-                <PartyPopper className="bg-white bg-opacity-100" />
+                <PartyPopper className="h-6 w-6" />
               )
             }
           >
             <a
               href={event.isEvent ? `/events/${event.id}` : ""}
               className={`text-sm ${
-                isCompleted ? "text-gray-400" : "text-gray-600"
+                isCompleted ? "text-gray-500" : "text-gray-700"
               }`}
             >
               <h3
@@ -67,17 +72,19 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
               >
                 {event.title}
               </h3>
-              <p className="text-sm mb-2">{event.dayTitle}</p>
+              <p className="text-sm text-purple-600 font-medium mb-2">
+                {event.dayTitle}
+              </p>
               <p className="mb-4">{event.description}</p>
               {event.location && (
-                <div className="flex items-center text-sm text-gray-500">
-                  <MapPin className="h-4 w-4 mr-2" />
+                <div className="flex items-center text-sm text-gray-600">
+                  <MapPin className="h-4 w-4 mr-2 text-blue-500" />
                   <span>{event.location}</span>
                 </div>
               )}
               {event.speaker && (
-                <div className="flex items-center text-sm text-gray-500">
-                  <User className="h-4 w-4 mr-2" />
+                <div className="flex items-center text-sm text-gray-600">
+                  <User className="h-4 w-4 mr-2 text-orange-500" />
                   <span>{event.speaker}</span>
                 </div>
               )}

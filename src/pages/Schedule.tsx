@@ -19,7 +19,7 @@ const Schedule = () => {
           <h1 className="text-4xl font-bold mb-4 text-center">
             Event Timeline
           </h1>
-          <p className="text-gray-600 text-center mb-12">
+          <p className="text-purple-600 text-center mb-12">
             Plan your TechParva 3.0 experience with our unified schedule
           </p>
         </AnimateOnScroll>

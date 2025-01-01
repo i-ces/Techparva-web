@@ -2,7 +2,6 @@ import { ArrowRight, Calendar, MapPin, CpuIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import Sponsors from "../components/Sponsors";
-
 import competitive_programming from "../../public/competition.png";
 import workshop from "../../public/workshop.png";
 
