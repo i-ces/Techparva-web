@@ -73,7 +73,7 @@ const Sponsors = () => {
                 <img
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  className="w-32 h-32 object-contain mb-4"
+                  className="w-60 h-60 object-contain mb-4"
                 />
               </div>
             ))}
@@ -86,7 +86,7 @@ const Sponsors = () => {
                 <img
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  className="w-32 h-32 object-contain mb-4"
+                  className="w-48 h-48 object-contain mb-4"
                 />
               </div>
             ))}
