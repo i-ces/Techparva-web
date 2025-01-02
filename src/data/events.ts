@@ -54,7 +54,7 @@ export const events: Event[] = [
     {
         id: generateSlug("CTF Workshop"),
         title: "CTF Workshop",
-        description: "Learn the basics of Capture the Flag competitions in this online workshop.",
+        description: "Learn the basics of capture the Flag competition in this online workshop.",
         type: "workshop",
         date: "2025-01-04T10:00:00", // ISO format (includes time)
         nepalidate: "Poush 20, 2081",
@@ -70,7 +70,7 @@ export const events: Event[] = [
     {
         id: generateSlug("Capture the Flag"),
         title: "Capture the Flag",
-        description: "Compete in an exciting Capture the Flag challenge.",
+        description: "Compete an exciting capture the flag challenge.",
         type: "competition",
         date: "2025-01-06T14:00:00", // ISO format (includes time)
         nepalidate: "Poush 22, 2081",

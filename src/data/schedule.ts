@@ -82,7 +82,7 @@ export const scheduleData: DaySchedule[] = [
                 id: generateSlug("CTF Workshop"),
                 time: "10:00 AM",
                 title: "CTF Workshop",
-                description: "Learn the basics of Capture the Flag competitions.",
+                description: "Understand the fundamentals of Capture the Flag (CTF) competition.",
                 location: "CIT Hall, WRC",
                 type: "workshop",
                 formlink: "https://forms.gle/7uh5Nei9KFdZc13N8", isEvent: true, icon: '/icons/CTF.svg'

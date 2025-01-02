@@ -68,7 +68,7 @@ const Home = () => {
               },
               {
                 icon: <CpuIcon className="h-10 w-10 text-indigo-600" />,
-                title: "Competetions",
+                title: "Competitions",
                 info: "Different domains",
               },
             ].map((item, index) => (
