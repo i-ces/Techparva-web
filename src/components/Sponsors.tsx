@@ -93,7 +93,7 @@ const Sponsors = () => {
           </div>
 
           {/* Static gold Section */}
-          {/* <div className="text-center">
+          <div className="text-center">
             {sponsors.Gold.map((sponsor, i) => (
               <div key={i} className="inline-block mx-8 p-4 rounded-lg">
                 <img
@@ -103,7 +103,7 @@ const Sponsors = () => {
                 />
               </div>
             ))}
-          </div> */}
+          </div>
 
           {/* Static silver Section */}
           {/* <div className="text-center">
@@ -132,7 +132,7 @@ const Sponsors = () => {
           </div>  */}
 
           {/* Dynamic Scrolling Sections */}
-          <InfiniteMovingCards items={sponsors.Gold} />
+          {/* <InfiniteMovingCards items={sponsors.Gold} /> */}
           <InfiniteMovingCards items={sponsors.Silver} direction="right" />
           <InfiniteMovingCards items={sponsors.General} />
         </div>
