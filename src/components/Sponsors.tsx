@@ -33,8 +33,8 @@ const sponsors = {
     { name: "Fresh Elements Restaurant", logo: freshelement },
     { name: "Citizen Furniture Trade Link Pvt. Ltd", logo: citizen_furniture },
     { name: "MarginTop Solutions", logo: margin_top },
-      { name: "Black Tech.", logo: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEUAAAAoKCXZ2dj////39/fFxsRiYmJkY2Q6OjqxsbEjJiUJBwAwLy6urq4rLCsRDg3KycrNzc3i4uKqqqo3NTUQFRNQTU89PTtTU1Jra2paD/exAAAAZklEQVR4Ad2NxQGAMAADA4e7y/6Dor/KAJB6Y/oAAvkR4uciYtlIklRSBrnNFUApVVDbZAO0z5G7SUmFl+y6fnCSFS+cndkbKxjdZCC1TnICJml2x76kxjGxyQWQDymsXnJj149xAs/sAw/uDqKRAAAAAElFTkSuQmCC" },
-      { name: " Panchamrit Bakery and cafe.", logo: "https://scontent.fktm21-1.fna.fbcdn.net/v/t39.30808-6/408803472_854376033055767_6050547739695413894_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=efgS88vi1MwQ7kNvgEK_iMi&_nc_zt=23&_nc_ht=scontent.fktm21-1.fna&_nc_gid=AauGBGatsoqN-puAVQZtp0y&oh=00_AYCibfZ-VT_wEYKu82I1u5PqXT35rxgk3aIs_tQMfEmarA&oe=6779CFC1" },
+    { name: "Black Tech.", logo: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEUAAAAoKCXZ2dj////39/fFxsRiYmJkY2Q6OjqxsbEjJiUJBwAwLy6urq4rLCsRDg3KycrNzc3i4uKqqqo3NTUQFRNQTU89PTtTU1Jra2paD/exAAAAZklEQVR4Ad2NxQGAMAADA4e7y/6Dor/KAJB6Y/oAAvkR4uciYtlIklRSBrnNFUApVVDbZAO0z5G7SUmFl+y6fnCSFS+cndkbKxjdZCC1TnICJml2x76kxjGxyQWQDymsXnJj149xAs/sAw/uDqKRAAAAAElFTkSuQmCC" },
+    { name: " Panchamrit Bakery and cafe.", logo: "https://scontent.fktm21-1.fna.fbcdn.net/v/t39.30808-6/408803472_854376033055767_6050547739695413894_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=efgS88vi1MwQ7kNvgEK_iMi&_nc_zt=23&_nc_ht=scontent.fktm21-1.fna&_nc_gid=AauGBGatsoqN-puAVQZtp0y&oh=00_AYCibfZ-VT_wEYKu82I1u5PqXT35rxgk3aIs_tQMfEmarA&oe=6779CFC1" },
 
   ],
   General: [
