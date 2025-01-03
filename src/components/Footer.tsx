@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Linkedin,FacebookIcon, Instagram, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -52,16 +52,36 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-indigo-400">
+              <a
+                href="https://github.com/i-ces"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-indigo-400"
+              >
                 <Github className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-indigo-400">
+              <a
+                href="https://www.linkedin.com/school/14523422/admin/page-posts/published/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-indigo-400"
+              >
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-indigo-400">
+              <a
+                href="https://www.facebook.com/icesnepal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-indigo-400"
+              >
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-indigo-400">
+              <a
+                href="https://www.instagram.com/icesnepal/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-indigo-400"
+              >
                 <Instagram className="h-6 w-6" />
               </a>
             </div>

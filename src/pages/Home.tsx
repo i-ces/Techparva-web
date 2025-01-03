@@ -11,46 +11,48 @@ import workshop from "../../public/workshop.png";
 const Home = () => {
   return (
     <div className="pt-16">
-      {/* Hero Section */}
-      <div className="relative h-[95vh] bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative max-w-7xl px-4 sm:px-6 lg:px-8 h-full w-full flex  items-center   ">
-          {/* <div className="md:w-2/5 sm:w-full"> */}
-          <AnimateOnScroll animation="slideUp">
-            <div className="text-white">
-              <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                <span className="text-orange-500">Tech</span>
-                <span>Parva</span>
-                <span className="text-orange-500"> 3.0</span>
-              </h1>
-              <p className="text-xl md:text-xl mb-8 max-w-2xl">
-                Experience innovation,
-                <br /> learn, and connect with tech enthusiasts.
-              </p>
-              <div className="flex flex-wrap gap-4">
-              <Link
-                  to="/events"
-                  className="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold border-2 border-indigo-600 shadow-md transition-all duration-300 transform hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600 hover:text-white hover:shadow-xl hover:scale-105"
-                >
-                  Explore Events
-                </Link>
-                <Link
-                  to="/schedule"
-                  className="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold border-2 border-indigo-600 shadow-md transition-all duration-300 transform hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600 hover:text-white hover:shadow-xl hover:scale-105"
-                >
-                  View Schedule
-                </Link>
-              </div>
-            </div>
-          </AnimateOnScroll>
-          {/* </div> */}
-          {/* <img
-                        src="/main.png"
-                        alt="Tech Parva"
-                        className="md:w-3/5 sm:w-full"
-                    /> */}
+{/* Hero Section */}
+<div className="relative h-screen bg-gradient-to-r from-indigo-600 via-purple-500 to-indigo-600 animate-gradient-x flex items-center justify-center overflow-hidden">
+  <div className="absolute inset-0 bg-black opacity-60"></div>
+  <div className="relative max-w-7xl px-4 sm:px-6 lg:px-8 h-full w-full flex flex-col items-center justify-center space-y-8">
+    <AnimateOnScroll animation="slideUp">
+      <div className="text-white text-center space-y-6">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
+          <span className="text-orange-500">Tech</span>
+          <span> Parva</span>
+          <span className="text-orange-500"> 3.0</span>
+        </h1>
+        <p className="text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed">
+        Learn and compete your interest !
+        </p>
+        <div className="flex flex-wrap justify-center gap-6">
+          <Link
+            to="/events"
+            className="bg-orange-500 text-white px-12 py-4 rounded-full font-semibold shadow-lg transition-all duration-300 transform hover:bg-orange-600 hover:shadow-xl hover:scale-105"
+          >
+            Explore Events 
+          </Link>
+          <Link
+            to="/schedule"
+            className="bg-white text-indigo-600 px-12 py-4 rounded-full font-semibold border-2 border-indigo-600 shadow-lg transition-all duration-300 transform hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600 hover:text-white hover:shadow-xl hover:scale-105"
+          >
+            View Schedule
+          </Link>
         </div>
       </div>
+    </AnimateOnScroll>
+    <div className="absolute bottom-10 text-center">
+      <p className="text-sm text-gray-300">
+        Scroll down to explore more <span className="animate-bounce">↓</span>
+      </p>
+    </div>
+  </div>
+  {/* Decorative Floating Elements */}
+  <div className="absolute top-10 left-10 bg-orange-400 h-16 w-16 rounded-full opacity-50 animate-pulse"></div>
+  <div className="absolute bottom-10 right-10 bg-purple-400 h-24 w-24 rounded-full opacity-50 animate-pulse"></div>
+  <div className="absolute top-9 right-1/4 bg-indigo-500 h-12 w-12 rounded-full opacity-50 animate-pulse"></div>
+</div>
+
 
       {/* Key Info Section */}
       <div className="py-16 bg-white">
@@ -69,7 +71,7 @@ const Home = () => {
               },
               {
                 icon: <CpuIcon className="h-10 w-10 text-indigo-600" />,
-                title: "Competetions",
+                title: "Competitions",
                 info: "Different domains",
               },
             ].map((item, index) => (
