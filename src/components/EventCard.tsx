@@ -92,7 +92,11 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
               </div>
               <div className="flex items-center">
                 <Users className="h-4 w-4 mr-2 text-indigo-500" />
+<<<<<<< HEAD
                 <span>Participants: {event.capacity}</span>
+=======
+                <span>Registration Fee: {event.Registration_Fee}</span>
+>>>>>>> master
               </div>
             </div>
 

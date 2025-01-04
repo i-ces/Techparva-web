@@ -29,11 +29,17 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
             key={index}
             date={event.time}
             contentStyle={{
+<<<<<<< HEAD
               background: isCompleted ? "#FFCFCF" : "#F3F4FF", 
               color: isCompleted ? "#4C4B7E" : "#333",
               borderLeft: isCompleted
                 ? "4px solid #F73C3C" // Dark purple 
                 : "4px solid #3B82F6", // Blue 
+=======
+              background: isCompleted ? "#DCD8EA" : "#f9f9f9", // Gray background for completed events
+              color: isCompleted ? "#8468F6" : "#333",
+              borderLeft: isCompleted ? "4px solid #6544E8" : "4px solid #4CAF50", // Line color based on status
+>>>>>>> master
             }}
             contentArrowStyle={{
               borderRight: isCompleted
@@ -41,8 +47,13 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
                 : "7px solid #F3F4FF", // Lighter 
             }}
             iconStyle={{
+<<<<<<< HEAD
               background: isCompleted ? "#FAF4F4" : "#ffffff", // Purple for completed, Orange for upcoming
               color: "#fff", // White icon color
+=======
+              background: isCompleted ? "#E6E3F2" : "#f9f9f9", // Dimmed icon background for completed events
+              color: isCompleted ? "#888" : "#333",
+>>>>>>> master
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
