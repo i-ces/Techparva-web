@@ -8,8 +8,8 @@ import "react-vertical-timeline-component/style.min.css";
 import { ScheduleEvent } from "../data/schedule";
 
 interface MergedScheduleEvent extends ScheduleEvent {
-  dayTitle: string; // Include day title
-  date: string; // Include date
+  dayTitle: string; 
+  date: string; 
 }
 
 interface TimelineProps {
@@ -23,16 +23,18 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
     <VerticalTimeline animate={true} lineColor="#dddddd">
       {events.map((event, index) => {
         const eventDate = new Date(event.date);
-        const isCompleted = eventDate < currentDate; // Check if the event date is in the past
+        const isCompleted = eventDate.toLocaleDateString() < currentDate.toLocaleDateString();
+
+        const isToday = eventDate.toLocaleDateString() === currentDate.toLocaleDateString();
 
         return (
           <VerticalTimelineElement
             key={index}
             date={event.time}
             contentStyle={{
-              background: isCompleted ? "#DCD8EA" : "#f9f9f9", // Gray background for completed events
+              background: isCompleted ? "#E3E8F8" : "#f9f9f9",
               color: isCompleted ? "#8468F6" : "#333",
-              borderLeft: isCompleted ? "4px solid #6544E8" : "4px solid #4CAF50", // Line color based on status
+              borderLeft:  isToday? "4px solid orange":  isCompleted ? "4px solid #6544E8" : "4px solid #4CAF50",
             }}
             contentArrowStyle={{
               borderRight: isCompleted
@@ -40,7 +42,7 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
                 : "7px solid #f9f9f9",
             }}
             iconStyle={{
-              background: isCompleted ? "#E6E3F2" : "#f9f9f9", // Dimmed icon background for completed events
+              background: isCompleted ? "#E6E3F2" : "#f9f9f9",
               color: isCompleted ? "#888" : "#333",
               display: "flex",
               justifyContent: "center",
@@ -58,10 +60,15 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
               href={event.isEvent ? `/events/${event.id}` : ""}
               className={`text-sm ${
                 isCompleted ? "text-gray-400" : "text-gray-600"
-              }`}
+              }
+              `
+            }
             >
               <h3
-                className={`text-lg font-semibold ${
+
+                className={`
+                  
+                  text-lg font-semibold ${
                   isCompleted ? "line-through" : ""
                 }`}
               >

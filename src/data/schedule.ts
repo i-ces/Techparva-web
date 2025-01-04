@@ -55,7 +55,7 @@ export const scheduleData: DaySchedule[] = [
             },
             {
                 id: generateSlug("Pre-event"),
-                time: "11:00 PM",
+                time: "11:00 AM",
                 title: "Wiki Speedrun",
                 description: "Navigate through Wikipedia pages in the least time.",
                 location: "CIT Hall, WRC",
@@ -80,7 +80,7 @@ export const scheduleData: DaySchedule[] = [
         events: [
             {
                 id: generateSlug("CTF Workshop"),
-                time: "10:00 AM",
+                time: "7:30 PM",
                 title: "CTF Workshop",
                 description: "Learn the basics of Capture the Flag competitions.",
                 location: "CIT Hall, WRC",

@@ -10,7 +10,7 @@ export interface Event {
   duration: string;
   location: string;
   image: string;
-  Registration_Fee: string; // Changed to a single string
+  Registration_Fee: string;
   speakers: string[];
   tags: string[];
   nepalidate: string;
@@ -56,9 +56,9 @@ export const events: Event[] = [
     title: "CTF Workshop",
     description: "Learn the basics of Capture the Flag competitions in this online workshop.",
     type: "workshop",
-    date: "2025-01-04T10:00:00",
+    date: "2025-01-04T19:30:00",
     nepalidate: "Poush 20, 2081",
-    time: "10:00 AM",
+    time: "7:30 PM",
     duration: "2 hours",
     location: "Online",
     image: "/CTF_Workshop.png",
@@ -75,7 +75,7 @@ export const events: Event[] = [
     date: "2025-01-06T14:00:00",
     nepalidate: "Poush 22, 2081",
     time: "02:00 PM",
-    duration: "4 hours",
+    duration: "2 hours",
     location: "CIT Hall, WRC",
     image: "/CTF.png",
     Registration_Fee: "Rs.100 Only",
@@ -107,7 +107,7 @@ export const events: Event[] = [
     date: "2025-01-07T10:00:00",
     nepalidate: "Poush 23, 2081",
     time: "10:00 AM",
-    duration: "3 hours",
+    duration: "2 hours",
     location: "CIT Hall, WRC",
     image: "/Design.png",
     Registration_Fee: "Rs.100 Only",
@@ -123,7 +123,7 @@ export const events: Event[] = [
     date: "2025-01-07T14:00:00",
     nepalidate: "Poush 23, 2081",
     time: "02:00 PM",
-    duration: "3 hours",
+    duration: "24 hours",
     location: "CIT Hall, WRC",
     image: "/Datathon.png",
     Registration_Fee: "Rs.100 Only",
