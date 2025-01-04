@@ -24,7 +24,7 @@ export const generateSlug = (title: string): string => {
 
 export const scheduleData: DaySchedule[] = [
     {
-        date: "December 27, 2024",
+        date: "January 1, 2025",
         nepalidate: "Poush 12, 2081",
         dayTitle: "Day 1",
         events: [
