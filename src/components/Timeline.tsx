@@ -32,7 +32,7 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
             key={index}
             date={event.time}
             contentStyle={{
-              background: isCompleted ? "#E3E8F8" : "#f9f9f9",
+              background: isToday? "#EFDDD1": isCompleted ? "#E3E8F8" : "#f9f9f9",
               color: isCompleted ? "#8468F6" : "#333",
               borderLeft:  isToday? "4px solid orange":  isCompleted ? "4px solid #6544E8" : "4px solid #4CAF50",
             }}

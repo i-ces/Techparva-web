@@ -18,38 +18,37 @@ const sponsors = {
     {
       name: "Nipuna Prabhidhik Sewa",
       logo: nipuna_sewa,
+      link: "https://www.facebook.com/NipunaPrabidhikSewa", // Example link
     },
   ],
   Diamond: [
     {
       name: "AECC Global",
       logo: "https://www.aeccglobal.com.np/images/new-logo.png",
+      link: "https://www.aeccglobal.com.np/study-abroad-consultant/pokhara",
     },
-    { name: "Infochip (P.) Ltd", logo: info_chip },
+    { name: "Infochip (P.) Ltd", logo: info_chip, link: "http://www.infochip.com.np/?fbclid=IwY2xjawHo3cBleHRuA2FlbQIxMAABHdj32IrAjcD43MjEYjYJdOUzrvXyOAa_MsW3sS9cHG69puyuLGikayFCkQ_aem_cdYadxQoo_kdOoElI_YKhA" },
   ],
   Gold: [
-    { name: "JanakariTech Pvt. Ltd.", logo: Janakari_tech },
-    { name: "Rebooted Creation Labs Pvt. Ltd.", logo: Rebooted },
+    { name: "JanakariTech Pvt. Ltd.", logo: Janakari_tech, link: "https://www.facebook.com/jankaritech" },
+    { name: "Rebooted Creation Labs Pvt. Ltd.", logo: Rebooted, link: "https://rcl-website.vercel.app/?fbclid=IwY2xjawHo3eNleHRuA2FlbQIxMAABHUUKG9WutYRTDZqRdR1V_NNcCIKggWh0VG1H6clBNNW-HfOfClaExn16dw_aem_2ajVa7Fj6bRJGNoNLzIGVQ" },
   ],
-
   E_learning_Partner: [
-    { name: "Programiz", logo: programiz_logo },
+    { name: "Programiz", logo: programiz_logo, link: "https://www.facebook.com/programiz" },
   ],
-
   Silver: [
-    { name: "Everest Technomania Pvt. Ltd",logo: "https://scontent.fktm21-2.fna.fbcdn.net/v/t39.30808-6/301671258_499152865548827_845228293027469985_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BrlVK7pV8owQ7kNvgE2JjiW&_nc_zt=23&_nc_ht=scontent.fktm21-2.fna&_nc_gid=Ak4tl3v2ngfX0ig4QucsYBO&oh=00_AYAaOYQCFZZ4ozXH1c-hi2EJhMp0aXqDg7onQUT1mVjUuA&oe=6779A9D7  "},
-    { name: "Fresh Elements Restaurant", logo: freshelement },
-    { name: "Citizen Furniture Trade Link Pvt. Ltd", logo: citizen_furniture },
-    { name: "MarginTop Solutions", logo: margin_top },
-    { name: "Black Tech.",logo: Black_Tech,},
-    { name: " Panchamrit Bakery and cafe.",logo: Panchamrit},
+    { name: "Everest Technomania Pvt. Ltd", logo: "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/301671258_499152865548827_845228293027469985_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OyIJocDIWZYQ7kNvgFAc6NH&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=AAl9tYwtPIckUvFIiG-M7kI&oh=00_AYAj144sqpvg0FCmR2nDXIWzE3F4b4k_DFmWt-9h_IQ8QA&oe=678273D7", link: "https://www.facebook.com/profile.php?id=100063623531083" },
+    { name: "Fresh Elements Restaurant", logo: freshelement, link: "https://www.facebook.com/FreshElementsRestaurant" },
+    { name: "Citizen Furniture Trade Link Pvt. Ltd", logo: citizen_furniture, link: "https://www.facebook.com/citizenfurniturepokhara" },
+    { name: "MarginTop Solutions", logo: margin_top, link: "https://www.facebook.com/margintopsolutionsnepal" },
+    { name: "Black Tech.", logo: Black_Tech, link: "https://www.facebook.com/blacktechnepal" },
+    { name: "Panchamrit Bakery and Cafe.", logo: Panchamrit, link: "https://www.facebook.com/profile.php?id=100054501338729" },
   ],
   Gifting: [
-    { name: "Book Mart", logo: Bookmart },
-    { name: "Books Mandala", logo: Books_Mandala},
+    { name: "Book Mart", logo: Bookmart, link: "https://www.facebook.com/bookmart.np" },
+    { name: "Books Mandala", logo: Books_Mandala, link: "https://www.facebook.com/booksmandala" },
   ],
 };
-
 
 const Sponsors = () => {
   return (
@@ -59,117 +58,38 @@ const Sponsors = () => {
           Our <span className="text-blue-800">Sponsors</span>
         </h2>
 
-        {/* Title Sponsor */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-semibold text-center text-yellow-600 mb-4">
-            Title Sponsor
-          </h3>
-          <div className="flex justify-center">
-            {sponsors.Title.map((sponsor, i) => (
-              <div key={i} className="mx-4 p-4">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="w-64 h-64 object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        {Object.keys(sponsors).map((category) => (
+          <div className="mb-16" key={category}>
+            <h3 className="text-3xl font-semibold text-center text-yellow-600 mb-4">
+              {category.replace(/_/g, " ")}
+            </h3>
+            <div className="flex justify-center flex-wrap gap-8">
+              {sponsors[category].map((sponsor, i) => (
+                <a
+                  key={i}
+                  href={sponsor.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 group"
+                >
+                 <div className="relative w-40 h-40 rounded-full bg-blue-200 group">
+                  <div className="absolute inset-0 flex items-center justify-center rounded-full bg-gradient-to-t from-purple-200 via-purple-100 to-transparent scale-110">
+                    <img
+                      src={sponsor.logo}
+                      alt="Sponsor Logo"
+                      className="w-36 h-36 object-contain rounded-full transition-transform duration-300 group-hover:scale-110 group-hover:rotate-2"
+                    />
+                  </div>
+                </div>
 
-        {/* Diamond Sponsors */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-center text-yellow-600 mb-4">
-            Diamond Sponsors
-          </h3>
-          <div className="flex justify-center flex-wrap gap-8">
-            {sponsors.Diamond.map((sponsor, i) => (
-              <div key={i} className="p-4">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="w-48 h-48 object-contain"
-                />
-              </div>
-            ))}
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-
-        {/* Gold Sponsors */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-center text-yellow-600 mb-4">
-            Gold Sponsors
-          </h3>
-          <div className="flex justify-center flex-wrap gap-6">
-            {sponsors.Gold.map((sponsor, i) => (
-              <div key={i} className="p-4">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="w-36 h-36 object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* E-learning Partner */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-center text-yellow-600 mb-4">
-            E-learning Partner
-          </h3>
-          <div className="flex justify-center flex-wrap gap-8">
-            {sponsors.E_learning_Partner.map((sponsor, i) => (
-              <div key={i} className="p-4">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="w-28 h-28 object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Silver Sponsors */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-center text-yellow-600 mb-4">
-            Silver Sponsors
-          </h3>
-          <div className="flex justify-center flex-wrap gap-8">
-            {sponsors.Silver.map((sponsor, i) => (
-              <div key={i} className="p-4">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="w-28 h-28 object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Gifting Sponsors */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-center text-yellow-600 mb-4">
-            Gifting Sponsors
-          </h3>
-          <div className="flex justify-center flex-wrap gap-8">
-            {sponsors.Gifting.map((sponsor, i) => (
-              <div key={i} className="p-4">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="w-36 h-36 object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
-
 
 export default Sponsors;
