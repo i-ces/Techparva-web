@@ -41,7 +41,7 @@ const sponsors = {
     { name: "Offensive Security", logo: Offensive_Security, link: "https://www.offsec.com/?fbclid=IwY2xjawHwGeBleHRuA2FlbQIxMAABHXliNpORt7ogtruYobHik_TRO13T4bGSfUswnNf76og4b7Iv53cGZQr-sQ_aem_fr1_sToOeHrXTWpMpVum0w" },
   ],
   Silver: [
-    { name: "Everest Technomania Pvt. Ltd", logo: "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/301671258_499152865548827_845228293027469985_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OyIJocDIWZYQ7kNvgFAc6NH&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=AAl9tYwtPIckUvFIiG-M7kI&oh=00_AYAj144sqpvg0FCmR2nDXIWzE3F4b4k_DFmWt-9h_IQ8QA&oe=678273D7", link: "https://www.facebook.com/profile.php?id=100063623531083" },
+    { name: "Everest Technomania Pvt. Ltd", logo: "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/301671258_499152865548827_845228293027469985_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=tr5DK03Sg1gQ7kNvgFnzkN6&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=Axiut2U7Ci79fmia5t0ULRP&oh=00_AYCevmrjAgVr0xRZIL-7OLaG4weuHuf4OeXaf0ZzezzCOg&oe=6789B417", link: "https://www.facebook.com/profile.php?id=100063623531083" },
     { name: "Fresh Elements Restaurant", logo: freshelement, link: "https://www.facebook.com/FreshElementsRestaurant" },
     { name: "Citizen Furniture Trade Link Pvt. Ltd", logo: citizen_furniture, link: "https://www.facebook.com/citizenfurniturepokhara" },
     { name: "MarginTop Solutions", logo: margin_top, link: "https://www.facebook.com/margintopsolutionsnepal" },
