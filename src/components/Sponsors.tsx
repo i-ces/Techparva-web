@@ -12,6 +12,7 @@ import programiz_logo from "../../public/Programiz.svg";
 import Panchamrit from "../../public/Panchamrit.png";
 import Black_Tech from "../../public/Black Tech.png";
 import Books_Mandala from "../../public/Books Mandala.png";
+import Offensive_Security from "../../public/offensive.png";
 
 const sponsors = {
   Title: [
@@ -35,6 +36,9 @@ const sponsors = {
   ],
   E_learning_Partner: [
     { name: "Programiz", logo: programiz_logo, link: "https://www.facebook.com/programiz" },
+  ],
+  Security_Partner: [
+    { name: "Offensive Security", logo: Offensive_Security, link: "https://www.offsec.com/?fbclid=IwY2xjawHwGeBleHRuA2FlbQIxMAABHXliNpORt7ogtruYobHik_TRO13T4bGSfUswnNf76og4b7Iv53cGZQr-sQ_aem_fr1_sToOeHrXTWpMpVum0w" },
   ],
   Silver: [
     { name: "Everest Technomania Pvt. Ltd", logo: "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/301671258_499152865548827_845228293027469985_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OyIJocDIWZYQ7kNvgFAc6NH&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=AAl9tYwtPIckUvFIiG-M7kI&oh=00_AYAj144sqpvg0FCmR2nDXIWzE3F4b4k_DFmWt-9h_IQ8QA&oe=678273D7", link: "https://www.facebook.com/profile.php?id=100063623531083" },
