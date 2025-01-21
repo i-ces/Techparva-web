@@ -1,7 +1,6 @@
 import InfiniteMovingCards from "./InfiniteScroll";
 
 import nipuna_sewa from "../../public/nipuna sewa.png";
-import info_chip from "../../public/infochip_updated.png";
 import Janakari_tech from "../../public/JankariTech.png";
 import Rebooted from "../../public/Rebooted.png";
 import margin_top from "../../public/margintop.svg";
@@ -12,14 +11,16 @@ import programiz_logo from "../../public/Programiz.svg";
 import Panchamrit from "../../public/Panchamrit.png";
 import Black_Tech from "../../public/Black Tech.png";
 import Books_Mandala from "../../public/Books Mandala.png";
-// import Offensive_Security from "../../public/offensive.png";
+import Offensive_Security from "../../public/security.png";
+import Infochip from "../../public/infochip.png";
+import everest from "../../public/everest.png";
 
 const sponsors = {
   Title: [
     {
       name: "Nipuna Prabhidhik Sewa",
       logo: nipuna_sewa,
-      link: "https://www.facebook.com/NipunaPrabidhikSewa", // Example link
+      link: "https://www.facebook.com/NipunaPrabidhikSewa", 
     },
   ],
   Diamond: [
@@ -28,7 +29,7 @@ const sponsors = {
       logo: "https://www.aeccglobal.com.np/images/new-logo.png",
       link: "https://www.aeccglobal.com.np/study-abroad-consultant/pokhara",
     },
-    { name: "Infochip (P.) Ltd", logo: info_chip, link: "http://www.infochip.com.np/?fbclid=IwY2xjawHo3cBleHRuA2FlbQIxMAABHdj32IrAjcD43MjEYjYJdOUzrvXyOAa_MsW3sS9cHG69puyuLGikayFCkQ_aem_cdYadxQoo_kdOoElI_YKhA" },
+    { name: "Infochip (P.) Ltd", logo: Infochip, link: "http://www.infochip.com.np/?fbclid=IwY2xjawHo3cBleHRuA2FlbQIxMAABHdj32IrAjcD43MjEYjYJdOUzrvXyOAa_MsW3sS9cHG69puyuLGikayFCkQ_aem_cdYadxQoo_kdOoElI_YKhA" },
   ],
   Gold: [
     { name: "JanakariTech Pvt. Ltd.", logo: Janakari_tech, link: "https://www.facebook.com/jankaritech" },
@@ -38,10 +39,10 @@ const sponsors = {
     { name: "Programiz", logo: programiz_logo, link: "https://www.facebook.com/programiz" },
   ],
   Security_Partner: [
-    { name: "Offensive Security", logo: "https://media.discordapp.net/attachments/1321375123500171366/1328249459393691659/OffSec_Tagline_White_Text.png?ex=67860434&is=6784b2b4&hm=4a06e9eb079c81a6eef6f4994bb968fd501516bff877fd524331599a1f55f351&=&format=webp&quality=lossless&width=868&height=288", link: "https://www.offsec.com/?fbclid=IwY2xjawHwGeBleHRuA2FlbQIxMAABHXliNpORt7ogtruYobHik_TRO13T4bGSfUswnNf76og4b7Iv53cGZQr-sQ_aem_fr1_sToOeHrXTWpMpVum0w" },
+    { name: "Offensive Security", logo: Offensive_Security, link: "https://www.offsec.com/?fbclid=IwY2xjawHwGeBleHRuA2FlbQIxMAABHXliNpORt7ogtruYobHik_TRO13T4bGSfUswnNf76og4b7Iv53cGZQr-sQ_aem_fr1_sToOeHrXTWpMpVum0w" },
   ],
   Silver: [
-    { name: "Everest Technomania Pvt. Ltd", logo: "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/301671258_499152865548827_845228293027469985_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=tr5DK03Sg1gQ7kNvgFnzkN6&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=Axiut2U7Ci79fmia5t0ULRP&oh=00_AYCevmrjAgVr0xRZIL-7OLaG4weuHuf4OeXaf0ZzezzCOg&oe=6789B417", link: "https://www.facebook.com/profile.php?id=100063623531083" },
+    { name: "Everest Technomania Pvt. Ltd", logo: everest, link: "https://www.facebook.com/profile.php?id=100063623531083" },
     { name: "Fresh Elements Restaurant", logo: freshelement, link: "https://www.facebook.com/FreshElementsRestaurant" },
     { name: "Citizen Furniture Trade Link Pvt. Ltd", logo: citizen_furniture, link: "https://www.facebook.com/citizenfurniturepokhara" },
     { name: "MarginTop Solutions", logo: margin_top, link: "https://www.facebook.com/margintopsolutionsnepal" },
