@@ -47,7 +47,7 @@ const EventDetails = () => {
       calculateTimeLeft();
       const timer = setInterval(calculateTimeLeft, 1000);
 
-      return () => clearInterval(timer); // Clean up the interval on component unmount
+      return () => clearInterval(timer); 
     }
   }, [id]);
 

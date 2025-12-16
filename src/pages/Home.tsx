@@ -19,7 +19,7 @@ const Home = () => {
               <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-[0_5px_30px_rgba(0,0,0,0.5)]">
                 <span className="text-orange-400">Tech</span>
                 <span> Parva</span>
-                <span className="text-orange-400"> 3.0</span>
+                <span className="text-orange-400"> 2026</span>
               </h1>
 
               <p className="text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed text-gray-200">
@@ -130,8 +130,8 @@ const Home = () => {
           <div
             className="
               group relative flex items-center space-x-4 p-7 rounded-2xl
-              bg-white/80 backdrop-blur-md
-              border border-indigo-300/30
+              bg-purple-100/80 backdrop-blur-md
+              border border-indigo-600/30
               shadow-[0_8px_30px_rgba(99,102,241,0.12)]
               transition-all duration-500
               hover:-translate-y-2
@@ -144,7 +144,7 @@ const Home = () => {
 
             <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
               {item.icon}
-            </div>
+            </div> 
 
             <div className="relative">
               <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
@@ -172,7 +172,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
               {
-                title: "Competitive Programming",
+                title: "CompetitiveProgramming",
                 description: "2-hour coding competition with amazing prizes",
                 image: competitive_programming,
               },
@@ -184,21 +184,23 @@ const Home = () => {
               },
             ].map((event, index) => (
               <AnimateOnScroll key={index} animation="slideUp" delay={index * 0.2}>
-                <div className="group bg-white rounded-3xl overflow-hidden shadow-lg
-                  transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+                <div className="group bg-purple-100 rounded-3xl overflow-hidden
+                  transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_15px_45px_rgba(99,102,241,0.5)] border border-indigo-600/30">
                   <div className="relative overflow-hidden">
                     <img
                       src={event.image}
                       alt={event.title}
                       className="w-full h-52 object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-indigo-700/70 to-transparent"></div>
                   </div>
-
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-indigo-600 mb-2">
-                      {event.title}
-                    </h3>
+                
+        <div className="p-6 relative z-10">
+          <h3 className="
+            text-xl font-semibold text-indigo-600 mb-2
+            transition-colors duration-300 group-hover:text-purple-600
+          ">
+            {event.title}
+          </h3>
                     <p className="text-gray-600 mb-4">
                       {event.description}
                     </p>
