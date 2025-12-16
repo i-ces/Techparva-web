@@ -1,19 +1,19 @@
 import InfiniteMovingCards from "./InfiniteScroll";
 
-import nipuna_sewa from "../../public/nipuna sewa.png";
-import Janakari_tech from "../../public/JankariTech.png";
-import Rebooted from "../../public/Rebooted.png";
-import margin_top from "../../public/margintop.svg";
-import freshelement from "../../public/freshelementslogo.png";
-import citizen_furniture from "../../public/citizen furniture.jpg";
-import Bookmart from "../../public/Bookmart logo.png";
-import programiz_logo from "../../public/Programiz.svg";
-import Panchamrit from "../../public/Panchamrit.png";
-import Black_Tech from "../../public/Black Tech.png";
-import Books_Mandala from "../../public/Books Mandala.png";
-import Offensive_Security from "../../public/security.png";
-import Infochip from "../../public/infochip.png";
-import everest from "../../public/everest.png";
+const nipuna_sewa = "/nipuna sewa.png";
+const Janakari_tech = "/JankariTech.png";
+const Rebooted = "/Rebooted.png";
+const margin_top = "/margintop.svg";
+const freshelement = "/freshelementslogo.png";
+const citizen_furniture = "/citizen furniture.jpg";
+const Bookmart = "/Bookmart logo.png";
+const programiz_logo = "/Programiz.svg";
+const Panchamrit = "/Panchamrit.png";
+const Black_Tech = "/Black Tech.png";
+const Books_Mandala = "/Books Mandala.png";
+const Offensive_Security = "/security.png";
+const Infochip = "/infochip.png";
+const everest = "/everest.png";
 
 const sponsors = {
   Title: [
