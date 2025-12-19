@@ -1,17 +1,30 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { events } from "../data/events";
 import EventCard from "../components/EventCard";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 
 const Events = () => {
-  const [selectedType, setSelectedType] = useState<string>("all");
+  const location = useLocation();
+
+  // Order filters: 'all' first, then 'pre-event', then the rest of types
+  const types = ["all", "pre-event", ...new Set(events.map((event) => event.type))];
+
+  const queryType = new URLSearchParams(location.search).get("type") ?? "all";
+  const initialType = types.includes(queryType) ? queryType : "all";
+
+  const [selectedType, setSelectedType] = useState<string>(initialType);
 
   const filteredEvents =
     selectedType === "all"
       ? events
+      : selectedType === "pre-event"
+      ? events.filter(
+          (event) =>
+            event.title.toLowerCase() === "pre-event" ||
+            (event.tags && event.tags.some((t) => t.toLowerCase() === "pre-event"))
+        )
       : events.filter((event) => event.type === selectedType);
-
-  const types = ["all", ...new Set(events.map((event) => event.type))];
 
   return (
     <div className="pt-16 min-h-screen bg-gray-50">
@@ -41,7 +54,11 @@ const Events = () => {
                   border border-gray-200
                 `}
               >
-                {type === "all" ? "Pre-Event" : type.charAt(0).toUpperCase() + type.slice(1)}
+                {type === "pre-event"
+                  ? "Pre-Event"
+                  : type === "all"
+                  ? "All"
+                  : type.charAt(0).toUpperCase() + type.slice(1)}
               </button>
             ))}
           </div>

@@ -23,10 +23,30 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
   return (
     <VerticalTimeline animate={true} lineColor="#dddddd">
       {events.map((event, index) => {
-        const eventDate = new Date(event.date);
-        const isCompleted = eventDate.toLocaleDateString() < currentDate.toLocaleDateString();
+        // Build a Date object from the event's date and time (prefer local parsing)
+        let eventDateTime: Date;
+        if (event.date && event.time) {
+          // Combine date and time into a single string. Examples handled: "January 2, 2026 10:00 AM" or ISO date + time
+          eventDateTime = new Date(`${event.date} ${event.time}`);
+        } else if (event.date) {
+          eventDateTime = new Date(event.date);
+        } else {
+          eventDateTime = new Date();
+        }
 
-        const isToday = eventDate.toLocaleDateString() === currentDate.toLocaleDateString();
+        // If parsing failed, fall back to using the date-only value
+        if (isNaN(eventDateTime.getTime())) {
+          eventDateTime = new Date(event.date);
+        }
+
+        // Consider the event completed when current time is strictly after the event datetime
+        const isCompleted = Date.now() > eventDateTime.getTime();
+
+        // isToday uses the eventDateTime (date part) compared to currentDate
+        const isToday =
+          eventDateTime.getFullYear() === currentDate.getFullYear() &&
+          eventDateTime.getMonth() === currentDate.getMonth() &&
+          eventDateTime.getDate() === currentDate.getDate();
 
         const resolvedImg = (() => {
           const found = allEvents.find((e) => e.id === event.id);
@@ -39,6 +59,7 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
           <VerticalTimelineElement
             key={index}
             date={event.time}
+            contentClassName="group transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg"
             contentStyle={{
               background: isToday? "#EFDDD1": isCompleted ? "#E3E8F8" : "#f9f9f9",
               color: isCompleted ? "#8468F6" : "#333",
@@ -79,12 +100,12 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
                     
                     text-lg font-semibold ${
                     isCompleted ? "line-through" : ""
-                  }`}
+                  } group-hover:text-indigo-700 transition-colors duration-200`}
                 >
                   {event.title}
                 </h3>
-                <p className="text-sm mb-2">{event.dayTitle}</p>
-                <p className="mb-4">{event.description}</p>
+                <p className="text-sm mb-2 group-hover:text-indigo-600 transition-colors duration-200">{event.dayTitle}</p>
+                <p className="mb-4 group-hover:text-gray-700 transition-colors duration-200">{event.description}</p>
                 {event.location && (
                   <div className="flex items-center text-sm text-gray-500">
                     <MapPin className="h-4 w-4 mr-2" />
@@ -98,16 +119,6 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
                   </div>
                 )}
               </a>
-
-              {resolvedImg && (
-                <img
-                  src={resolvedImg}
-                  alt={event.title}
-                  className={`hidden group-hover:block absolute top-1/2 transform -translate-y-1/2 w-48 max-w-xs rounded-lg shadow-lg transition-all duration-200 ${
-                    index % 2 === 0 ? "left-full ml-6" : "right-full mr-6"
-                  }`}
-                />
-              )}
             </div>
           </VerticalTimelineElement>
         );

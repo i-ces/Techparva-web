@@ -2,6 +2,7 @@ import { ArrowRight, Calendar, MapPin, CpuIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import Sponsors from "../components/Sponsors";
+import Vision from "./Vision";
 
 const pre_event = "/competition.png";
 const workshop = "/workshop.png";
@@ -111,14 +112,16 @@ const Home = () => {
               bg-gradient-to-br from-indigo-950 via-purple-950 to-black "
             >
               <AnimateOnScroll animation="scaleUp" delay={0.1}>
-                {/* Image Wrapper */}
-                <div className=" h-[75vh] w-[80vw]">
-                  <img
-                    src={club}
-                    alt="Techparva Banner"
-                    className="w-screen h-full "
-                  />
-                </div>
+                {/* Image Wrapper (click to view Pre-Event) */}
+                <Link to="/events?type=pre-event" className="h-[75vh] w-[80vw] block">
+                  <div className="h-[75vh] w-[80vw]">
+                    <img
+                      src={club}
+                      alt="Techparva Banner"
+                      className="w-screen h-full "
+                    />
+                  </div>
+                </Link>
               </AnimateOnScroll>
             
               {/* Ambient glow */}
@@ -129,6 +132,9 @@ const Home = () => {
                 pointer-events-none
               " />
             </section>
+
+            {/* Vision Section (inserted after Gallery) */}          
+              <Vision />
             
              {/* Key Info Section */}
               <div className="py-20 bg-white">
@@ -149,41 +155,70 @@ const Home = () => {
                     icon: <CpuIcon className="h-10 w-10" />,
                     title: "Competitions",
                     info: "Different domains",
+                    link: "/events?type=competition",
                   },
                 ].map((item, index) => (
                   <AnimateOnScroll key={index} animation="slideUp" delay={index * 0.2}>
-                    <div
-                      className="
-                        group relative flex items-center space-x-4 p-7 rounded-2xl
-                        bg-purple-100/80 backdrop-blur-md
-                        border border-indigo-600/30
-                        shadow-[0_8px_30px_rgba(99,102,241,0.12)]
-                        transition-all duration-500
-                        hover:-translate-y-2
-                        hover:shadow-[0_15px_45px_rgba(99,102,241,0.25)]
-                      "
-                    >
-                      {/* glow layer */}
-                      <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
-                        bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
-          
-                      <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
-                        {item.icon}
-                      </div> 
-          
-                      <div className="relative">
-                        <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-gray-600">{item.info}</p>
+                    {item.link ? (
+                      <Link to={item.link} className="group relative">
+                        <div
+                          className="
+                            relative flex items-center space-x-4 p-7 rounded-2xl
+                            bg-purple-100/80 backdrop-blur-md
+                            border border-indigo-600/30
+                            shadow-[0_8px_30px_rgba(99,102,241,0.12)]
+                            transition-all duration-500
+                            hover:-translate-y-2
+                            hover:shadow-[0_15px_45px_rgba(99,102,241,0.25)]
+                          "
+                        >
+                          <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+                            bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
+
+                          <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
+                            {item.icon}
+                          </div>
+
+                          <div className="relative">
+                            <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
+                              {item.title}
+                            </h3>
+                            <p className="text-gray-600">{item.info}</p>
+                          </div>
+                        </div>
+                      </Link>
+                    ) : (
+                      <div
+                        className="
+                          group relative flex items-center space-x-4 p-7 rounded-2xl
+                          bg-purple-100/80 backdrop-blur-md
+                          border border-indigo-600/30
+                          shadow-[0_8px_30px_rgba(99,102,241,0.12)]
+                          transition-all duration-500
+                          hover:-translate-y-2
+                          hover:shadow-[0_15px_45px_rgba(99,102,241,0.25)]
+                        "
+                      >
+                        <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+                          bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
+
+                        <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
+                          {item.icon}
+                        </div>
+
+                        <div className="relative">
+                          <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
+                            {item.title}
+                          </h3>
+                          <p className="text-gray-600">{item.info}</p>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </AnimateOnScroll>
                 ))}
               </div>
             </div>
           </div>
-
 
       {/* Featured Events */}
       <div className="py-20 bg-gray-50">
@@ -253,11 +288,20 @@ const Home = () => {
                         </p>
                         </div>
 
-                  <Link to="/events" className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                          <span className="px-1 py-1 rounded-full bg-indigo-600/50 text-white font-semibold shadow-md backdrop-blur-sm">
-                            Learn More
-                          </span>
-                        </Link>
+                  <Link
+                    to={`/events?type=${
+                      event.title === "Workshops"
+                        ? "workshop"
+                        : event.title === "Main Event"
+                        ? "competition"
+                        : "pre-event"
+                    }`}
+                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+                  >
+                    <span className="px-1 py-1 rounded-full bg-indigo-600/50 text-white font-semibold shadow-md backdrop-blur-sm">
+                      Explore
+                    </span>
+                  </Link>
                         <div className="absolute inset-0 bg-gradient-to-t from-indigo-700/40 via-indigo-500/10 to-transparent"></div>
                       </div>
                     </AnimateOnScroll>
