@@ -24,8 +24,8 @@ export const generateSlug = (title: string): string => {
 
 export const scheduleData: DaySchedule[] = [
     {
-        date: "January 1, 2025",
-        nepalidate: "Poush 12, 2081",
+        date: "December 29, 2025",
+        nepalidate: "Poush 14, 2082",
         dayTitle: "Day 1",
         events: [
             {
@@ -40,8 +40,8 @@ export const scheduleData: DaySchedule[] = [
         ],
     },
     {
-        date: "January 3, 2025",
-        nepalidate: "Poush 19, 2081",
+        date: "January 2, 2026",
+        nepalidate: "Poush 18, 2082",
         dayTitle: "Day 2",
         events: [
             {
@@ -65,8 +65,17 @@ export const scheduleData: DaySchedule[] = [
             {
                 id: generateSlug("Pre-event"),
                 time: "12:00 PM",
-                title: "Gen AI Showdown",
+                title: "Prompt Memer",
                 description: "Explore the power of generative AI with fun challenges.",
+                location: "CIT Hall, WRC",
+                type: "competition",
+                formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true, icon: '/icons/GenAI.svg'
+            },
+               {
+                id: generateSlug("Pre-event"),
+                time: "1:00 PM",
+                title: "Type Ninja",
+                description: "Typing competition to test your speed and accuracy.",
                 location: "CIT Hall, WRC",
                 type: "competition",
                 formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true, icon: '/icons/GenAI.svg'
@@ -74,8 +83,8 @@ export const scheduleData: DaySchedule[] = [
         ],
     },
     {
-        date: "January 4, 2025",
-        nepalidate: "Poush 20, 2081",
+        date: "December 24, 2025",
+        nepalidate: "Poush 9, 2082",
         dayTitle: "Day 3",
         events: [
             {
@@ -90,15 +99,15 @@ export const scheduleData: DaySchedule[] = [
         ]
     },
     {
-        date: "January 6, 2025",
-        nepalidate: "Poush 22, 2081",
+        date: "January 4, 2026",
+        nepalidate: "Poush 20, 2082",
         dayTitle: "Day 4",
         events: [
             {
                 id: generateSlug("Inauguration"),
                 time: "10:00 AM",
                 title: "Inauguration",
-                description: "Welcome address to kickstart Tech Parva 3.0.",
+                description: "Welcome address to kickstart Tech Parva 2026.",
                 location: "CIT Hall, WRC",
                 type: "talk",
                 isEvent: false, icon: '/icons/Inauguration.svg'
@@ -124,8 +133,8 @@ export const scheduleData: DaySchedule[] = [
         ]
     },
     {
-        date: "January 7, 2025",
-        nepalidate: "Poush 23, 2081",
+        date: "January 5, 2026",
+        nepalidate: "Poush 21, 2082",
         dayTitle: "Day 5",
         events: [
             {
@@ -149,8 +158,8 @@ export const scheduleData: DaySchedule[] = [
         ]
     },
     {
-        date: "January 8, 2025",
-        nepalidate: "Poush 24, 2081",
+        date: "January 6, 2026",
+        nepalidate: "Poush 22, 2082",
         dayTitle: "Day 6",
         events: [
             {

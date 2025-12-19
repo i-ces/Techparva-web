@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 interface AnimateOnScrollProps {
   children: React.ReactNode;
-  animation?: 'fadeIn' | 'slideUp' | 'slideLeft' | 'slideRight';
+  animation?: 'fadeIn' | 'slideUp' | 'slideLeft' | 'slideRight' | 'scaleUp';
   delay?: number;
 }
 
@@ -24,6 +24,10 @@ const animations = {
   slideRight: {
     hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 }
+  },
+  scaleUp: {
+    hidden: { opacity: 0, scale: 0.85, y: 40 },
+    visible: { opacity: 1, scale: 1, y: 0 }
   }
 };
 

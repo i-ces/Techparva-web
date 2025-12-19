@@ -41,7 +41,7 @@ const Events = () => {
                   border border-gray-200
                 `}
               >
-                {type.charAt(0).toUpperCase() + type.slice(1)}
+                {type === "all" ? "Pre-Event" : type.charAt(0).toUpperCase() + type.slice(1)}
               </button>
             ))}
           </div>

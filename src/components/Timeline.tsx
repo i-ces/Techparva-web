@@ -6,6 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { ScheduleEvent } from "../data/schedule";
+import { events as allEvents } from "../data/events";
 
 interface MergedScheduleEvent extends ScheduleEvent {
   dayTitle: string; 
@@ -26,6 +27,13 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
         const isCompleted = eventDate.toLocaleDateString() < currentDate.toLocaleDateString();
 
         const isToday = eventDate.toLocaleDateString() === currentDate.toLocaleDateString();
+
+        const resolvedImg = (() => {
+          const found = allEvents.find((e) => e.id === event.id);
+          const img = found?.hoverImage || found?.image || event.icon;
+          if (!img) return null;
+          return img.startsWith("/") ? img : `/${img}`;
+        })();
 
         return (
           <VerticalTimelineElement
@@ -56,39 +64,51 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
               )
             }
           >
-            <a
-              href={event.isEvent ? `/events/${event.id}` : ""}
-              className={`text-sm ${
-                isCompleted ? "text-gray-400" : "text-gray-600"
+            <div className="relative group">
+              <a
+                href={event.isEvent ? `/events/${event.id}` : ""}
+                className={`text-sm ${
+                  isCompleted ? "text-gray-400" : "text-gray-600"
+                }
+                `
               }
-              `
-            }
-            >
-              <h3
-
-                className={`
-                  
-                  text-lg font-semibold ${
-                  isCompleted ? "line-through" : ""
-                }`}
               >
-                {event.title}
-              </h3>
-              <p className="text-sm mb-2">{event.dayTitle}</p>
-              <p className="mb-4">{event.description}</p>
-              {event.location && (
-                <div className="flex items-center text-sm text-gray-500">
-                  <MapPin className="h-4 w-4 mr-2" />
-                  <span>{event.location}</span>
-                </div>
+                <h3
+
+                  className={`
+                    
+                    text-lg font-semibold ${
+                    isCompleted ? "line-through" : ""
+                  }`}
+                >
+                  {event.title}
+                </h3>
+                <p className="text-sm mb-2">{event.dayTitle}</p>
+                <p className="mb-4">{event.description}</p>
+                {event.location && (
+                  <div className="flex items-center text-sm text-gray-500">
+                    <MapPin className="h-4 w-4 mr-2" />
+                    <span>{event.location}</span>
+                  </div>
+                )}
+                {event.speaker && (
+                  <div className="flex items-center text-sm text-gray-500">
+                    <User className="h-4 w-4 mr-2" />
+                    <span>{event.speaker}</span>
+                  </div>
+                )}
+              </a>
+
+              {resolvedImg && (
+                <img
+                  src={resolvedImg}
+                  alt={event.title}
+                  className={`hidden group-hover:block absolute top-1/2 transform -translate-y-1/2 w-48 max-w-xs rounded-lg shadow-lg transition-all duration-200 ${
+                    index % 2 === 0 ? "left-full ml-6" : "right-full mr-6"
+                  }`}
+                />
               )}
-              {event.speaker && (
-                <div className="flex items-center text-sm text-gray-500">
-                  <User className="h-4 w-4 mr-2" />
-                  <span>{event.speaker}</span>
-                </div>
-              )}
-            </a>
+            </div>
           </VerticalTimelineElement>
         );
       })}

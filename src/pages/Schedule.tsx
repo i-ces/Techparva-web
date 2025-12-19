@@ -20,7 +20,7 @@ const Schedule = () => {
             Event Timeline
           </h1>
           <p className="text-gray-600 text-center mb-12">
-            Plan your TechParva 3.0 experience with our unified schedule
+            Plan your Tech Parva 2026 experience with our unified schedule
           </p>
         </AnimateOnScroll>
 

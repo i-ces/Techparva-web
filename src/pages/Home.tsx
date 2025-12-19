@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import Sponsors from "../components/Sponsors";
 
-const competitive_programming = "/competition.png";
+const pre_event = "/competition.png";
 const workshop = "/workshop.png";
+const main_event = "/4.jpg";
+const club = "/main.png";
 
 const Home = () => {
   return (
@@ -17,8 +19,8 @@ const Home = () => {
           <AnimateOnScroll animation="slideUp">
             <div className="text-white text-center space-y-8">
               <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-[0_5px_30px_rgba(0,0,0,0.5)]">
-                <span className="text-orange-400">Tech</span>
-                <span> Parva</span>
+                <span>Tech</span>
+                <span className="text-orange-400"> Parva</span>
                 <span className="text-orange-400"> 2026</span>
               </h1>
 
@@ -46,118 +48,141 @@ const Home = () => {
               </div>
             </div>
           </AnimateOnScroll>
-
-        </div>
-
-      
-{/* Image Bubble Decorations */}
-<div className="absolute bottom-60 left-10 z-10 animate-float-slow">
-  <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
-    <div
-      className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
-    >
-      <div
-        className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
-        style={{ backgroundImage: "url('/workshop.png')" }}
-      ></div>
-    </div>
-  </div>
-</div>
-
-<div className="absolute top-20 left-20 z-20 animate-float">
-  <div className="rounded-full w-24 h-24 animate-glow flex items-center justify-center">
-    <div
-      className="h-24 w-24 rounded-full border-2 border-indigo-400 overflow-hidden relative"
-    >
-      <div
-        className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
-        style={{ backgroundImage: "url('/competition.png')" }}
-      ></div>
-    </div>
-  </div>
-</div>
-
-<div className="absolute bottom-16 right-12 animate-float-slow">
-  <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
-    <div
-      className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
-    >
-      <div
-        className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
-        style={{ backgroundImage: "url('/workshop.png')" }}
-      ></div>
-    </div>
-  </div>
-</div>
-
-<div className="absolute top-10 right-48 z-20 animate-float">
-  <div className="rounded-full w-28 h-28 animate-glow flex items-center justify-center">
-    <div
-      className="h-28 w-28 rounded-full border-2 border-indigo-500 overflow-hidden relative"
-    >
-      <div
-        className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
-        style={{ backgroundImage: "url('/competition.png')" }}
-      ></div>
-    </div>
-  </div>
-</div>
-
-      </div>
-
-      {/* Key Info Section */}
-    <div className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {[
-        {
-          icon: <Calendar className="h-10 w-10 " />,
-          title: "Date",
-          info: "Poush 19-24th",
-        },
-        {
-          icon: <MapPin className="h-8 w-8" />,
-          title: "Location",
-          info: "WRC, CIT, Multimedia Hall",
-        },
-        {
-          icon: <CpuIcon className="h-10 w-10" />,
-          title: "Competitions",
-          info: "Different domains",
-        },
-      ].map((item, index) => (
-        <AnimateOnScroll key={index} animation="slideUp" delay={index * 0.2}>
-          <div
-            className="
-              group relative flex items-center space-x-4 p-7 rounded-2xl
-              bg-purple-100/80 backdrop-blur-md
-              border border-indigo-600/30
-              shadow-[0_8px_30px_rgba(99,102,241,0.12)]
-              transition-all duration-500
-              hover:-translate-y-2
-              hover:shadow-[0_15px_45px_rgba(99,102,241,0.25)]
-            "
-          >
-            {/* glow layer */}
-            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
-              bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
-
-            <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
-              {item.icon}
-            </div> 
-
-            <div className="relative">
-              <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
-                {item.title}
-              </h3>
-              <p className="text-gray-600">{item.info}</p>
+                    </div>
+            {/* Image Bubble Decorations */}
+            <div className="absolute bottom-60 left-10 z-10 animate-float-slow">
+              <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
+                <div
+                  className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
+                >
+                  <div
+                    className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
+                    style={{ backgroundImage: "url('/2.jpg')" }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute top-20 left-20 z-20 animate-float">
+              <div className="rounded-full w-24 h-24 animate-glow flex items-center justify-center">
+                <div
+                  className="h-24 w-24 rounded-full border-2 border-indigo-400 overflow-hidden relative"
+                >
+                  <div
+                    className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
+                    style={{ backgroundImage: "url('/19.jpg')" }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute bottom-16 right-12 animate-float-slow">
+              <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
+                <div
+                  className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
+                >
+                  <div
+                    className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
+                    style={{ backgroundImage: "url('/20.jpg')" }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute top-10 right-48 z-20 animate-float">
+              <div className="rounded-full w-28 h-28 animate-glow flex items-center justify-center">
+                <div
+                  className="h-28 w-28 rounded-full border-2 border-indigo-500 overflow-hidden relative"
+                >
+                  <div
+                    className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
+                    style={{ backgroundImage: "url('/6.jpg')" }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+            
+                  </div>
+            
+               {/* Gallery Section */}
+            <section
+              id="gallery"
+              className="relative min-h-screen flex items-center justify-center
+              bg-gradient-to-br from-indigo-950 via-purple-950 to-black "
+            >
+              <AnimateOnScroll animation="scaleUp" delay={0.1}>
+                {/* Image Wrapper */}
+                <div className=" h-[75vh] w-[80vw]">
+                  <img
+                    src={club}
+                    alt="Techparva Banner"
+                    className="w-screen h-full "
+                  />
+                </div>
+              </AnimateOnScroll>
+            
+              {/* Ambient glow */}
+              <div className="
+                absolute inset-0
+                bg-gradient-to-r from-indigo-600/10 via-purple-600/10 to-pink-600/10
+                blur-3xl
+                pointer-events-none
+              " />
+            </section>
+            
+             {/* Key Info Section */}
+              <div className="py-20 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {[
+                  {
+                    icon: <Calendar className="h-10 w-10 " />,
+                    title: "Date",
+                    info: "Poush 20-22th",
+                  },
+                  {
+                    icon: <MapPin className="h-8 w-8" />,
+                    title: "Location",
+                    info: "WRC, CIT, Multimedia Hall",
+                  },
+                  {
+                    icon: <CpuIcon className="h-10 w-10" />,
+                    title: "Competitions",
+                    info: "Different domains",
+                  },
+                ].map((item, index) => (
+                  <AnimateOnScroll key={index} animation="slideUp" delay={index * 0.2}>
+                    <div
+                      className="
+                        group relative flex items-center space-x-4 p-7 rounded-2xl
+                        bg-purple-100/80 backdrop-blur-md
+                        border border-indigo-600/30
+                        shadow-[0_8px_30px_rgba(99,102,241,0.12)]
+                        transition-all duration-500
+                        hover:-translate-y-2
+                        hover:shadow-[0_15px_45px_rgba(99,102,241,0.25)]
+                      "
+                    >
+                      {/* glow layer */}
+                      <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+                        bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
+          
+                      <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
+                        {item.icon}
+                      </div> 
+          
+                      <div className="relative">
+                        <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
+                          {item.title}
+                        </h3>
+                        <p className="text-gray-600">{item.info}</p>
+                      </div>
+                    </div>
+                  </AnimateOnScroll>
+                ))}
+              </div>
             </div>
           </div>
-        </AnimateOnScroll>
-      ))}
-    </div>
-  </div>
-</div>
 
 
       {/* Featured Events */}
@@ -172,57 +197,80 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
               {
-                title: "CompetitiveProgramming",
-                description: "2-hour coding competition with amazing prizes",
-                image: competitive_programming,
+                title: "Pre-Event",
+                description: "Exclusive fun and games for juniors.",    
+                image: pre_event,
+                hoverImage: "/5.jpg",
               },
               {
                 title: "Workshops",
-                description:
-                  "Hands-on learning experiences in various technologies",
+                description: "Hands-on learning experiences in various technologies",
                 image: workshop,
+                hoverImage: "/1.jpg",
+              },
+                 {
+                title: "Main Event",
+                description: "The big kickoff, competitions, and winning moments.",
+                image: main_event,
+                hoverImage: "/20.jpg",
               },
             ].map((event, index) => (
               <AnimateOnScroll key={index} animation="slideUp" delay={index * 0.2}>
                 <div className="group bg-purple-100 rounded-3xl overflow-hidden
                   transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_15px_45px_rgba(99,102,241,0.5)] border border-indigo-600/30">
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={event.image}
-                      alt={event.title}
-                      className="w-full h-52 object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                  </div>
-                
-        <div className="p-6 relative z-10">
-          <h3 className="
-            text-xl font-semibold text-indigo-600 mb-2
-            transition-colors duration-300 group-hover:text-purple-600
-          ">
-            {event.title}
-          </h3>
-                    <p className="text-gray-600 mb-4">
-                      {event.description}
-                    </p>
-                    <Link
-                      to="/events"
-                      className="inline-flex items-center text-purple-500 font-medium
-                      transition-all duration-300 hover:text-purple-700 group-hover:translate-x-1"
-                    >
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </div>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
-        </div>
+                 <div className="relative overflow-hidden h-52">
+        {/* Default image */}
+        <img
+          src={event.image}
+          alt={event.title}
+          className="
+            absolute inset-0 w-full h-full object-cover
+            transition-all duration-700
+            group-hover:opacity-0 group-hover:scale-110
+          "
+        />
+        {/* Hover image */}
+        <img
+          src={event.hoverImage}
+          alt={`${event.title} hover`}
+          className="
+            absolute inset-0 w-full h-full object-cover
+            opacity-0 scale-105
+            transition-all duration-700
+            group-hover:opacity-100 group-hover:scale-110
+          "
+        />
       </div>
+              <div className="p-6 relative z-10">
+                <h3 className="
+                  text-xl font-semibold text-indigo-600 mb-2
+                  transition-colors duration-300 group-hover:text-purple-600
+                ">
+                  {event.title}
+                </h3>
+                        <p className="text-gray-600 mb-4">
+                            {event.description}
+                        </p>
+                        </div>
 
-      {/* Sponsors Section */}
-      <Sponsors />
-    </div>
-  );
-};
-
+                  <Link to="/events" className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                          <span className="px-1 py-1 rounded-full bg-indigo-600/50 text-white font-semibold shadow-md backdrop-blur-sm">
+                            Learn More
+                          </span>
+                        </Link>
+                        <div className="absolute inset-0 bg-gradient-to-t from-indigo-700/40 via-indigo-500/10 to-transparent"></div>
+                      </div>
+                    </AnimateOnScroll>
+                  ))}
+                </div>
+              </div>
+            </div>
+      
+            {/* Sponsors Section */}
+          <Sponsors />
+      </div>
+    );
+  };
+      
 export default Home;
+      
