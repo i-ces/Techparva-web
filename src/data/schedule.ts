@@ -23,10 +23,74 @@ export const generateSlug = (title: string): string => {
 };
 
 export const scheduleData: DaySchedule[] = [
+      {
+        date: "December 14, 2025",
+        nepalidate: "Mangsir 28 2082",
+        dayTitle: "Day 0",
+        events: [
+              {
+                id: generateSlug("Tech Roadmap"),
+                time: "1:00 PM",
+                title: "Tech Roadmap",
+                description: "Welcome address to kickstart Tech Parva 2026.",
+                location: "CIT Hall, WRC",
+                type: "talk",
+                isEvent: false, icon: '/icons/Roadmap.svg'
+            },
+        ],
+    },
+       {
+        date: "December 22, 2025",
+        nepalidate: "Poush 7 2082",
+        dayTitle: "Day 1",
+        events: [
+              {
+                id: generateSlug("AI Art Battle"),
+                time: "1:00 PM",
+                title: "AI Art Battle",
+                description: "A fast-paced battle of prompts, creativity, and AI art.",
+                location: "CIT Hall, WRC",
+                type: "competition",
+                isEvent: false, icon: '/icons/AIArtBattle.svg'
+            },
+        ],
+    },
+       {
+        date: "December 24, 2025",
+        nepalidate: "Poush 9, 2082",
+        dayTitle: "Day 2",
+        events: [
+            {
+                id: generateSlug("CTF Workshop"),
+                time: "7:30 PM",
+                title: "CTF Workshop",
+                description: "Learn the basics of Capture the Flag competitions.",
+                location: "CIT Hall, WRC",
+                type: "workshop",
+                formlink: "https://forms.gle/7uh5Nei9KFdZc13N8", isEvent: true, icon: '/icons/CTF.svg'
+            }
+        ]
+    },
+       {
+        date: "December 26, 2025",
+        nepalidate: "Poush 11, 2082",
+        dayTitle: "Day 3",
+        events: [
+            {
+                id: generateSlug("Blind Tech"),
+                time: "7:30 PM",
+                title: "Blind Tech",
+                description: "A challenge where skills matter more than sight.",
+                location: "CIT Hall, WRC",
+                type: "competition",
+                formlink: "https://forms.gle/7uh5Nei9KFdZc13N8", isEvent: true, icon: '/icons/BlindTech.svg'
+            }
+        ]
+    },
     {
         date: "December 29, 2025",
         nepalidate: "Poush 14, 2082",
-        dayTitle: "Day 1",
+        dayTitle: "Day 4",
         events: [
             {
                 id: generateSlug("Design Workshop"),
@@ -42,7 +106,7 @@ export const scheduleData: DaySchedule[] = [
     {
         date: "January 2, 2026",
         nepalidate: "Poush 18, 2082",
-        dayTitle: "Day 2",
+        dayTitle: "Day 5",
         events: [
             {
                 id: generateSlug("Pre-event"),
@@ -78,31 +142,17 @@ export const scheduleData: DaySchedule[] = [
                 description: "Typing competition to test your speed and accuracy.",
                 location: "CIT Hall, WRC",
                 type: "competition",
-                formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true, icon: '/icons/GenAI.svg'
+                formlink: "https://forms.gle/fY63ccmGNdXLxxy4A", isEvent: true, icon: '/icons/TypeNinja.svg'
             }
         ],
     },
-    {
-        date: "December 24, 2025",
-        nepalidate: "Poush 9, 2082",
-        dayTitle: "Day 3",
-        events: [
-            {
-                id: generateSlug("CTF Workshop"),
-                time: "7:30 PM",
-                title: "CTF Workshop",
-                description: "Learn the basics of Capture the Flag competitions.",
-                location: "CIT Hall, WRC",
-                type: "workshop",
-                formlink: "https://forms.gle/7uh5Nei9KFdZc13N8", isEvent: true, icon: '/icons/CTF.svg'
-            }
-        ]
-    },
+ 
     {
         date: "January 4, 2026",
         nepalidate: "Poush 20, 2082",
-        dayTitle: "Day 4",
+        dayTitle: "Day 6",
         events: [
+            
             {
                 id: generateSlug("Inauguration"),
                 time: "10:00 AM",
@@ -135,7 +185,7 @@ export const scheduleData: DaySchedule[] = [
     {
         date: "January 5, 2026",
         nepalidate: "Poush 21, 2082",
-        dayTitle: "Day 5",
+        dayTitle: "Day 7",
         events: [
             {
                 id: generateSlug("Design Incubation"),
@@ -160,7 +210,7 @@ export const scheduleData: DaySchedule[] = [
     {
         date: "January 6, 2026",
         nepalidate: "Poush 22, 2082",
-        dayTitle: "Day 6",
+        dayTitle: "Day 8",
         events: [
             {
                 id: generateSlug("Code with Coffee"),
