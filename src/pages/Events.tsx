@@ -7,24 +7,33 @@ import AnimateOnScroll from "../components/AnimateOnScroll";
 const Events = () => {
   const location = useLocation();
 
-  // Order filters: 'all' first, then 'pre-event', then the rest of types
-  const types = ["all", "pre-event", ...new Set(events.map((event) => event.type))];
+  // Define explicit categories: main events (specific titles), workshops, pre-events
+  const mainTitles = [
+    "Capture the Flag",
+    "Design Incubation",
+    "Datathon",
+    "Code with Coffee",
+  ];
 
-  const queryType = new URLSearchParams(location.search).get("type") ?? "all";
-  const initialType = types.includes(queryType) ? queryType : "all";
+  const categoryKeys = ["main", "workshop", "pre-event"];
+  const categoryLabels: Record<string, string> = {
+    "pre-event": "Pre-Events",
+    "workshop": "Workshops",
+    "main": "Main Events",
+  };
+
+  const queryType = new URLSearchParams(location.search).get("type") ?? "main";
+  const initialType = categoryKeys.includes(queryType) ? queryType : "main";
 
   const [selectedType, setSelectedType] = useState<string>(initialType);
 
   const filteredEvents =
-    selectedType === "all"
-      ? events
-      : selectedType === "pre-event"
-      ? events.filter(
-          (event) =>
-            event.title.toLowerCase() === "pre-event" ||
-            (event.tags && event.tags.some((t) => t.toLowerCase() === "pre-event"))
-        )
-      : events.filter((event) => event.type === selectedType);
+    selectedType === "main"
+      ? events.filter((e) => mainTitles.includes(e.title))
+      : selectedType === "workshop"
+      ? events.filter((e) => e.type === "workshop" && !mainTitles.includes(e.title))
+      : // pre-event: anything that's not a main event and not a workshop
+        events.filter((e) => !mainTitles.includes(e.title) && e.type !== "workshop");
 
   return (
     <div className="pt-16 min-h-screen bg-gray-50">
@@ -38,27 +47,23 @@ const Events = () => {
 
         <div className="flex justify-center mb-8">
           <div className="inline-flex rounded-md shadow-sm">
-            {types.map((type) => (
+            {categoryKeys.map((key, idx) => (
               <button
-                key={type}
-                onClick={() => setSelectedType(type)}
+                key={key}
+                onClick={() => setSelectedType(key)}
                 className={`
                   px-4 py-2 text-sm font-medium
                   ${
-                    type === selectedType
+                    key === selectedType
                       ? "bg-indigo-600 text-white"
                       : "bg-white text-gray-700 hover:bg-gray-50"
                   }
-                  ${type === types[0] ? "rounded-l-md" : ""}
-                  ${type === types[types.length - 1] ? "rounded-r-md" : ""}
+                  ${idx === 0 ? "rounded-l-md" : ""}
+                  ${idx === categoryKeys.length - 1 ? "rounded-r-md" : ""}
                   border border-gray-200
                 `}
               >
-                {type === "pre-event"
-                  ? "Pre-Event"
-                  : type === "all"
-                  ? "All"
-                  : type.charAt(0).toUpperCase() + type.slice(1)}
+                {categoryLabels[key]}
               </button>
             ))}
           </div>

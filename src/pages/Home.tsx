@@ -247,7 +247,7 @@ const Home = () => {
                 title: "Main Event",
                 description: "The big kickoff, competitions, and winning moments.",
                 image: main_event,
-                hoverImage: "/20.jpg",
+                hoverImage: "/21.jpg",
               },
             ].map((event, index) => (
               <AnimateOnScroll key={index} animation="slideUp" delay={index * 0.2}>

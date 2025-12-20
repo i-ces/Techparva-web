@@ -4,7 +4,7 @@ export interface Event {
   id: string;
   title: string;
   description: string;
-  type: "workshop" | "talk" | "competition";
+  type: "workshop" | "competition";
   date: string; // ISO format
   time: string;
   duration: string;
@@ -21,6 +21,40 @@ export interface Event {
 
 export const events: Event[] = [
     {
+    id: generateSlug("Tech Roadmap"),
+    title: "Tech Roadmap",
+    description: "A glimpse into upcoming technologies, events, and opportunities ahead.",
+    type: "workshop",
+    date: "2025-12-14T13:00:00",
+    nepalidate: "Mangsir 28, 2082",
+    time: "1:00 AM",
+    duration: "3 hours",
+    location: "CIT Hall, WRC",
+    image: "/preevent.png",
+    hoverImage: "/roadmap.jpg",
+    Registration_Fee: "Free",
+    speakers: [],
+    tags: ["Logic", "Pre-event", "Competition"],
+    formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
+  },
+    {
+    id: generateSlug("AI Art Battle"),
+    title: "AI Art Battle",
+    description: "A fast-paced battle of prompts, creativity, and AI art.",
+    type: "competition",
+    date: "2025-12-22T13:00:00",
+    nepalidate: "Poush 7, 2082",
+    time: "1:00 PM",
+    duration: "3 hours",
+    location: "CIT Hall, WRC",
+    image: "/preevent.png",
+    hoverImage: "/artbattle.jpg",
+    Registration_Fee: "Free",
+    speakers: [],
+    tags: ["Logic", "Pre-event", "Competition"],
+    formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
+  },
+    {
     id: generateSlug("CTF Workshop"),
     title: "CTF Workshop",
     description: "Learn the basics of Capture the Flag competitions in this online workshop.",
@@ -36,6 +70,24 @@ export const events: Event[] = [
     speakers: [],
     tags: ["Cybersecurity", "Workshop", "CTF"],
     formlink: "https://forms.gle/7uh5Nei9KFdZc13N8",
+  },
+
+    {
+    id: generateSlug("Blind Tech"),
+    title: "Blind Tech",
+    description: "A challenge where skills matter more than sight.",
+    type: "competition",
+    date: "2025-12-26T13:00:00",
+    nepalidate: "Poush 11, 2082",
+    time: "1:00 PM",
+    duration: "3 hours",
+    location: "CIT Hall, WRC",
+    image: "/preevent.png",
+    hoverImage: "/blindtech.jpg",
+    Registration_Fee: "Free",
+    speakers: [],
+    tags: ["Logic", "Pre-event", "Competition"],
+    formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
   },
   {
     id: generateSlug("Design Workshop"),
@@ -54,12 +106,12 @@ export const events: Event[] = [
     formlink: "https://forms.gle/ZiBnemrH7xz3F1K36",
     tags: ["Design", "Creativity", "Workshop"],
   },
-  {
-    id: generateSlug("Pre-event"),
+      {
+    id: generateSlug("Pre-Event"),
     title: "Pre-Event",
-    description: "An engaging pre-event challenge to kick-start the excitement for Tech Parva.",
+    description: "A glimpse into upcoming technologies, events, and opportunities ahead.",
     type: "competition",
-    date: "2026-01-02T10:00:00",
+    date: "2026-01-02T13:00:00",
     nepalidate: "Poush 18, 2082",
     time: "10:00 AM",
     duration: "3 hours",

@@ -60,7 +60,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
                   className={`
                     absolute inset-0 w-full h-full object-cover
                     transition-all duration-700
-                    ${isCompleted ? "opacity-70 grayscale-[20%]" : "group-hover:opacity-0 group-hover:scale-110"}
+                    group-hover:opacity-0 group-hover:scale-110
                   `}
                 />
                 <img
@@ -70,7 +70,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
                     absolute inset-0 w-full h-full object-cover
                     opacity-0 scale-105
                     transition-all duration-700
-                    ${isCompleted ? "opacity-60 grayscale-[20%]" : "group-hover:opacity-100 group-hover:scale-110"}
+                    group-hover:opacity-100 group-hover:scale-110
                   `}
                 />
               </>
@@ -81,7 +81,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
                 className={`
                   w-full h-full object-cover
                   transition-transform duration-700
-                  ${isCompleted ? "opacity-70 grayscale-[20%]" : "group-hover:scale-110"}
+                  group-hover:scale-110
                 `}
               />
             )}
@@ -98,14 +98,14 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
           <div className="p-4 flex flex-col flex-grow">
             {/* Title and Event Type */}
             <div className="flex justify-between items-start mb-3">
-             <h3
-               className={`
-                 text-lg font-bold
-                 text-indigo-600
-                 transition-colors duration-300
-                 ${isCompleted ? "line-through text-gray-400" : "group-hover:text-purple-600"}
-               `}
-             >
+                <h3
+                  className={`
+                    text-lg font-bold
+                    text-indigo-600
+                    transition-colors duration-300
+                    group-hover:text-purple-600
+                  `}
+                >
              
                 {event.title}
               </h3>

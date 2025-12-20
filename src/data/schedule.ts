@@ -32,7 +32,7 @@ export const scheduleData: DaySchedule[] = [
                 id: generateSlug("Tech Roadmap"),
                 time: "1:00 PM",
                 title: "Tech Roadmap",
-                description: "Welcome address to kickstart Tech Parva 2026.",
+                description: "A glimpse into upcoming technologies, events, and opportunities ahead.",
                 location: "CIT Hall, WRC",
                 type: "talk",
                 isEvent: false, icon: '/icons/Roadmap.svg'
