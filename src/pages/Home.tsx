@@ -51,7 +51,7 @@ const Home = () => {
           </AnimateOnScroll>
                     </div>
             {/* Image Bubble Decorations */}
-            <div className="absolute bottom-60 left-10 z-10 animate-float-slow">
+            <div className="hidden md:block absolute bottom-60 left-10 z-10 animate-float-slow">
               <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
                 <div
                   className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
@@ -64,7 +64,7 @@ const Home = () => {
               </div>
             </div>
             
-            <div className="absolute top-20 left-20 z-20 animate-float">
+            <div className="hidden md:block absolute top-20 left-20 z-20 animate-float">
               <div className="rounded-full w-24 h-24 animate-glow flex items-center justify-center">
                 <div
                   className="h-24 w-24 rounded-full border-2 border-indigo-400 overflow-hidden relative"
@@ -77,7 +77,7 @@ const Home = () => {
               </div>
             </div>
             
-            <div className="absolute bottom-16 right-12 animate-float-slow">
+            <div className="hidden md:block absolute bottom-16 right-12 animate-float-slow">
               <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
                 <div
                   className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
@@ -90,7 +90,7 @@ const Home = () => {
               </div>
             </div>
             
-            <div className="absolute top-10 right-48 z-20 animate-float">
+            <div className="hidden md:block absolute top-10 right-48 z-20 animate-float">
               <div className="rounded-full w-28 h-28 animate-glow flex items-center justify-center">
                 <div
                   className="h-28 w-28 rounded-full border-2 border-indigo-500 overflow-hidden relative"
@@ -108,7 +108,7 @@ const Home = () => {
                {/* Gallery Section */}
             <section
               id="gallery"
-              className="relative min-h-screen flex items-center justify-center
+              className="relative min-h-screen hidden md:flex items-center justify-center
               bg-gradient-to-br from-indigo-950 via-purple-950 to-black "
             >
               <AnimateOnScroll animation="scaleUp" delay={0.1}>
@@ -118,7 +118,7 @@ const Home = () => {
                     <img
                       src={club}
                       alt="Techparva Banner"
-                      className="w-screen h-full "
+                      className="w-screen h-full object-scale-down "
                     />
                   </div>
                 </Link>
