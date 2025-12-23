@@ -40,8 +40,8 @@ export const scheduleData: DaySchedule[] = [
         ],
     },
        {
-        date: "December 22, 2025",
-        nepalidate: "Poush 7, 2082 / December 22, 2025",
+        date: "December 25, 2025",
+        nepalidate: "Poush 10, 2082 / December 25, 2025",
         dayTitle: "Day 1",
         events: [
               {
