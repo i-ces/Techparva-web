@@ -25,7 +25,7 @@ export const generateSlug = (title: string): string => {
 export const scheduleData: DaySchedule[] = [
       {
         date: "December 14, 2025",
-        nepalidate: "Mangsir 28 2082",
+        nepalidate: "Mangsir 28, 2082 / December 14, 2025   ",
         dayTitle: "Day 0",
         events: [
               {
@@ -41,7 +41,7 @@ export const scheduleData: DaySchedule[] = [
     },
        {
         date: "December 22, 2025",
-        nepalidate: "Poush 7 2082",
+        nepalidate: "Poush 7, 2082 / December 22, 2025",
         dayTitle: "Day 1",
         events: [
               {
@@ -57,7 +57,7 @@ export const scheduleData: DaySchedule[] = [
     },
        {
         date: "December 24, 2025",
-        nepalidate: "Poush 9, 2082",
+        nepalidate: "Poush 9, 2082 / December 24, 2025",
         dayTitle: "Day 2",
         events: [
             {
@@ -73,7 +73,7 @@ export const scheduleData: DaySchedule[] = [
     },
        {
         date: "December 26, 2025",
-        nepalidate: "Poush 11, 2082",
+        nepalidate: "Poush 11, 2082 / December 26, 2025",
         dayTitle: "Day 3",
         events: [
             {
@@ -89,7 +89,7 @@ export const scheduleData: DaySchedule[] = [
     },
     {
         date: "December 29, 2025",
-        nepalidate: "Poush 14, 2082",
+        nepalidate: "Poush 14, 2082 / December 29, 2025", 
         dayTitle: "Day 4",
         events: [
             {
@@ -105,7 +105,7 @@ export const scheduleData: DaySchedule[] = [
     },
     {
         date: "January 2, 2026",
-        nepalidate: "Poush 18, 2082",
+        nepalidate: "Poush 18, 2082 / January 2, 2026",
         dayTitle: "Day 5",
         events: [
             {
@@ -149,7 +149,7 @@ export const scheduleData: DaySchedule[] = [
  
     {
         date: "January 4, 2026",
-        nepalidate: "Poush 20, 2082",
+        nepalidate: "Poush 20, 2082 / January 4, 2026", 
         dayTitle: "Day 6",
         events: [
             
@@ -184,7 +184,7 @@ export const scheduleData: DaySchedule[] = [
     },
     {
         date: "January 5, 2026",
-        nepalidate: "Poush 21, 2082",
+        nepalidate: "Poush 21, 2082 / January 5, 2026",
         dayTitle: "Day 7",
         events: [
             {
@@ -209,7 +209,7 @@ export const scheduleData: DaySchedule[] = [
     },
     {
         date: "January 6, 2026",
-        nepalidate: "Poush 22, 2082",
+        nepalidate: "Poush 22, 2082 / January 6, 2026",
         dayTitle: "Day 8",
         events: [
             {

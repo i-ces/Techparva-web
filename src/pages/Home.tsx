@@ -144,7 +144,7 @@ const Home = () => {
                   {
                     icon: <Calendar className="h-10 w-10 " />,
                     title: "Date",
-                    info: "Poush 20-22th",
+                    info: "Poush 20-22th / January 4-6th",
                   },
                   {
                     icon: <MapPin className="h-8 w-8" />,
