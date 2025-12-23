@@ -118,7 +118,9 @@ const Home = () => {
                     <img
                       src={club}
                       alt="Techparva Banner"
-                      className="w-screen h-full object-scale-down "
+                      className="w-screen h-full object-scale-down"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </Link>
@@ -258,6 +260,8 @@ const Home = () => {
         <img
           src={event.image}
           alt={event.title}
+          loading="lazy"
+          decoding="async"
           className="
             absolute inset-0 w-full h-full object-cover
             transition-all duration-700
@@ -268,6 +272,8 @@ const Home = () => {
         <img
           src={event.hoverImage}
           alt={`${event.title} hover`}
+          loading="lazy"
+          decoding="async"
           className="
             absolute inset-0 w-full h-full object-cover
             opacity-0 scale-105
