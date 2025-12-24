@@ -11,10 +11,10 @@ const club = "/main.png";
 
 const Home = () => {
   return (
-    <div className="pt-16">
+    <div>
       {/* Hero Section */}
       <div className="relative h-screen bg-gradient-to-r from-indigo-700 via-purple-600 to-indigo-700 animate-gradient-x flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
         <div className="relative max-w-7xl px-4 sm:px-6 lg:px-8 h-full w-full flex flex-col items-center justify-center space-y-10">
           <AnimateOnScroll animation="slideUp">
@@ -139,7 +139,7 @@ const Home = () => {
               <Vision />
             
              {/* Key Info Section */}
-              <div className="py-20 bg-white">
+              <div className="py-20 bg-gradient-to-br from-indigo-950 via-purple-950 to-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
@@ -177,15 +177,15 @@ const Home = () => {
                           <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
                             bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
 
-                          <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
+                          <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)] text-white">
                             {item.icon}
                           </div>
 
                           <div className="relative">
-                            <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
+                            <h3 className="font-semibold text-lg text-white group-hover:text-indigo-300 transition-colors">
                               {item.title}
                             </h3>
-                            <p className="text-gray-600">{item.info}</p>
+                            <p className="text-gray-200">{item.info}</p>
                           </div>
                         </div>
                       </Link>
@@ -204,15 +204,15 @@ const Home = () => {
                         <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
                           bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
 
-                        <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
+                        <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)] text-white">
                           {item.icon}
                         </div>
 
                         <div className="relative">
-                          <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
+                          <h3 className="font-semibold text-lg text-white group-hover:text-indigo-300 transition-colors">
                             {item.title}
                           </h3>
-                          <p className="text-gray-600">{item.info}</p>
+                          <p className="text-gray-200">{item.info}</p>
                         </div>
                       </div>
                     )}
@@ -223,10 +223,10 @@ const Home = () => {
           </div>
 
       {/* Featured Events */}
-      <div className="py-20 bg-gray-50">
+      <div className="py-20 bg-gradient-to-br from-indigo-950 via-purple-950 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll animation="slideUp">
-            <h2 className="text-3xl font-bold mb-12 text-indigo-700">
+            <h2 className="text-3xl font-bold mb-12 text-white">
               Featured Events
             </h2>
           </AnimateOnScroll>

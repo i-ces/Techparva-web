@@ -35,7 +35,7 @@ export const events: Event[] = [
     Registration_Fee: "Free",
     speakers: [],
     tags: ["Logic", "Pre-event", "Competition"],
-    formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSc984efQ-EX_QoO334x7E6Mn0otJ3eD3tgigZDiVIGarKqBtw/viewform?usp=header",
   },
     {
     id: generateSlug("AI Art Battle"),
@@ -52,16 +52,16 @@ export const events: Event[] = [
     Registration_Fee: "Free",
     speakers: [],
     tags: ["Logic", "Pre-event", "Competition"],
-    formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSft5-Hcj_Yf9eAAzMsot77T9dats7j9O6Q4esN-K164uPdFqA/viewform?usp=header",
   },
     {
     id: generateSlug("CTF Workshop"),
     title: "CTF Workshop",
     description: "Learn the basics of Capture the Flag competitions in this online workshop.",
     type: "workshop",
-    date: "2025-12-24T19:30:00",
+    date: "2025-12-24T20:00:00",
     nepalidate: "Poush 9, 2082 / December 24, 2025",
-    time: "7:30 PM",
+    time: "8:00 PM",
     duration: "2 hours",
     location: "Online",
     image: "/CTF_Workshop.png",
@@ -69,7 +69,7 @@ export const events: Event[] = [
     Registration_Fee: "Free",
     speakers: [],
     tags: ["Cybersecurity", "Workshop", "CTF"],
-    formlink: "https://forms.gle/7uh5Nei9KFdZc13N8",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSd3UX1NyBmIDT0mxTqoM_laxQrZCVxo2-pxHd_101bk_R3Z_Q/viewform8",
   },
 
     {
@@ -87,7 +87,7 @@ export const events: Event[] = [
     Registration_Fee: "Free",
     speakers: [],
     tags: ["Logic", "Pre-event", "Competition"],
-    formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSdpCa1vHUSDC3W1M6S42zwGnlEHZo7cGd_9DTu6Hf2jkyOsJw/viewform",
   },
   {
     id: generateSlug("Design Workshop"),
@@ -103,7 +103,7 @@ export const events: Event[] = [
     hoverImage: "/11.jpg",
     Registration_Fee: "Free",
     speakers: ["John Doe"],
-    formlink: "https://forms.gle/ZiBnemrH7xz3F1K36",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSegzib2MkHn9PMXwaMwTssFlGRJOiQNn-MYLaqSUOYWTDPsEQ/viewform?usp=header",
     tags: ["Design", "Creativity", "Workshop"],
   },
       {
@@ -138,7 +138,7 @@ export const events: Event[] = [
     Registration_Fee: "Free",
     speakers: ["Jane Doe"],
     tags: ["Analytics", "Workshop", "Visualization"],
-    formlink: "https://forms.gle/ACXpxmXoojitF7j87",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLScVQCfHYNrgql4e3VOuIxvMjztNWPogclHaby-e9UuIbjkpGw/viewform?usp=header",
   },
   {
     id: generateSlug("Capture the Flag"),
@@ -155,7 +155,7 @@ export const events: Event[] = [
     Registration_Fee: "Rs.100 Only",
     speakers: [],
     tags: ["Cybersecurity", "Competition", "CTF"],
-    formlink: "https://forms.gle/JsUcgKVY6kzKLms96",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSdsucYR50CIR8LrvEZP8_XrBu7Ix7KtuIavxnOHArLK9x9Wtg/viewform?usp=header",
   },
   {
     id: generateSlug("Design Incubation"),
@@ -172,7 +172,7 @@ export const events: Event[] = [
     Registration_Fee: "Rs.100 Only",
     speakers: [],
     tags: ["Ideation", "Competition", "Innovation"],
-    formlink: "https://forms.gle/WfB2v3aVnRdJhbiU7",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSea08ETzp_cxDtWh24qkyc0IxeqvxvRrfApJwkOgkX84yntCA/viewform?usp=header",
   },
   {
     id: generateSlug("Datathon"),
@@ -189,7 +189,7 @@ export const events: Event[] = [
     Registration_Fee: "Rs.100 Only",
     speakers: [],
     tags: ["Analytics", "Competition", "Analysis"],
-    formlink: "https://forms.gle/DMCpMMjrtHcibMET6",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSeb_abtAbbQPkMEYvxAomQCSekq2Vvv5TLIy9rnemS4QFgD7A/viewform?usp=header",
   },
   {
     id: generateSlug("Code with Coffee"),
@@ -206,6 +206,6 @@ export const events: Event[] = [
     Registration_Fee: "Rs.100 Only",
     speakers: [],
     tags: ["Coding", "Competition", "Fun"],
-    formlink: "https://forms.gle/4aYTkcfCDXy9o7x87",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSfpd-JMNdFcySMH_IjuJsDAfcE7MmtKGr2a1IdL4guOHpVkZQ/viewform?usp=header",
   },
 ];
