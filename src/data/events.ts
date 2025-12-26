@@ -42,8 +42,8 @@ export const events: Event[] = [
     title: "AI Art Battle",
     description: "A fast-paced battle of prompts, creativity, and AI art.",
     type: "competition",
-    date: "2025-12-25T13:00:00",
-    nepalidate: "Poush 10, 2082 / December 25, 2025",
+    date: "2026-01-08T13:00:00",
+    nepalidate: "Poush 23, 2082 / January 8, 2026",
     time: "1:00 PM",
     duration: "3 hours",
     location: "CIT Hall, WRC",
@@ -69,7 +69,7 @@ export const events: Event[] = [
     Registration_Fee: "Free",
     speakers: [],
     tags: ["Cybersecurity", "Workshop", "CTF"],
-    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSd3UX1NyBmIDT0mxTqoM_laxQrZCVxo2-pxHd_101bk_R3Z_Q/viewform8",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSd3UX1NyBmIDT0mxTqoM_laxQrZCVxo2-pxHd_101bk_R3Z_Q/viewform?usp=header",
   },
 
     {

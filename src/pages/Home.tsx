@@ -19,42 +19,46 @@ const Home = () => {
         <div className="relative max-w-7xl px-4 sm:px-6 lg:px-8 h-full w-full flex flex-col items-center justify-center space-y-10">
           <AnimateOnScroll animation="slideUp">
             <div className="text-white text-center space-y-8">
-              <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-[0_5px_30px_rgba(0,0,0,0.5)]">
+              <h1 className="text-1xl md:text-9xl font-extrabold tracking-tight drop-shadow-[0_5px_30px_rgba(0,0,0,0.5)]">
                 <span>Tech</span>
                 <span className="text-orange-400"> Parva</span>
                 <span className="text-orange-400"> 2026</span>
               </h1>
 
-              <p className="text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed text-gray-200">
+              <p className="text-xl md:text-4xl font-medium max-w-3xl mx-auto leading-relaxed text-gray-200">
                 Learn and compete your interest !
               </p>
 
-              <div className="flex flex-wrap justify-center gap-6">
-                <Link
-                  to="/events"
-                  className="bg-orange-500 text-white px-12 py-4 rounded-full font-semibold shadow-[0_10px_40px_rgba(255,140,0,0.4)]
-                  transition-all duration-500 hover:bg-orange-600 hover:scale-110 hover:shadow-[0_15px_60px_rgba(255,140,0,0.6)]"
-                >
-                  Explore Events
-                </Link>
+             <div className="flex flex-wrap justify-center gap-6">
+  <Link
+    to="/events"
+    className="bg-orange-500 text-white px-16 py-8 text-xl md:text-2xl rounded-full font-semibold
+    shadow-[0_10px_40px_rgba(255,140,0,0.4)]
+    transition-all duration-500 hover:bg-orange-600 hover:scale-110
+    hover:shadow-[0_12px_60px_rgba(255,140,0,0.6)]"
+  >
+    Explore Events
+  </Link>
 
-                <Link
-                  to="/schedule"
-                  className="bg-white/90 backdrop-blur text-indigo-700 px-12 py-4 rounded-full font-semibold border border-white/30
-                  shadow-lg transition-all duration-500 hover:text-white hover:scale-110
-                  hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600"
-                >
-                  View Schedule
-                </Link>
-              </div>
+  <Link
+    to="/schedule"
+    className="bg-white/90 backdrop-blur text-indigo-700 px-16 py-8 text-xl md:text-2xl rounded-full font-semibold
+    border border-white/30 shadow-lg transition-all duration-500
+    hover:text-white hover:scale-110
+    hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600"
+  >
+    View Schedule
+  </Link>
+</div>
+
             </div>
           </AnimateOnScroll>
                     </div>
             {/* Image Bubble Decorations */}
             <div className="hidden md:block absolute bottom-60 left-10 z-10 animate-float-slow">
-              <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
+              <div className="rounded-full w-48 h-48 animate-glow flex items-center justify-center">
                 <div
-                  className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
+                  className="h-48 w-48 rounded-full border-2 border-purple-400 overflow-hidden relative"
                 >
                   <div
                     className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
@@ -64,10 +68,10 @@ const Home = () => {
               </div>
             </div>
             
-            <div className="hidden md:block absolute top-20 left-20 z-20 animate-float">
-              <div className="rounded-full w-24 h-24 animate-glow flex items-center justify-center">
+            <div className="hidden md:block absolute top-44 left-20 z-20 animate-float">
+              <div className="rounded-full w-32 h-32 animate-glow flex items-center justify-center">
                 <div
-                  className="h-24 w-24 rounded-full border-2 border-indigo-400 overflow-hidden relative"
+                  className="h-32 w-32 rounded-full border-2 border-indigo-400 overflow-hidden relative"
                 >
                   <div
                     className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
@@ -78,9 +82,9 @@ const Home = () => {
             </div>
             
             <div className="hidden md:block absolute bottom-16 right-12 animate-float-slow">
-              <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
+              <div className="rounded-full w-52  h-52  animate-glow flex items-center justify-center">
                 <div
-                  className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
+                  className="h-52  w-52  rounded-full border-2 border-purple-400 overflow-hidden relative"
                 >
                   <div
                     className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
@@ -91,9 +95,9 @@ const Home = () => {
             </div>
             
             <div className="hidden md:block absolute top-10 right-48 z-20 animate-float">
-              <div className="rounded-full w-28 h-28 animate-glow flex items-center justify-center">
+              <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
                 <div
-                  className="h-28 w-28 rounded-full border-2 border-indigo-500 overflow-hidden relative"
+                  className="h-40 w-40 rounded-full border-2 border-indigo-500 overflow-hidden relative"
                 >
                   <div
                     className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
@@ -135,11 +139,11 @@ const Home = () => {
               " />
             </section>
 
-            {/* Vision Section (inserted after Gallery) */}          
+            {/* Vision Section */}          
               <Vision />
             
              {/* Key Info Section */}
-              <div className="py-20 bg-gradient-to-br from-indigo-950 via-purple-950 to-black">
+              <div className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
@@ -177,15 +181,15 @@ const Home = () => {
                           <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
                             bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
 
-                          <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)] text-white">
+                          <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
                             {item.icon}
                           </div>
 
                           <div className="relative">
-                            <h3 className="font-semibold text-lg text-white group-hover:text-indigo-300 transition-colors">
+                            <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
                               {item.title}
                             </h3>
-                            <p className="text-gray-200">{item.info}</p>
+                            <p className="text-gray-600">{item.info}</p>
                           </div>
                         </div>
                       </Link>
@@ -204,15 +208,15 @@ const Home = () => {
                         <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
                           bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
 
-                        <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)] text-white">
+                        <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
                           {item.icon}
                         </div>
 
                         <div className="relative">
-                          <h3 className="font-semibold text-lg text-white group-hover:text-indigo-300 transition-colors">
+                          <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
                             {item.title}
                           </h3>
-                          <p className="text-gray-200">{item.info}</p>
+                          <p className="text-gray-600">{item.info}</p>
                         </div>
                       </div>
                     )}
@@ -223,10 +227,10 @@ const Home = () => {
           </div>
 
       {/* Featured Events */}
-      <div className="py-20 bg-gradient-to-br from-indigo-950 via-purple-950 to-black">
+      <div className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll animation="slideUp">
-            <h2 className="text-3xl font-bold mb-12 text-white">
+            <h2 className="text-3xl font-bold mb-12 text-indigo-700">
               Featured Events
             </h2>
           </AnimateOnScroll>
