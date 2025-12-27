@@ -108,7 +108,7 @@ export const events: Event[] = [
   },
       {
     id: generateSlug("Pre-Event"),
-    title: "Pre-Event",
+    title: "Junior Tech Fest",
     description: "A glimpse into upcoming technologies, events, and opportunities ahead.",
     type: "competition",
     date: "2026-01-02T13:00:00",

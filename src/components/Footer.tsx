@@ -14,7 +14,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center">
                 <Phone className="h-5 w-5 mr-2" />
-                <a href="tel:+977 984-1891060">+977 984-1891060</a>
+                <a href="tel:+977 9745810304">+977 9745810304</a>
               </p>
               <p className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2" />

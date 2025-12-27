@@ -67,7 +67,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="hidden md:block absolute top-44 left-20 z-20 animate-float">
               <div className="rounded-full w-32 h-32 animate-glow flex items-center justify-center">
                 <div
@@ -116,8 +116,8 @@ const Home = () => {
               bg-gradient-to-br from-indigo-950 via-purple-950 to-black "
             >
               <AnimateOnScroll animation="scaleUp" delay={0.1}>
-                {/* Image Wrapper (click to view Pre-Event) */}
-                <Link to="/events?type=pre-event" className="h-[75vh] w-[80vw] block">
+                {/* Image Wrapper (click to view Junior-TechFest) */}
+                <Link to="/events?type=Junior-TechFest" className="h-[75vh] w-[80vw] block">
                   <div className="h-[75vh] w-[80vw]">
                     <img
                       src={club}
@@ -239,7 +239,8 @@ const Home = () => {
             {[
               {
                 title: "Pre-Event",
-                description: "Exclusive fun and games for juniors.",    
+                description: "Engaging fun activities and interactive games for all participants.",
+   
                 image: pre_event,
                 hoverImage: "/5.jpg",
               },
@@ -304,7 +305,7 @@ const Home = () => {
                         ? "workshop"
                         : event.title === "Main Event"
                         ? "competition"
-                        : "pre-event"
+                        : "Junior-TechFest"
                     }`}
                     className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
                   >
@@ -317,6 +318,35 @@ const Home = () => {
                     </AnimateOnScroll>
                   ))}
                 </div>
+              </div>
+            </div>
+
+              {/* I-CES Community Section */}
+            <div className="relative py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden">
+              <div className="absolute inset-0 pointer-events-none select-none">
+                <svg width="100%" height="100%" className="absolute inset-0" style={{zIndex:0}}>
+                  <circle cx="20%" cy="20%" r="3" fill="#38bdf8" opacity="0.5" />
+                  <circle cx="80%" cy="30%" r="2.5" fill="#818cf8" opacity="0.5" />
+                  <circle cx="30%" cy="80%" r="2" fill="#a5b4fc" opacity="0.5" />
+                  <circle cx="60%" cy="60%" r="2.5" fill="#38bdf8" opacity="0.5" />
+                  <circle cx="90%" cy="70%" r="2" fill="#818cf8" opacity="0.5" />
+                </svg>
+              </div>
+              <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
+                <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
+                  Join Our <span className="text-orange-400">I-CES</span> Community
+                </h2>
+                <p className="text-lg md:text-2xl text-gray-200 mb-4 font-medium">
+                  Becoming A <span className="text-orange-400 font-bold">I-CES</span> Community Member Is Your Exclusive Ticket To Becoming The Face And Voice Of Our Vibrant Academic Community. It's Not Just A Role, It's An Opportunity To Share The Dynamic Spirit Of Our Campus With The World!
+                </p>
+                <a
+                  href="https://discord.com/channels/846300701277159474/849620402237079572"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 px-8 py-4 bg-orange-400 hover:bg-orange-500 text-white font-bold text-xl rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
+                >
+                  Join Us On Discord
+                </a>
               </div>
             </div>
       
