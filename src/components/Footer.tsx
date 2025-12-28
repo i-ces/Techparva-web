@@ -2,37 +2,34 @@ import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Facebook } from "luci
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white relative overflow-hidden" style={{ opacity: 0.85 }}>
+    <footer className="bg-gradient-to-r from-indigo-700 via-purple-600 to-indigo-700 text-white relative overflow-hidden">
+              <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
       {/* Animated SVG Backgrounds */}
       <img
         src="/icons/AIArtBattle.svg"
         alt="AI Art Battle"
         className="pointer-events-none select-none absolute left-[-60px] top-10 w-40 h-40 opacity-20 animate-spin-slow z-0"
-        style={{ animationDuration: '18s' }}
       />
       <img
         src="/icons/Design.svg"
         alt="Design"
         className="pointer-events-none select-none absolute right-[-60px] bottom-10 w-44 h-44 opacity-20 animate-float-slow z-0"
-        style={{ animationDuration: '22s' }}
       />
       <img
         src="/icons/BlindTech.svg"
         alt="Blind Tech"
         className="pointer-events-none select-none absolute right-[90px] top-10 w-44 h-44 opacity-20 animate-float-slow z-0"
-        style={{ animationDuration: '22s' }}
       />
       <img
         src="/icons/CWC.svg"
         alt="CWC"
         className="pointer-events-none select-none absolute left-[90px] bottom-1 w-44 h-44 opacity-20 animate-float-slow z-0"
-        style={{ animationDuration: '22s' }}
       />
       <img
         src="/icons/Datathon.svg"
         alt="Datathon"
         className="pointer-events-none select-none absolute left-1/2 -translate-x-1/2 bottom-10 w-44 h-44 opacity-20 animate-float-slow z-0"
-        style={{ animationDuration: '22s' }}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-[420px] flex flex-col justify-center relative z-10">
         <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 relative">
