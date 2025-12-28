@@ -98,14 +98,14 @@ useEffect(() => {
 >
 
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div className="flex justify-between h-16 items-center">
+    <div className="flex justify-between h-24 items-center">
       
       {/* Logo */}
       <Link to="/" className="flex items-center justify-between space-x-2 mr-auto -ml-14">
         <img
           src="/icons/logo.svg"
           alt="Logo"
-          className="w-80 h-80"  
+          className="h-96 w-auto" 
         />
       </Link>
       {/* Desktop navigation */}
@@ -115,18 +115,19 @@ useEffect(() => {
             key={item.name}
             onClick={() => handleClick(item)}
             className={`
-              relative text-sm font-medium tracking-wide
-              transition-all duration-300
-              ${
-                activeSection === item.href.replace("#", "") ||
-                (location.pathname === item.href && item.href.startsWith("/"))
-                  ? "text-white"
-                  : "text-white/80 hover:text-white"
-              }
-             
-            `}
+            relative text-lg font-bold tracking-wider
+            transition-all duration-300
+            ${
+              activeSection === item.href.replace("#", "") ||
+              (location.pathname === item.href && item.href.startsWith("/"))
+                ? "text-white"
+                : "text-white/80 hover:text-white"
+             }
+                     `}
           >
             {item.name}
+            <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+
           </button>
         ))}
       </div>

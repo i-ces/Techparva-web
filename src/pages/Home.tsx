@@ -337,7 +337,7 @@ const Home = () => {
                   Join Our <span className="text-orange-400">I-CES</span> Community
                 </h2>
                 <p className="text-lg md:text-2xl text-gray-200 mb-4 font-medium">
-                  Becoming A <span className="text-orange-400 font-bold">I-CES</span> Community Member Is Your Exclusive Ticket To Becoming The Face And Voice Of Our Vibrant Academic Community. It's Not Just A Role, It's An Opportunity To Share The Dynamic Spirit Of Our Campus With The World!
+                  This isn’t just membership. It’s representation. Become an <span className="text-orange-400 font-bold">I-CES</span> Community Member and be the face, the voice, and the energy that defines our campus.
                 </p>
                 <a
                   href="https://discord.com/channels/846300701277159474/849620402237079572"
