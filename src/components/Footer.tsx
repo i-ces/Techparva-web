@@ -16,17 +16,17 @@ const Footer = () => {
 
       {/* Animated SVG Backgrounds */}
 
-      <AnimateLogo name="/icons/Design.svg" cls="bottom-0 right-0" />
-      <AnimateLogo name="/icons/Design.svg" cls="bottom-20 right-20" />
-      <AnimateLogo name="/icons/Design.svg" cls="bottom-40 right-40" />
-      <AnimateLogo name="/icons/Design.svg" cls="top-20 right-20" />
+      <AnimateLogo name="/icons/AIArtBattle.svg" cls="bottom-0 right-0" />
+      <AnimateLogo name="/icons/BlindTech.svg" cls="bottom-20 right-20" />
+      <AnimateLogo name="/icons/Closing.svg" cls="bottom-40 right-40" />
+      <AnimateLogo name="/icons/CTF.svg" cls="top-20 right-20" />
       <AnimateLogo name="/icons/Design.svg" cls="top-0 right-0" />
 
-      <AnimateLogo name="/icons/Design.svg" cls="bottom-0 left-0" />
-      <AnimateLogo name="/icons/Design.svg" cls="bottom-20 left-20" />
-      <AnimateLogo name="/icons/Design.svg" cls="top-40 left-40" />
-      <AnimateLogo name="/icons/Design.svg" cls="top-20 left-20" />
-      <AnimateLogo name="/icons/Design.svg" cls="top-0 left-0" />
+      <AnimateLogo name="/icons/Datathon.svg" cls="bottom-0 left-0" />
+      <AnimateLogo name="/icons/GenAI.svg" cls="bottom-20 left-20" />
+      <AnimateLogo name="/icons/Googler.svg" cls="top-40 left-40" />
+      <AnimateLogo name="/icons/Roadmap.svg" cls="top-20 left-20" />
+      <AnimateLogo name="/icons/TypeNinja.svg" cls="top-0 left-0" />
 
 
       <div className="w-full px-4 sm:px-6 lg:px-8 pt-20 min-h-[420px] flex flex-col justify-center relative z-10">
