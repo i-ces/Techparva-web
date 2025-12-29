@@ -322,7 +322,8 @@ const Home = () => {
             </div>
 
               {/* I-CES Community Section */}
-            <div className="relative py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden">
+            <div className="flex flex-row justify-center">
+            <div className="relative w-[70%] py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden rounded-2xl">
               <div className="absolute inset-0 pointer-events-none select-none">
                 <svg width="100%" height="100%" className="absolute inset-0" style={{zIndex:0}}>
                   <circle cx="20%" cy="20%" r="3" fill="#38bdf8" opacity="0.5" />
@@ -348,6 +349,7 @@ const Home = () => {
                   Join Us On Discord
                 </a>
               </div>
+            </div>
             </div>
       
             {/* Sponsors Section */}
