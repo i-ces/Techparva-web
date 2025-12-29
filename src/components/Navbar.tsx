@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(""); // Tracks the current section
   const location = useLocation();
+  const [showNavbar, setShowNavbar] = useState(false);
   const navigate = useNavigate();
 
   const navigation = [
@@ -42,47 +43,69 @@ const Navbar = () => {
     }
   };
 
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.6 } // Trigger when 60% of the section is in view
-    );
+useEffect(() => {
+  // ===== Scroll handler (Navbar show/hide) =====
+  const handleScroll = () => {
+    setShowNavbar(window.scrollY > 50);
+  };
 
-    sections.forEach((section) => observer.observe(section));
+  window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
+  // ===== Intersection Observer (Active section) =====
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+
+  // ===== Cleanup =====
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+    sections.forEach((section) => observer.unobserve(section));
+    observer.disconnect();
+  };
+}, []);
+
 
   return (
- <nav 
-className="
-  fixed w-full z-50
-  bg-gradient-to-r from-indigo-600/80 to-purple-800/80
-  backdrop-blur-md
-  border-b border-purple-400/80
-  shadow-[0_10px_30px_rgba(99,102,241,0.35)]
-  animate-navbar-glow
-"
-
+<nav
+  className={`
+    fixed top-0 left-0 w-full z-50
+    transition-all duration-500 ease-in-out
+    ${
+      showNavbar
+        ? `
+          bg-gradient-to-r from-indigo-600/80 to-purple-800/80
+          backdrop-blur-md
+          border-b border-purple-400/80
+          shadow-[0_10px_30px_rgba(99,102,241,0.35)]
+        `
+        : `
+          bg-gradient-to-r from-indigo-700 via-purple-600 to-indigo-700
+          relative
+        `
+    }
+  `}
 >
+
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div className="flex justify-between h-16 items-center">
+    <div className="flex justify-between h-24 items-center">
       
       {/* Logo */}
       <Link to="/" className="flex items-center justify-between space-x-2 mr-auto -ml-14">
         <img
           src="/icons/logo.svg"
           alt="Logo"
-          className="w-80 h-80"  
+          className="h-96 w-auto" 
         />
       </Link>
       {/* Desktop navigation */}
@@ -92,21 +115,19 @@ className="
             key={item.name}
             onClick={() => handleClick(item)}
             className={`
-              relative text-sm font-medium tracking-wide
-              transition-all duration-300
-              ${
-                activeSection === item.href.replace("#", "") ||
-                (location.pathname === item.href && item.href.startsWith("/"))
-                  ? "text-white"
-                  : "text-white/80 hover:text-white"
-              }
-              after:content-[''] after:absolute after:left-0 after:-bottom-1
-              after:h-[2px] after:w-0 after:bg-white
-              after:transition-all after:duration-300
-              hover:after:w-full
-            `}
+            relative text-lg font-bold tracking-wider
+            transition-all duration-300
+            ${
+              activeSection === item.href.replace("#", "") ||
+              (location.pathname === item.href && item.href.startsWith("/"))
+                ? "text-white"
+                : "text-white/80 hover:text-white"
+             }
+                     `}
           >
             {item.name}
+            <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+
           </button>
         ))}
       </div>

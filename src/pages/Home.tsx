@@ -11,50 +11,54 @@ const club = "/main.png";
 
 const Home = () => {
   return (
-    <div className="pt-16">
+    <div>
       {/* Hero Section */}
       <div className="relative h-screen bg-gradient-to-r from-indigo-700 via-purple-600 to-indigo-700 animate-gradient-x flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
         <div className="relative max-w-7xl px-4 sm:px-6 lg:px-8 h-full w-full flex flex-col items-center justify-center space-y-10">
           <AnimateOnScroll animation="slideUp">
             <div className="text-white text-center space-y-8">
-              <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-[0_5px_30px_rgba(0,0,0,0.5)]">
+              <h1 className="text-1xl md:text-9xl font-extrabold tracking-tight drop-shadow-[0_5px_30px_rgba(0,0,0,0.5)]">
                 <span>Tech</span>
                 <span className="text-orange-400"> Parva</span>
                 <span className="text-orange-400"> 2026</span>
               </h1>
 
-              <p className="text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed text-gray-200">
+              <p className="text-xl md:text-4xl font-medium max-w-3xl mx-auto leading-relaxed text-gray-200">
                 Learn and compete your interest !
               </p>
 
-              <div className="flex flex-wrap justify-center gap-6">
-                <Link
-                  to="/events"
-                  className="bg-orange-500 text-white px-12 py-4 rounded-full font-semibold shadow-[0_10px_40px_rgba(255,140,0,0.4)]
-                  transition-all duration-500 hover:bg-orange-600 hover:scale-110 hover:shadow-[0_15px_60px_rgba(255,140,0,0.6)]"
-                >
-                  Explore Events
-                </Link>
+             <div className="flex flex-wrap justify-center gap-6">
+  <Link
+    to="/events"
+    className="bg-orange-500 text-white px-16 py-8 text-xl md:text-2xl rounded-full font-semibold
+    shadow-[0_10px_40px_rgba(255,140,0,0.4)]
+    transition-all duration-500 hover:bg-orange-600 hover:scale-110
+    hover:shadow-[0_12px_60px_rgba(255,140,0,0.6)]"
+  >
+    Explore Events
+  </Link>
 
-                <Link
-                  to="/schedule"
-                  className="bg-white/90 backdrop-blur text-indigo-700 px-12 py-4 rounded-full font-semibold border border-white/30
-                  shadow-lg transition-all duration-500 hover:text-white hover:scale-110
-                  hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600"
-                >
-                  View Schedule
-                </Link>
-              </div>
+  <Link
+    to="/schedule"
+    className="bg-white/90 backdrop-blur text-indigo-700 px-16 py-8 text-xl md:text-2xl rounded-full font-semibold
+    border border-white/30 shadow-lg transition-all duration-500
+    hover:text-white hover:scale-110
+    hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600"
+  >
+    View Schedule
+  </Link>
+</div>
+
             </div>
           </AnimateOnScroll>
                     </div>
             {/* Image Bubble Decorations */}
             <div className="hidden md:block absolute bottom-60 left-10 z-10 animate-float-slow">
-              <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
+              <div className="rounded-full w-48 h-48 animate-glow flex items-center justify-center">
                 <div
-                  className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
+                  className="h-48 w-48 rounded-full border-2 border-purple-400 overflow-hidden relative"
                 >
                   <div
                     className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
@@ -63,11 +67,11 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="hidden md:block absolute top-20 left-20 z-20 animate-float">
-              <div className="rounded-full w-24 h-24 animate-glow flex items-center justify-center">
+
+            <div className="hidden md:block absolute top-44 left-20 z-20 animate-float">
+              <div className="rounded-full w-32 h-32 animate-glow flex items-center justify-center">
                 <div
-                  className="h-24 w-24 rounded-full border-2 border-indigo-400 overflow-hidden relative"
+                  className="h-32 w-32 rounded-full border-2 border-indigo-400 overflow-hidden relative"
                 >
                   <div
                     className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
@@ -78,9 +82,9 @@ const Home = () => {
             </div>
             
             <div className="hidden md:block absolute bottom-16 right-12 animate-float-slow">
-              <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
+              <div className="rounded-full w-52  h-52  animate-glow flex items-center justify-center">
                 <div
-                  className="h-40 w-40 rounded-full border-2 border-purple-400 overflow-hidden relative"
+                  className="h-52  w-52  rounded-full border-2 border-purple-400 overflow-hidden relative"
                 >
                   <div
                     className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
@@ -91,9 +95,9 @@ const Home = () => {
             </div>
             
             <div className="hidden md:block absolute top-10 right-48 z-20 animate-float">
-              <div className="rounded-full w-28 h-28 animate-glow flex items-center justify-center">
+              <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
                 <div
-                  className="h-28 w-28 rounded-full border-2 border-indigo-500 overflow-hidden relative"
+                  className="h-40 w-40 rounded-full border-2 border-indigo-500 overflow-hidden relative"
                 >
                   <div
                     className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
@@ -112,8 +116,8 @@ const Home = () => {
               bg-gradient-to-br from-indigo-950 via-purple-950 to-black "
             >
               <AnimateOnScroll animation="scaleUp" delay={0.1}>
-                {/* Image Wrapper (click to view Pre-Event) */}
-                <Link to="/events?type=pre-event" className="h-[75vh] w-[80vw] block">
+                {/* Image Wrapper (click to view Junior-TechFest) */}
+                <Link to="/events?type=Junior-TechFest" className="h-[75vh] w-[80vw] block">
                   <div className="h-[75vh] w-[80vw]">
                     <img
                       src={club}
@@ -135,7 +139,7 @@ const Home = () => {
               " />
             </section>
 
-            {/* Vision Section (inserted after Gallery) */}          
+            {/* Vision Section */}          
               <Vision />
             
              {/* Key Info Section */}
@@ -235,7 +239,8 @@ const Home = () => {
             {[
               {
                 title: "Pre-Event",
-                description: "Exclusive fun and games for juniors.",    
+                description: "Engaging fun activities and interactive games for all participants.",
+   
                 image: pre_event,
                 hoverImage: "/5.jpg",
               },
@@ -300,7 +305,7 @@ const Home = () => {
                         ? "workshop"
                         : event.title === "Main Event"
                         ? "competition"
-                        : "pre-event"
+                        : "Junior-TechFest"
                     }`}
                     className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
                   >
@@ -313,6 +318,35 @@ const Home = () => {
                     </AnimateOnScroll>
                   ))}
                 </div>
+              </div>
+            </div>
+
+              {/* I-CES Community Section */}
+            <div className="relative py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden">
+              <div className="absolute inset-0 pointer-events-none select-none">
+                <svg width="100%" height="100%" className="absolute inset-0" style={{zIndex:0}}>
+                  <circle cx="20%" cy="20%" r="3" fill="#38bdf8" opacity="0.5" />
+                  <circle cx="80%" cy="30%" r="2.5" fill="#818cf8" opacity="0.5" />
+                  <circle cx="30%" cy="80%" r="2" fill="#a5b4fc" opacity="0.5" />
+                  <circle cx="60%" cy="60%" r="2.5" fill="#38bdf8" opacity="0.5" />
+                  <circle cx="90%" cy="70%" r="2" fill="#818cf8" opacity="0.5" />
+                </svg>
+              </div>
+              <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
+                <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
+                  Join Our <span className="text-orange-400">I-CES</span> Community
+                </h2>
+                <p className="text-lg md:text-2xl text-gray-200 mb-4 font-medium">
+                  This isn’t just membership. It’s representation. Become an <span className="text-orange-400 font-bold">I-CES</span> Community Member and be the face, the voice, and the energy that defines our campus.
+                </p>
+                <a
+                  href="https://discord.com/channels/846300701277159474/849620402237079572"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 px-8 py-4 bg-orange-400 hover:bg-orange-500 text-white font-bold text-xl rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
+                >
+                  Join Us On Discord
+                </a>
               </div>
             </div>
       
