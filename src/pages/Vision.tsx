@@ -3,7 +3,7 @@ import AnimateOnScroll from "../components/AnimateOnScroll";
 
 const Vision: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen flex justify-center items-center overflow-hidden">
+    <section className="relative w-full min-h-screen flex justify-center items-center overflow-hidden px-4 sm:px-6">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-right"
@@ -15,12 +15,12 @@ const Vision: React.FC = () => {
 
       {/* Main content (left aligned) */}
       <AnimateOnScroll animation="fadeIn">
-        <div className="bg-[rgba(245,245,245,0.7)] relative z-10 max-w-4xl lg:max-w-3xl xl:max-w-4xl px-8 md:px-16 py-24 rounded-xl">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-black/80 leading-tight drop-shadow-[0_6px_18px_rgba(0,0,0,0.6)]">
+        <div className="bg-[rgba(245,245,245,0.7)] relative z-10 sm:max-w-lg md:max-w-3xl lg:max-w-4xl sm:px-6 md:px-12 lg:px-16 py-10 sm:py-10 md:py-20 rounded-xl">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-black/80 leading-tight drop-shadow-[0_6px_18px_rgba(0,0,0,0.6)] text-center md:text-left">
             The Vision for 2026
           </h1>
 
-          <p className="mt-6 text-black/70 text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl">
+          <p className="mt-6 text-black/70 px-4 text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0 text-center md:text-left">
             Standing tall as the pride of Pokhara, Mt. Machhapuchhre embodies
             elegance, strength, and an unshakable spirit—qualities that define
             the vision of TechParva 2026. Just as this majestic peak rises
@@ -35,7 +35,7 @@ const Vision: React.FC = () => {
             stronger technological future from the heart of Pokhara.
           </p>
 
-          <p className="mt-6 text-black/70 font-semibold">
+          <p className="mt-6 text-black/70 font-semibold text-center md:text-left">
             “Think bigger, innovate bolder and become better.”
           </p>
         </div>
@@ -48,7 +48,7 @@ const Vision: React.FC = () => {
         className="pointer-events-none absolute right-5 bottom-24 w-64 md:w-96 lg:w-[300px] opacity-30 transform rotate-12"
       /> */}
       {/* Rotating Badge - Positioned below student info */}
-      <div className="pointer-events-none absolute right-5 bottom-24 w-64 md:w-96 lg:w-[300px]">
+      <div className="pointer-events-none absolute right-5 bottom-24 w-64 md:w-96 lg:w-[300px] hidden sm:block">
         <div className="relative w-60 h-60">
           <svg
             className="w-full h-full animate-spin"
