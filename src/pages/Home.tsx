@@ -354,6 +354,51 @@ const Home = () => {
       
             {/* Sponsors Section */}
           <Sponsors />
+
+{/* Map Section */}
+<div className="w-full py-20 bg-gradient-to-br white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <AnimateOnScroll animation="slideUp">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-purple-600 mb-8 text-center">
+        Event Location
+      </h2>
+    </AnimateOnScroll>
+
+    <AnimateOnScroll animation="scaleUp" delay={0.2}>
+      <div className="relative w-full h-[500px] rounded-3xl overflow-hidden
+        border border-indigo-600/40
+        shadow-[0_20px_60px_rgba(99,102,241,0.4)]">
+
+        <div>
+          <a
+            href="https://www.google.com/maps/place/CIT+Center+and+Electronics+%26+Computer+Department/@28.254489,83.97638,20z/data=!4m14!1m7!3m6!1s0x89b91d6e97d534e1:0xe4b6c6fc49942b9f!2sGuerrieri+Technology+Center!8m2!3d38.3716078!4d-75.500135!16s%2Fg%2F11vj5clq5r!3m5!1s0x3995947dd802d223:0xcc6f32e6a0be8042!8m2!3d28.2546211!4d83.9762843!16s%2Fg%2F12hptkm6y?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 text-xs hover:underline mt-1"
+          >
+            {/* View larger map */}
+          </a>
+        </div>
+
+        <iframe
+          title="Event Location Map"
+          src="https://www.google.com/maps?q=CIT+Center+and+Electronics+%26+Computer+Department+Pokhara&output=embed"
+          className="w-full h-full border-0"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+        {/* Glass overlay */}
+        <div className="absolute inset-0 pointer-events-none
+          bg-gradient-to-t from-black/30 via-transparent to-transparent">
+        </div>
+      </div>
+    </AnimateOnScroll>
+
+  </div>
+</div>
+
+
       </div>
     );
   };
