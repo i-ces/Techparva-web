@@ -1,58 +1,54 @@
-import InfiniteMovingCards from "./InfiniteScroll";
+const kangaroopokhara = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/491895265_1077511114407514_5421893810400654368_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HlUX_JoSIfwQ7kNvwGwwLef&_nc_oc=AdkZhN7jaJvANLwvT2AWhZQEHIIVHUccZLw3thDHyUEMbPLjR6mSP3A6tQ9YkpvYTW0&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=ny68oBqGAHvJsUb3vPSDow&oh=00_Afnis2CxOEPQUEbloTL-21Ff73pjPDRGA0h4HscMtlrdWA&oe=6959216E";
+const yashi = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/476394564_122203120112208202_3930788751999818459_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=EdNXUlsBc1YQ7kNvwEoFtT2&_nc_oc=AdleQoEZtooNfAjEi7AsM21zZlR5zUdT-mIu0yNMF-SznV94vsRoHuhVRsXqpwwmz9Q&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=flv1pkEsBiZwKnhuOGd7yw&oh=00_Afl96-0VBvntxqpySW8qOHRvbmhoco186YZ2hGV3-Lr1Pg&oe=69591F1A";
+const old_lan_hua = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/298652431_559165006000056_3699906122409785334_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_aid=0&_nc_ohc=HtN7XCciz-8Q7kNvwHV6jhH&_nc_oc=AdnW6DWbZB05vpcLw6V6fEZh3Pb4Gm4LEmQqECqq3_MvkOLkldaR_U6J8Q0sFYHqpYY&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=KmmJFYCksQLF7vjxJMxxvA&oh=00_Afkzob-sC1AG40mfkWm75enNfcXrcpzpHOapBfpz7WVW3A&oe=695903F9";
+const infochip = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/481972241_1075873271228233_8889409555477099425_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Qtdtq2l5HnAQ7kNvwHFh3xy&_nc_oc=AdlskDF58YEKlCujaaTFZLeo-7-TblqDRMH_gQ8ZghDYRCfyMegH9Y26fWHDMQNo7AQ&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=ASO2RFbwtsp2_5kMQLqzZQ&oh=00_AfkwH3wSqL3_1WcKhTL7CiKwbKCPcK_OR6mw-SSxtIM7nA&oe=695923B2";
+const mindcraft = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/461714494_122110409246521358_4884230586989047632_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ABm97KV1u-8Q7kNvwFvJPU2&_nc_oc=Adl9YInF-ul7yF6kzVYpNpl-kzFikHhvjI_BKlRRuT_I6ZK6SGdU5dCDNOffmp61oMY&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=GSm_os49idYZR7S5d0-r2w&oh=00_AfmvLY-q0fMLGVJGUJ1FD0W7tS0lYwl75L4TyumSEdzk8Q&oe=6958FD92";
+const jankaritech = "https://scontent.fktm3-1.fna.fbcdn.net/v/t1.6435-9/162117560_191427782781785_7284501706623852323_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DndB5IWOv4sQ7kNvwFRgP56&_nc_oc=AdnInibSC9uQ5NeTpSJJIa5HCW3te4-12sWLR2Qx7oY-Cf5sS9uYPYDmtdsGSzYU8VQ&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=bLziS-LbFYLdIgUJNmSbgg&oh=00_Afl4aj0Ngbbg6wNncTdlfYvikcyoXB93LWq8lEAzImHQgA&oe=697AC4F6";
 
-const nipuna_sewa = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const Janakari_tech = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const Rebooted =      "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const margin_top =    "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const freshelement ="https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const citizen_furniture ="https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const Bookmart = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const programiz_logo = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const Panchamrit = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const Black_Tech ="https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const Books_Mandala = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const Offensive_Security = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const Infochip = "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
-const everest =  "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F";
 
-const sponsors = {
+const sponsors: Record<string, { name: string; logo: string; link: string }[]> = {
   Title: [
     {
-      name: "Nipuna Prabhidhik Sewa",
-      logo: nipuna_sewa,
-      link: "https://www.facebook.com/NipunaPrabidhikSewa", 
+      name: "Kangaroo Education",
+      logo: kangaroopokhara,
+      link: "https://www.facebook.com/kangaroopokhara",
     },
   ],
-  Diamond: [
+  Powered_By: [
     {
-      name: "AECC Global",
-      logo: "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308457541_183475174183366_7242559162188718994_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DsU7yHSc51sQ7kNvwF6tSWu&_nc_oc=AdmnukTGW2PpBQ3rhHMOMybLDj8RelXuSBROq6gfijJGEV-kR7Sc7xaSIQN8WemsdYo&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=nt1sn0kd4-wxoWtn4Q_T7Q&oh=00_AfnlzSDRLgqikAxNpZ3_KuHhXoPdGBGmEuMVfGuUnQ9GiA&oe=694A054F",
-      link: "https://www.aeccglobal.com.np/study-abroad-consultant/pokhara",
+      name: "Yashi Academy",
+      logo: yashi,
+      link: "https://www.facebook.com/yashi.academy",
     },
-    { name: "Infochip (P.) Ltd", logo: Infochip, link: "http://www.infochip.com.np/?fbclid=IwY2xjawHo3cBleHRuA2FlbQIxMAABHdj32IrAjcD43MjEYjYJdOUzrvXyOAa_MsW3sS9cHG69puyuLGikayFCkQ_aem_cdYadxQoo_kdOoElI_YKhA" },
   ],
-  Gold: [
-    { name: "JanakariTech Pvt. Ltd.", logo: Janakari_tech, link: "https://www.facebook.com/jankaritech" },
-    { name: "Rebooted Creation Labs Pvt. Ltd.", logo: Rebooted, link: "https://rcl-website.vercel.app/?fbclid=IwY2xjawHo3eNleHRuA2FlbQIxMAABHUUKG9WutYRTDZqRdR1V_NNcCIKggWh0VG1H6clBNNW-HfOfClaExn16dw_aem_2ajVa7Fj6bRJGNoNLzIGVQ" },
+  Associated_with: [
+    {
+      name: "Old Lan Hua",
+      logo: old_lan_hua,
+      link: "https://www.facebook.com/oldlanhuachineserestaurant",
+    },
   ],
-  E_learning_Partner: [
-    { name: "Programiz", logo: programiz_logo, link: "https://www.facebook.com/programiz" },
+  General_Partner: [
+    {
+      name: "Infochip",
+      logo: infochip,
+      link: "https://www.facebook.com/infochippkr",
+    },
+    {
+      name: "Mind Craft",
+      logo: mindcraft,
+      link: "https://www.facebook.com/MINDCRAFT.NP",
+    },
+    {
+      name: "Jankari Tech",
+      logo: jankaritech,
+      link: "https://www.facebook.com/jankaritech",
+    },
   ],
-  Security_Partner: [
-    { name: "Offensive Security", logo: Offensive_Security, link: "https://www.offsec.com/?fbclid=IwY2xjawHwGeBleHRuA2FlbQIxMAABHXliNpORt7ogtruYobHik_TRO13T4bGSfUswnNf76og4b7Iv53cGZQr-sQ_aem_fr1_sToOeHrXTWpMpVum0w" },
-  ],
-  Silver: [
-    { name: "Everest Technomania Pvt. Ltd", logo: everest, link: "https://www.facebook.com/profile.php?id=100063623531083" },
-    { name: "Fresh Elements Restaurant", logo: freshelement, link: "https://www.facebook.com/FreshElementsRestaurant" },
-    { name: "Citizen Furniture Trade Link Pvt. Ltd", logo: citizen_furniture, link: "https://www.facebook.com/citizenfurniturepokhara" },
-    { name: "MarginTop Solutions", logo: margin_top, link: "https://www.facebook.com/margintopsolutionsnepal" },
-    { name: "Black Tech.", logo: Black_Tech, link: "https://www.facebook.com/blacktechnepal" },
-    { name: "Panchamrit Bakery and Cafe.", logo: Panchamrit, link: "https://www.facebook.com/profile.php?id=100054501338729" },
-  ],
-  Gifting: [
-    { name: "Book Mart", logo: Bookmart, link: "https://www.facebook.com/bookmart.np" },
-    { name: "Books Mandala", logo: Books_Mandala, link: "https://www.facebook.com/booksmandala" },
-  ],
+  // Gifting: [
+  //   { name: "Book Mart", logo: Bookmart, link: "https://www.facebook.com/bookmart.np" },
+  //   { name: "Books Mandala", logo: Books_Mandala, link: "https://www.facebook.com/booksmandala" },
+  // ],
 };
 
 const Sponsors = () => {
@@ -60,7 +56,7 @@ const Sponsors = () => {
     <div id="sponsors" className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl font-bold text-center mb-8">
-          Our <span className="text-blue-800">Sponsors</span>
+          Our <span className="text-blue-800">Partners</span>
         </h2>
 
         {Object.keys(sponsors).map((category) => (
@@ -69,7 +65,7 @@ const Sponsors = () => {
               {category.replace(/_/g, " ")}
             </h3>
             <div className="flex justify-center flex-wrap gap-8">
-              {sponsors[category].map((sponsor, i) => (
+              {(sponsors[category] as { name: string; logo: string; link: string }[]).map((sponsor, i: number) => (
                 <a
                   key={i}
                   href={sponsor.link}
@@ -77,8 +73,8 @@ const Sponsors = () => {
                   rel="noopener noreferrer"
                   className="p-4 group"
                 >
-                 <div className="relative w-40 h-40 rounded-full bg-blue-200 group">
-                  <div className="absolute inset-0 flex items-center justify-center rounded-full bg-gradient-to-t from-purple-200 via-purple-100 to-transparent scale-110">
+                 <div className="relative w-40 h-40 rounded-full bg-purple-900 group">
+                  <div className="absolute inset-0 flex items-center justify-center rounded-full bg-gradient-to-t from-purple-400 via-purple-200 to-transparent scale-110">
                     <img
                       src={sponsor.logo}
                       alt="Sponsor Logo"
