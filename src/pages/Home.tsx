@@ -19,156 +19,167 @@ const Home = () => {
         <div className="relative max-w-7xl px-4 sm:px-6 lg:px-8 h-full w-full flex flex-col items-center justify-center space-y-10">
           <AnimateOnScroll animation="slideUp">
             <div className="text-white text-center space-y-8">
-              <h1 className="text-1xl md:text-9xl font-extrabold tracking-tight drop-shadow-[0_5px_30px_rgba(0,0,0,0.5)]">
+              <h1 className="text-7xl md:text-9xl font-extrabold tracking-tight drop-shadow-[0_5px_30px_rgba(0,0,0,0.5)]">
                 <span>Tech</span>
                 <span className="text-orange-400"> Parva</span>
                 <span className="text-orange-400"> 2026</span>
               </h1>
 
-              <p className="text-xl md:text-4xl font-medium max-w-3xl mx-auto leading-relaxed text-gray-200">
+              <p className="text-2xl md:text-4xl font-medium max-w-3xl mx-auto leading-relaxed text-gray-200">
                 Learn and compete your interest !
               </p>
 
-             <div className="flex flex-wrap justify-center gap-6">
-  <Link
-    to="/events"
-    className="bg-orange-500 text-white px-16 py-8 text-xl md:text-2xl rounded-full font-semibold
+              <div className="flex flex-wrap justify-center gap-6">
+                <div
+                className="bg-orange-500 text-white px-16 py-8 text-xl md:text-2xl rounded-full font-semibold
     shadow-[0_10px_40px_rgba(255,140,0,0.4)]
     transition-all duration-500 hover:bg-orange-600 hover:scale-110
-    hover:shadow-[0_12px_60px_rgba(255,140,0,0.6)]"
-  >
-    Explore Events
-  </Link>
-
-  <Link
-    to="/schedule"
-    className="bg-white/90 backdrop-blur text-indigo-700 px-16 py-8 text-xl md:text-2xl rounded-full font-semibold
+    hover:shadow-[0_12px_60px_rgba(255,140,0,0.6)] z-10"
+                >
+                <Link
+                  to="/events"
+                >
+                  Explore Events
+                </Link>
+                </div>
+                <div
+                className="bg-white/90 backdrop-blur text-indigo-700 px-16 py-8 text-xl md:text-2xl rounded-full font-semibold
     border border-white/30 shadow-lg transition-all duration-500
     hover:text-white hover:scale-110
-    hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600"
-  >
-    View Schedule
-  </Link>
-</div>
-
+    hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600 z-10"
+                >
+                <Link
+                  to="/schedule"
+                >
+                  View Schedule
+                </Link>
+                </div>
+              </div>
             </div>
           </AnimateOnScroll>
-                    </div>
-            {/* Image Bubble Decorations */}
-            <div className="hidden md:block absolute bottom-60 left-10 z-10 animate-float-slow">
-              <div className="rounded-full w-48 h-48 animate-glow flex items-center justify-center">
-                <div
-                  className="h-48 w-48 rounded-full border-2 border-purple-400 overflow-hidden relative"
-                >
-                  <div
-                    className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
-                    style={{ backgroundImage: "url('/2.jpg')" }}
-                  ></div>
-                </div>
-              </div>
+        </div>
+        {/* Image Bubble Decorations */}
+        <div className="hidden md:block absolute bottom-60 left-10 z-10 animate-float-slow">
+          <div className="rounded-full w-48 h-48 animate-glow flex items-center justify-center">
+            <div className="h-48 w-48 rounded-full border-2 border-purple-400 overflow-hidden relative">
+              <div
+                className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
+                style={{ backgroundImage: "url('/2.jpg')" }}
+              ></div>
             </div>
+          </div>
+        </div>
 
-            <div className="hidden md:block absolute top-44 left-20 z-20 animate-float">
-              <div className="rounded-full w-32 h-32 animate-glow flex items-center justify-center">
-                <div
-                  className="h-32 w-32 rounded-full border-2 border-indigo-400 overflow-hidden relative"
-                >
-                  <div
-                    className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
-                    style={{ backgroundImage: "url('/19.jpg')" }}
-                  ></div>
-                </div>
-              </div>
+        <div className="hidden md:block absolute top-44 left-20 z-20 animate-float">
+          <div className="rounded-full w-32 h-32 animate-glow flex items-center justify-center">
+            <div className="h-32 w-32 rounded-full border-2 border-indigo-400 overflow-hidden relative">
+              <div
+                className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
+                style={{ backgroundImage: "url('/19.jpg')" }}
+              ></div>
             </div>
-            
-            <div className="hidden md:block absolute bottom-16 right-12 animate-float-slow">
-              <div className="rounded-full w-52  h-52  animate-glow flex items-center justify-center">
-                <div
-                  className="h-52  w-52  rounded-full border-2 border-purple-400 overflow-hidden relative"
-                >
-                  <div
-                    className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
-                    style={{ backgroundImage: "url('/20.jpg')" }}
-                  ></div>
-                </div>
-              </div>
+          </div>
+        </div>
+
+        <div className="hidden md:block absolute bottom-16 right-12 animate-float-slow">
+          <div className="rounded-full w-52  h-52  animate-glow flex items-center justify-center">
+            <div className="h-52  w-52  rounded-full border-2 border-purple-400 overflow-hidden relative">
+              <div
+                className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
+                style={{ backgroundImage: "url('/20.jpg')" }}
+              ></div>
             </div>
-            
-            <div className="hidden md:block absolute top-10 right-48 z-20 animate-float">
-              <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
-                <div
-                  className="h-40 w-40 rounded-full border-2 border-indigo-500 overflow-hidden relative"
-                >
-                  <div
-                    className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
-                    style={{ backgroundImage: "url('/6.jpg')" }}
-                  ></div>
-                </div>
-              </div>
+          </div>
+        </div>
+
+        <div className="hidden md:block absolute top-10 right-48 z-20 animate-float">
+          <div className="rounded-full w-40 h-40 animate-glow flex items-center justify-center">
+            <div className="h-40 w-40 rounded-full border-2 border-indigo-500 overflow-hidden relative">
+              <div
+                className="absolute inset-0 rounded-full bg-center bg-cover opacity-90"
+                style={{ backgroundImage: "url('/6.jpg')" }}
+              ></div>
             </div>
-            
-                  </div>
-            
-               {/* Gallery Section */}
-            <section
+          </div>
+        </div>
+      </div>
+
+      {/* Vision Section */}
+      <Vision />
+      {/* Gallery Section */}
+      {/* <section
               id="gallery"
               className="relative min-h-screen hidden md:flex items-center justify-center
               bg-gradient-to-br from-indigo-950 via-purple-950 to-black "
-            >
-              <AnimateOnScroll animation="scaleUp" delay={0.1}>
-                {/* Image Wrapper (click to view Junior-TechFest) */}
-                <Link to="/events?type=Junior-TechFest" className="h-[75vh] w-[80vw] block">
-                  <div className="h-[75vh] w-[80vw]">
-                    <img
-                      src={club}
-                      alt="Techparva Banner"
-                      className="w-screen h-full object-scale-down"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                </Link>
-              </AnimateOnScroll>
-            
-              {/* Ambient glow */}
-              <div className="
+            > */}
+      <section
+        id="gallery"
+        className="relative min-h-screen hidden md:flex items-center justify-center"
+      >
+        <AnimateOnScroll animation="scaleUp" delay={0.1}>
+          {/* Image Wrapper (click to view Junior-TechFest) */}
+          <Link
+            to="/events?type=Junior-TechFest"
+            className="h-[75vh] w-[90vw] block"
+          >
+            <div className="h-[75vh] w-[90vw] bg-slate-200 rounded-2xl bg-gradient-to-br from-indigo-950 via-purple-950 to-black overflow-hidden pt-6 ">
+              <img
+                src={club}
+                alt="Techparva Banner"
+                className="w-screen h-full object-center"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </Link>
+        </AnimateOnScroll>
+
+        {/* Ambient glow */}
+        {/* <div className="
                 absolute inset-0
                 bg-gradient-to-r from-indigo-600/10 via-purple-600/10 to-pink-600/10
                 blur-3xl
                 pointer-events-none
-              " />
-            </section>
-
-            {/* Vision Section */}          
-              <Vision />
-            
-             {/* Key Info Section */}
-              <div className="py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    icon: <Calendar className="h-10 w-10 " />,
-                    title: "Date",
-                    info: "Poush 20-22th / January 4-6th",
-                  },
-                  {
-                    icon: <MapPin className="h-8 w-8" />,
-                    title: "Location",
-                    info: "WRC, CIT, Multimedia Hall",
-                  },
-                  {
-                    icon: <CpuIcon className="h-10 w-10" />,
-                    title: "Competitions",
-                    info: "Different domains",
-                    link: "/events?type=competition",
-                  },
-                ].map((item, index) => (
-                  <AnimateOnScroll key={index} animation="slideUp" delay={index * 0.2}>
-                    {item.link ? (
-                      <Link to={item.link} className="group relative">
-                        <div
-                          className="
+              " /> */}
+        <div
+          className="
+                absolute inset-0
+                blur-3xl
+                pointer-events-none
+              "
+        />
+      </section>
+      {/* Key Info Section */}
+      <div className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <Calendar className="h-10 w-10 " />,
+                title: "Date",
+                info: "Poush 20-22th / January 4-6th",
+              },
+              {
+                icon: <MapPin className="h-8 w-8" />,
+                title: "Location",
+                info: "WRC, CIT, Multimedia Hall",
+              },
+              {
+                icon: <CpuIcon className="h-10 w-10" />,
+                title: "Competitions",
+                info: "Different domains",
+                link: "/events?type=competition",
+              },
+            ].map((item, index) => (
+              <AnimateOnScroll
+                key={index}
+                animation="slideUp"
+                delay={index * 0.2}
+              >
+                {item.link ? (
+                  <Link to={item.link} className="group relative">
+                    <div
+                      className="
                             relative flex items-center space-x-4 p-7 rounded-2xl
                             bg-purple-100/80 backdrop-blur-md
                             border border-indigo-600/30
@@ -177,25 +188,27 @@ const Home = () => {
                             hover:-translate-y-2
                             hover:shadow-[0_15px_45px_rgba(99,102,241,0.25)]
                           "
-                        >
-                          <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
-                            bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
-
-                          <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
-                            {item.icon}
-                          </div>
-
-                          <div className="relative">
-                            <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
-                              {item.title}
-                            </h3>
-                            <p className="text-gray-600">{item.info}</p>
-                          </div>
-                        </div>
-                      </Link>
-                    ) : (
+                    >
                       <div
-                        className="
+                        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+                            bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"
+                      ></div>
+
+                      <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
+                        {item.icon}
+                      </div>
+
+                      <div className="relative">
+                        <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
+                          {item.title}
+                        </h3>
+                        <p className="text-gray-600">{item.info}</p>
+                      </div>
+                    </div>
+                  </Link>
+                ) : (
+                  <div
+                    className="
                           group relative flex items-center space-x-4 p-7 rounded-2xl
                           bg-purple-100/80 backdrop-blur-md
                           border border-indigo-600/30
@@ -204,27 +217,29 @@ const Home = () => {
                           hover:-translate-y-2
                           hover:shadow-[0_15px_45px_rgba(99,102,241,0.25)]
                         "
-                      >
-                        <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
-                          bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"></div>
+                  >
+                    <div
+                      className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+                          bg-gradient-to-r from-indigo-400/10 to-purple-400/10 blur-xl"
+                    ></div>
 
-                        <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
-                          {item.icon}
-                        </div>
+                    <div className="relative transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]">
+                      {item.icon}
+                    </div>
 
-                        <div className="relative">
-                          <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
-                            {item.title}
-                          </h3>
-                          <p className="text-gray-600">{item.info}</p>
-                        </div>
-                      </div>
-                    )}
-                  </AnimateOnScroll>
-                ))}
-              </div>
-            </div>
+                    <div className="relative">
+                      <h3 className="font-semibold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-600">{item.info}</p>
+                    </div>
+                  </div>
+                )}
+              </AnimateOnScroll>
+            ))}
           </div>
+        </div>
+      </div>
 
       {/* Featured Events */}
       <div className="py-20 bg-gray-50">
@@ -239,65 +254,74 @@ const Home = () => {
             {[
               {
                 title: "Pre-Event",
-                description: "Engaging fun activities and interactive games for all participants.",
-   
+                description:
+                  "Engaging fun activities and interactive games for all participants.",
+
                 image: pre_event,
                 hoverImage: "/5.jpg",
               },
               {
                 title: "Workshops",
-                description: "Hands-on learning experiences in various technologies",
+                description:
+                  "Hands-on learning experiences in various technologies",
                 image: workshop,
                 hoverImage: "/1.jpg",
               },
-                 {
+              {
                 title: "Main Event",
-                description: "The big kickoff, competitions, and winning moments.",
+                description:
+                  "The big kickoff, competitions, and winning moments.",
                 image: main_event,
                 hoverImage: "/21.jpg",
               },
             ].map((event, index) => (
-              <AnimateOnScroll key={index} animation="slideUp" delay={index * 0.2}>
-                <div className="group bg-purple-100 rounded-3xl overflow-hidden
-                  transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_15px_45px_rgba(99,102,241,0.5)] border border-indigo-600/30">
-                 <div className="relative overflow-hidden h-52">
-        {/* Default image */}
-        <img
-          src={event.image}
-          alt={event.title}
-          loading="lazy"
-          decoding="async"
-          className="
+              <AnimateOnScroll
+                key={index}
+                animation="slideUp"
+                delay={index * 0.2}
+              >
+                <div
+                  className="group bg-purple-100 rounded-3xl overflow-hidden
+                  transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_15px_45px_rgba(99,102,241,0.5)] border border-indigo-600/30"
+                >
+                  <div className="relative overflow-hidden h-52">
+                    {/* Default image */}
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      loading="lazy"
+                      decoding="async"
+                      className="
             absolute inset-0 w-full h-full object-cover
             transition-all duration-700
             group-hover:opacity-0 group-hover:scale-110
           "
-        />
-        {/* Hover image */}
-        <img
-          src={event.hoverImage}
-          alt={`${event.title} hover`}
-          loading="lazy"
-          decoding="async"
-          className="
+                    />
+                    {/* Hover image */}
+                    <img
+                      src={event.hoverImage}
+                      alt={`${event.title} hover`}
+                      loading="lazy"
+                      decoding="async"
+                      className="
             absolute inset-0 w-full h-full object-cover
             opacity-0 scale-105
             transition-all duration-700
             group-hover:opacity-100 group-hover:scale-110
           "
-        />
-      </div>
-              <div className="p-6 relative z-10">
-                <h3 className="
+                    />
+                  </div>
+                  <div className="p-6 relative z-10">
+                    <h3
+                      className="
                   text-xl font-semibold text-indigo-600 mb-2
                   transition-colors duration-300 group-hover:text-purple-600
-                ">
-                  {event.title}
-                </h3>
-                        <p className="text-gray-600 mb-4">
-                            {event.description}
-                        </p>
-                        </div>
+                "
+                    >
+                      {event.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4">{event.description}</p>
+                  </div>
 
                   <Link
                     to={`/events?type=${
@@ -313,50 +337,57 @@ const Home = () => {
                       Explore
                     </span>
                   </Link>
-                        <div className="absolute inset-0 bg-gradient-to-t from-indigo-700/40 via-indigo-500/10 to-transparent"></div>
-                      </div>
-                    </AnimateOnScroll>
-                  ))}
+                  <div className="absolute inset-0 bg-gradient-to-t from-indigo-700/40 via-indigo-500/10 to-transparent"></div>
                 </div>
-              </div>
-            </div>
-
-              {/* I-CES Community Section */}
-            <div className="flex flex-row justify-center">
-            <div className="relative w-[70%] py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden rounded-2xl">
-              <div className="absolute inset-0 pointer-events-none select-none">
-                <svg width="100%" height="100%" className="absolute inset-0" style={{zIndex:0}}>
-                  <circle cx="20%" cy="20%" r="3" fill="#38bdf8" opacity="0.5" />
-                  <circle cx="80%" cy="30%" r="2.5" fill="#818cf8" opacity="0.5" />
-                  <circle cx="30%" cy="80%" r="2" fill="#a5b4fc" opacity="0.5" />
-                  <circle cx="60%" cy="60%" r="2.5" fill="#38bdf8" opacity="0.5" />
-                  <circle cx="90%" cy="70%" r="2" fill="#818cf8" opacity="0.5" />
-                </svg>
-              </div>
-              <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
-                <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
-                  Join Our <span className="text-orange-400">I-CES</span> Community
-                </h2>
-                <p className="text-lg md:text-2xl text-gray-200 mb-4 font-medium">
-                  This isn’t just membership. It’s representation. Become an <span className="text-orange-400 font-bold">I-CES</span> Community Member and be the face, the voice, and the energy that defines our campus.
-                </p>
-                <a
-                  href="https://discord.com/channels/846300701277159474/849620402237079572"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-8 px-8 py-4 bg-orange-400 hover:bg-orange-500 text-white font-bold text-xl rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
-                >
-                  Join Us On Discord
-                </a>
-              </div>
-            </div>
-            </div>
-      
-            {/* Sponsors Section */}
-          <Sponsors />
+              </AnimateOnScroll>
+            ))}
+          </div>
+        </div>
       </div>
-    );
-  };
-      
+
+      {/* I-CES Community Section */}
+      <div className="flex flex-row justify-center">
+        <div className="relative w-[70%] py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden rounded-2xl">
+          <div className="absolute inset-0 pointer-events-none select-none">
+            <svg
+              width="100%"
+              height="100%"
+              className="absolute inset-0"
+              style={{ zIndex: 0 }}
+            >
+              <circle cx="20%" cy="20%" r="3" fill="#38bdf8" opacity="0.5" />
+              <circle cx="80%" cy="30%" r="2.5" fill="#818cf8" opacity="0.5" />
+              <circle cx="30%" cy="80%" r="2" fill="#a5b4fc" opacity="0.5" />
+              <circle cx="60%" cy="60%" r="2.5" fill="#38bdf8" opacity="0.5" />
+              <circle cx="90%" cy="70%" r="2" fill="#818cf8" opacity="0.5" />
+            </svg>
+          </div>
+          <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
+            <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
+              Join Our <span className="text-orange-400">I-CES</span> Community
+            </h2>
+            <p className="text-lg md:text-2xl text-gray-200 mb-4 font-medium">
+              This isn’t just membership. It’s representation. Become an{" "}
+              <span className="text-orange-400 font-bold">I-CES</span> Community
+              Member and be the face, the voice, and the energy that defines our
+              campus.
+            </p>
+            <a
+              href="https://discord.com/channels/846300701277159474/849620402237079572"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 px-8 py-4 bg-orange-400 hover:bg-orange-500 text-white font-bold text-xl rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
+            >
+              Join Us On Discord
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Sponsors Section */}
+      <Sponsors />
+    </div>
+  );
+};
+
 export default Home;
-      
