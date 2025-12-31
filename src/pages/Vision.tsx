@@ -69,7 +69,7 @@ const Vision: React.FC = () => {
               letterSpacing="5"
             >
               <textPath href="#circlePath" startOffset="0%">
-                • Bigger • Bolder • Better
+                •Bigger•Bolder•Better
               </textPath>
             </text>
           </svg>
