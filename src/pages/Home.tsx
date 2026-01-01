@@ -421,13 +421,7 @@ const Home = () => {
 
   </div>
 </div>
-
-
-      </div>
-
-      {/* Sponsors Section */}
-      <Sponsors />
-    </div>
+</div>
   );
 };
 
