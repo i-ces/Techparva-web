@@ -345,43 +345,84 @@ const Home = () => {
         </div>
       </div>
 
-      {/* I-CES Community Section */}
-      <div className="flex flex-row justify-center">
-        <div className="relative w-[70%] py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden rounded-2xl">
-          <div className="absolute inset-0 pointer-events-none select-none">
-            <svg
-              width="100%"
-              height="100%"
-              className="absolute inset-0"
-              style={{ zIndex: 0 }}
-            >
-              <circle cx="20%" cy="20%" r="3" fill="#38bdf8" opacity="0.5" />
-              <circle cx="80%" cy="30%" r="2.5" fill="#818cf8" opacity="0.5" />
-              <circle cx="30%" cy="80%" r="2" fill="#a5b4fc" opacity="0.5" />
-              <circle cx="60%" cy="60%" r="2.5" fill="#38bdf8" opacity="0.5" />
-              <circle cx="90%" cy="70%" r="2" fill="#818cf8" opacity="0.5" />
-            </svg>
-          </div>
-          <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
-            <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
-              Join Our <span className="text-orange-400">I-CES</span> Community
-            </h2>
-            <p className="text-lg md:text-2xl text-gray-200 mb-4 font-medium">
-              This isn’t just membership. It’s representation. Become an{" "}
-              <span className="text-orange-400 font-bold">I-CES</span> Community
-              Member and be the face, the voice, and the energy that defines our
-              campus.
-            </p>
-            <a
-              href="https://discord.com/channels/846300701277159474/849620402237079572"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 px-8 py-4 bg-orange-400 hover:bg-orange-500 text-white font-bold text-xl rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
-            >
-              Join Us On Discord
-            </a>
-          </div>
+              {/* I-CES Community Section */}
+            <div className="flex flex-row justify-center">
+            <div className="relative w-[70%] py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden rounded-2xl">
+              <div className="absolute inset-0 pointer-events-none select-none">
+                <svg width="100%" height="100%" className="absolute inset-0" style={{zIndex:0}}>
+                  <circle cx="20%" cy="20%" r="3" fill="#38bdf8" opacity="0.5" />
+                  <circle cx="80%" cy="30%" r="2.5" fill="#818cf8" opacity="0.5" />
+                  <circle cx="30%" cy="80%" r="2" fill="#a5b4fc" opacity="0.5" />
+                  <circle cx="60%" cy="60%" r="2.5" fill="#38bdf8" opacity="0.5" />
+                  <circle cx="90%" cy="70%" r="2" fill="#818cf8" opacity="0.5" />
+                </svg>
+              </div>
+              <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-4">
+                <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
+                  Join Our <span className="text-orange-400">I-CES</span> Community
+                </h2>
+                <p className="text-lg md:text-2xl text-gray-200 mb-4 font-medium">
+                  This isn’t just membership. It’s representation. Become an <span className="text-orange-400 font-bold">I-CES</span> Community Member and be the face, the voice, and the energy that defines our campus.
+                </p>
+                <a
+                  href="https://discord.com/channels/846300701277159474/849620402237079572"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 px-8 py-4 bg-orange-400 hover:bg-orange-500 text-white font-bold text-xl rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
+                >
+                  Join Us On Discord
+                </a>
+              </div>
+            </div>
+            </div>
+      
+            {/* Sponsors Section */}
+          <Sponsors />
+
+{/* Map Section */}
+<div className="w-full py-20 bg-gradient-to-br white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <AnimateOnScroll animation="slideUp">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-purple-600 mb-8 text-center">
+        Event Location
+      </h2>
+    </AnimateOnScroll>
+
+    <AnimateOnScroll animation="scaleUp" delay={0.2}>
+      <div className="relative w-full h-[500px] rounded-3xl overflow-hidden
+        border border-indigo-600/40
+        shadow-[0_20px_60px_rgba(99,102,241,0.4)]">
+
+        <div>
+          <a
+            href="https://www.google.com/maps/place/CIT+Center+and+Electronics+%26+Computer+Department/@28.254489,83.97638,20z/data=!4m14!1m7!3m6!1s0x89b91d6e97d534e1:0xe4b6c6fc49942b9f!2sGuerrieri+Technology+Center!8m2!3d38.3716078!4d-75.500135!16s%2Fg%2F11vj5clq5r!3m5!1s0x3995947dd802d223:0xcc6f32e6a0be8042!8m2!3d28.2546211!4d83.9762843!16s%2Fg%2F12hptkm6y?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 text-xs hover:underline mt-1"
+          >
+            {/* View larger map */}
+          </a>
         </div>
+
+        <iframe
+          title="Event Location Map"
+          src="https://www.google.com/maps?q=CIT+Center+and+Electronics+%26+Computer+Department+Pokhara&output=embed"
+          className="w-full h-full border-0"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+        {/* Glass overlay */}
+        <div className="absolute inset-0 pointer-events-none
+          bg-gradient-to-t from-black/30 via-transparent to-transparent">
+        </div>
+      </div>
+    </AnimateOnScroll>
+
+  </div>
+</div>
+
+
       </div>
 
       {/* Sponsors Section */}

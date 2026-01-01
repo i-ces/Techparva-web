@@ -121,7 +121,7 @@ export const events: Event[] = [
     Registration_Fee: "Free",
     speakers: [],
     tags: ["Logic", "Pre-event", "Competition"],
-    formlink: "https://forms.gle/fY63ccmGNdXLxxy4A",
+    formlink: "https://docs.google.com/forms/d/e/1FAIpQLSdJRLLAlotJQOxqucecXgm_lqfBrWJSHBZM3JoXZn3UB28flQ/viewform?usp=header",
   },
   {
     id: generateSlug("Datathon Workshop"),
