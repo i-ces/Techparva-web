@@ -198,7 +198,7 @@ export const events: Event[] = [
     type: "competition",
     date: "2026-01-06T11:00:00",
     nepalidate: "Poush 22, 2082 / January 6, 2026",
-    time: "11:00 AM",
+    time: "10:30 AM",
     duration: "2 hours",
     location: "CIT Hall, WRC",
     image: "/CWC.png",
