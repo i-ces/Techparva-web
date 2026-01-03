@@ -214,7 +214,7 @@ export const scheduleData: DaySchedule[] = [
         events: [
             {
                 id: generateSlug("Code with Coffee"),
-                time: "11:00 AM",
+                time: "10:30 AM",
                 title: "Code with Coffee",
                 description: "Competitive coding with a relaxing coffee vibe.",
                 location: "CIT Hall, WRC",

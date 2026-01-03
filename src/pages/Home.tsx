@@ -347,7 +347,7 @@ const Home = () => {
 
               {/* I-CES Community Section */}
             <div className="flex flex-row justify-center">
-            <div className="relative w-[70%] py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden rounded-2xl">
+            <div className="relative w-[90%] md:w-[70%] py-24 bg-gradient-to-br from-black via-indigo-950 to-purple-950 flex flex-col items-center justify-center overflow-hidden rounded-2xl">
               <div className="absolute inset-0 pointer-events-none select-none">
                 <svg width="100%" height="100%" className="absolute inset-0" style={{zIndex:0}}>
                   <circle cx="20%" cy="20%" r="3" fill="#38bdf8" opacity="0.5" />
@@ -368,7 +368,7 @@ const Home = () => {
                   href="https://discord.com/channels/846300701277159474/849620402237079572"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-8 px-8 py-4 bg-orange-400 hover:bg-orange-500 text-white font-bold text-xl rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
+                  className="mt-8 px-4 md:px-8 py-4 bg-orange-400 hover:bg-orange-500 text-white font-bold text-lg md:text-xl rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
                 >
                   Join Us On Discord
                 </a>
