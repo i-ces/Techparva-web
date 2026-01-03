@@ -13,7 +13,7 @@ const Sponsors = () => {
             <h3 className="text-3xl font-semibold text-center text-yellow-600 mb-4">
               {category.replace(/_/g, " ")}
             </h3>
-            <div className="bg-white/85 p-4 flex justify-center flex-wrap rounded-lg">
+            <div className="bg-white/85 p-4 flex justify-center flex-wrap gap-10 rounded-lg">
               {(
                 sponsors[category] as {
                   name: string;
