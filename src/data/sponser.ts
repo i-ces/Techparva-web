@@ -2,7 +2,7 @@ export const sponsors: Record<
   string,
   { name: string; logo: string; link: string }[]
 > = {
-  Title: [
+  Presented_By: [
     {
       name: "Kangaroo Education",
       logo: "/sponser/Kangaroo.png",
@@ -16,7 +16,7 @@ export const sponsors: Record<
       link: "https://www.facebook.com/yashi.academy",
     },
   ],
-  Associated_with: [
+  In_Association_with: [
     {
       name: "Old Lan Hua",
       logo: "/sponser/old_lan.png",
@@ -42,23 +42,21 @@ export const sponsors: Record<
       link: "https://www.facebook.com/profile.php?id=61576245407692",
     },
   ],
-  Banking_Partner: [
-    {
-      name: "Global Ime Bank",
-      logo: "/sponser/global.svg",
-      link: "https://www.facebook.com/Globalime",
-    },
-  ],
-  General_Partner: [
-    {
-      name: "Leapfrog",
-      logo: "/sponser/leapfrog.svg",
-      link: "https://www.facebook.com/lftechnology",
-    },
+  General_Sponsor: [
     {
       name: "Leapfrog Connect",
       logo: "/sponser/LFConnect.svg",
-      link: "https://www.facebook.com/profile.php?id=61572083639570",
+      link: "https://www.linkedin.com/company/leapfrog-connect/",
+    },
+    {
+      name: "Leapfrog",
+      logo: "/sponser/leapfrog.svg",
+      link: "https://www.linkedin.com/company/lftechnology/",
+    },
+    {
+      name: "Jankari Tech",
+      logo: "/sponser/JankariTech.png",
+      link: "https://www.linkedin.com/company/jankaritech/",
     },
     {
       name: "Infochip",
@@ -71,14 +69,37 @@ export const sponsors: Record<
       link: "https://www.facebook.com/MINDCRAFT.NP",
     },
     {
-      name: "Jankari Tech",
-      logo: "/sponser/JankariTech.png",
-      link: "https://www.facebook.com/jankaritech",
-    },
-    {
       name: "Eser Tech",
       logo: "/sponser/EserTech.png",
       link: "https://www.facebook.com/aankhijhyal.tech",
+    },
+  ],
+  Banking_Partner: [
+    {
+      name: "Global Ime Bank",
+      logo: "/sponser/global.svg",
+      link: "https://www.facebook.com/Globalime",
+    },
+  ],
+  Security_Partner: [
+    {
+      name: "Offsec",
+      logo: "/sponser/Offsec.png",
+      link: "https://www.linkedin.com/company/offsec-training/",
+    },
+  ],
+  E_Learning_Partner: [
+    {
+      name: "Programiz",
+      logo: "/sponser/Programiz.svg",
+      link: "https://www.linkedin.com/company/programiz/",
+    },
+  ],
+  Hospitality_Partner: [
+    {
+      name: "Karoma",
+      logo: "/sponser/Karoma.svg",
+      link: "https://www.instagram.com/karomacafe.pkr/",
     },
   ],
   Gifting: [
@@ -96,13 +117,6 @@ export const sponsors: Record<
       name: "Nepal Tech pal",
       logo: "/sponser/NepTechPal.svg",
       link: "https://www.facebook.com/neptechpal",
-    },
-  ],
-  Hospitality: [
-    {
-      name: "Karoma",
-      logo: "/sponser/Karoma.svg",
-      link: "",
     },
   ],
   Media_Partner: [
